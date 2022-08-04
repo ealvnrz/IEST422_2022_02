@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: bebdd0f9-c199-4e79-964b-7fa5d04d869f
+      url: 'https://heroic-paletas-59e182.netlify.app'
