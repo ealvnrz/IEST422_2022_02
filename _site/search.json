@@ -9,8 +9,43 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Modernizing the undergraduate regression analysis course",
+    "title": "IEST 422: Control de Calidad",
     "section": "",
-    "text": "eCOTS 2022\nMonday, May 23, 2022\n3:35 pm – 4:45 pm ET\n\n\nAbstract\ntest text test 2 updated"
+    "text": "En este curso se estudian los fundamentos del control de la calidad y la aplicación de los métodos estadísticos de uso habitual en él, por lo cual se espera que al término del curso el alumno esté capacitado para aplicarlos en procesos relacionados con la producción de bienes y/o prestación de servicios.\nPor su naturaleza aplicada y ser un curso de años superiores, se dará un especial énfasis en la aplicación de las herramientas a estudiar."
+  },
+  {
+    "objectID": "index.html#softwares",
+    "href": "index.html#softwares",
+    "title": "IEST 422: Control de Calidad",
+    "section": "Softwares",
+    "text": "Softwares\nPara la mayoría de las aplicaciones utilizaremos R, por lo que se sugiere utilizar un IDE como RStudio.\nPara la entrega de informes y talleres que requieran uso de programación, se recomienda el uso de Rmarkdown, Jupyter Notebook o \\(\\LaTeX\\) para la confección de documentos a entregar."
+  },
+  {
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa del curso",
+    "section": "",
+    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y seños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos\n\n\n\nHerramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso\n\n\n\nModelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades\n\n\n\nCapacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa\n\n\n\nDiagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas\n\n\n\nControl de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
+  },
+  {
+    "objectID": "pages/programa.html",
+    "href": "pages/programa.html",
+    "title": "Programa del curso",
+    "section": "",
+    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y seños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos\n\n\n\nHerramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso\n\n\n\nModelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades\n\n\n\nCapacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa\n\n\n\nDiagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas\n\n\n\nControl de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
+  },
+  {
+    "objectID": "pages/evaluaciones.html",
+    "href": "pages/evaluaciones.html",
+    "title": "Evaluaciones",
+    "section": "",
+    "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (3)\n70%\n\n\nTalleres grupales e individuales. Presentaciones de informes (3)\n30%"
+  },
+  {
+    "objectID": "pages/calendario.html",
+    "href": "pages/calendario.html",
+    "title": "Calendario",
+    "section": "",
+    "text": "Semana\nFecha\nPreparación\nPresentación\nEjercicios\nTalleres\nPruebas\nTrabajo Final\n\n\n\n\n1\n18/08\n📖\n🖥️\n📋\n\n\n\n\n\n2\n25/08\n📖\n🖥️\n📋\n\n\n\n\n\n3\n01/09\n📖\n🖥️\n📋\n💻\n\n\n\n\n4\n01/09\n📖\n🖥️\n📋\n\n\n\n\n\n5\n08/09\n📖\n🖥️\n📋\n\n\n\n\n\n6\n15/09\n📖\n🖥️\n📋\n\n📝\n\n\n\n7\n22/09\n📖\n🖥️\n📋\n\n\n\n\n\n8\n29/09\n📖\n🖥️\n📋\n\n\n\n\n\n9\n06/10\n📖\n🖥️\n📋\n\n\n\n\n\n10\n13/10\n📖\n🖥️\n📋\n💻\n\n\n\n\n11\n20/10\n📖\n🖥️\n📋\n\n\n\n\n\n12\n27/10\n📖\n🖥️\n📋\n\n📝\n\n\n\n13\n03/11\n📖\n🖥️\n📋\n\n\n\n\n\n14\n10/11\n📖\n🖥️\n📋\n\n\n\n\n\n15\n17/11\n📖\n🖥️\n📋\n💻\n\n\n\n\n16\n24/11\n📖\n🖥️\n📋\n\n\n\n\n\n17\n01/12\n📖\n🖥️\n📋\n\n📝\n\n\n\n18\n08/12\n📖\n🖥️\n📋\n\n\n📔"
   }
 ]

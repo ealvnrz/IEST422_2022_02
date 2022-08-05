@@ -11,15 +11,23 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/sta210-s22
-        text: "GitHub organization"
+        href: https://github.com/ealvnrz/IEST422_2022_02
+        text: "Repositorio del curso"
     style: "docked"
     search: true
     collapse-level: 1
-    contents:
-      - section: "Course information"
+    contents:    
+      - section: "Información del curso"
         contents:
-          - text: Overview
+          - href: index.qmd
+            text: Descripción
+          - href: pages/programa.qmd
+            text: Programa
+          - href: pages/evaluaciones.qmd
+            text: Evaluaciones
+          - href: pages/calendario.qmd
+            text: Calendario
+           
 format:
   html:
     theme:
@@ -29,8 +37,8 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
+    lang: es
     
 freeze: auto
 
-editor: visual
 

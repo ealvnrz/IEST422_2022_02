@@ -1,0 +1,57 @@
+---
+title: "Programa del curso"
+---
+
+# Programa oficial
+
+El programa oficial del curso está disponible [**acá**](/documents/IEST422_Control_de_calidad.pdf "Programa IEST 422")
+
+# Introducción al control de calidad
+
+1.  Breve historia del control de calidad
+2.  Control total de la calidad
+3.  Filosofías del control de calidad
+4.  Ingeniería de la calidad y seños robustos
+5.  Máxima calidad.
+6.  Teoría seis sigma
+7.  Aspectos generales del control estadístico de procesos
+
+# Herramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad
+
+1.  Tipos de datos
+2.  Datos de atributos. Distribución binomial
+3.  Datos contables distribución de Poisson
+4.  Otras distribuciones discretas
+5.  Aplicaciones
+6.  Diagramas de control
+7.  Estimando el nivel medio y la variación en un proceso
+
+# Modelamiento de la calidad de un proceso
+
+1.  Razones para la variación en un proceso
+2.  Descripción de la variación
+3.  Algunos modelos para la variación en un proceso
+4.  Estudio de la variación en un proceso
+5.  Distribución condicional, definiciones formales y teorema de existencia
+6.  Esperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades
+
+# Capacidad del proceso
+
+1.  Estudio de la capacidad inicial de un proceso
+2.  Límites de control de límites de especificación o tolerancia
+3.  Capacidad relativa
+
+# Diagramas de control para variables continuas
+
+1.  Control in‐out
+2.  Diagramas de control para el nivel medio
+3.  Diagramas de control para la dispersión en el proceso
+4.  Otras técnicas de control. Sumas acumuladas
+
+# Control de procesos para datos discretos
+
+1.  Diagramas de Shewhart para datos contables
+2.  Diagramas de Shewhart para datos por atributos
+3.  Diagramas de Cusum para datos contables
+4.  Diagramas de Cusum para datos de atributos
+5.  Notas de muestreo
