@@ -1,19 +1,23 @@
 ---
-title: "IEST 422: Control de Calidad"
+title: "LFIS325: Estadística para Ciencias Físicas"
 ---
 
 # Descripción del curso
 
-En este curso se estudian los fundamentos del control de la calidad y la aplicación de los métodos estadísticos de uso habitual en él, por lo cual se espera que al término del curso el alumno esté capacitado para aplicarlos en procesos relacionados con la producción de bienes y/o prestación de servicios.
-
-Por su naturaleza aplicada y ser un curso de años superiores, se dará un especial énfasis en la aplicación de las herramientas a estudiar.
+Es un curso teórico/práctico de modalidad presencial, de nivel intermedio, cuya misión es introducir al
+estudiante a las principales herramientas de análisis. El curso está orientado a desarrollar en el estudiante
+la capacidad de transformar los datos de que dispone tanto para extraer información útil como también
+para facilitar las conclusiones. Aprenderá los conceptos de la teoría de la probabilidad y la inferencia
+estadística que se utilizan para interpretar datos experimentales. Abordará los problemas tanto desde una
+perspectiva teórica como con trabajos prácticos.
 
 # Horario de clases
 
 |            | Día    | Horario             | Lugar     |
 |------------|--------|---------------------|-----------|
-| Cátedra #1 | Jueves | 10:15 am - 11:45 am | A definir |
-| Cátedra #2 | Jueves | 12.00 pm - 13:13 pm | A definir |
+| Cátedra #1 | Jueves | 08:30 am - 10:00 am | A definir |
+| Cátedra #2 | Viernes | 14:30 pm - 16:00 pm | A definir |
+| Cátedra #3 | Viernes | 16:15 pm - 17:45 pm | A definir |
 
 # Instructor
 
@@ -23,7 +27,7 @@ Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es candidato a Doct
 
 # Pre-requisitos
 
-Oficialmente, el curso sólo requiere la aprobación de IEST 412: Muestreo II, pero a su vez se necesitará conocimiento general de teoría de probabilidad e inferencia.
+Oficialmente, el curso requiere la aprobación de Calculo III y Física computacional III.
 
 ## Softwares
 
@@ -36,10 +40,10 @@ Para la entrega de informes y talleres que requieran uso de programación, se re
 La bibliografía principal del curso es:
 
 ::: {layout-ncol=3}
-![Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.](images/montgomery.jpg)
+![Statistical Data Analysis, Glen Cowan.](images/Cowan.jpg)
 
-![Statistical Process Control, Theory and practice. Wetherill, G. Barrie, Brown, Don W.](images/sqc.jpg)
+![Practical Statistics for Astronomers, J.V. Wall, C.R. Jenkins](images/practical.jpg)
 
-![Introduction to Statistical Process Control. Qiu, Peihua](images/sqc2.jpg)
+![Probability and Statistics for Engineering and the Sciences, 9th Edition.Jay L. Devore](images/devore.jpg)
 
 :::
