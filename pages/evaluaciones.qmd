@@ -4,7 +4,7 @@ title: "Evaluaciones"
 
 La metodología de evaluación es la siguiente:
 
-| Tipo de evaluación         | Porcentaje que corresponde |
-|----------------------------|----------------------------|
-| Evaluaciones sumativas (3) | 60%                        |
-| Tareas/Proyectos           | 40%                        |
+| Tipo de evaluación                                               | Porcentaje que corresponde |
+|------------------------------------------------------------------|----------------------------|
+| Evaluaciones sumativas (3)                                       | 70%                        |
+| Talleres grupales e individuales. Presentaciones de informes (3) | 30%                        |

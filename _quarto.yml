@@ -3,10 +3,10 @@ project:
 
 website:
   page-navigation: true
-  title: "LFIS 325 - Estadística para Ciencias Físicas"
+  title: "STA 210 - Spring 2022"
   sidebar:
     background: "#D9E3E4"
-    logo: "images/lfis325_logo.png"
+    logo: "images/iest422_logo.png"
     pinned: true
     align: center
     tools:
