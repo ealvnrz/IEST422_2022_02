@@ -3,7 +3,7 @@ project:
 
 website:
   page-navigation: true
-  title: "STA 210 - Spring 2022"
+  title: "IEST 422 - Control de Calidad"
   sidebar:
     background: "#D9E3E4"
     logo: "images/iest422_logo.png"
