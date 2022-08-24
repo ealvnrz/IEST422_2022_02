@@ -18,20 +18,489 @@
     "href": "pages/calendario.html",
     "title": "Calendario",
     "section": "",
-    "text": "Semana\nFecha\nPreparación\nPresentación\nEjercicios\nTalleres\nPruebas\nTrabajo Final\n\n\n\n\n1\n18/08\n\n🖥️\n\n\n\n\n\n\n2\n25/08\n\n🖥️\n\n\n\n\n\n\n3\n01/09\n\n🖥️\n\n\n\n\n\n\n4\n08/09\n\n🖥️\n\n\n\n\n\n\n5\n15/09\n\n🖥️\n\n\n\n\n\n\n6\n29/09\n\n🖥️\n\n\n\n\n\n\n7\n06/10\n\n🖥️\n\n\n\n\n\n\n8\n13/10\n\n🖥️\n\n\n\n\n\n\n9\n20/10\n\n🖥️\n\n\n\n\n\n\n10\n27/10\n\n🖥️\n\n\n\n\n\n\n11\n10/11\n\n🖥️\n\n\n\n\n\n\n12\n17/11\n\n🖥️\n\n\n\n\n\n\n13\n24/11\n\n🖥️\n\n\n\n\n\n\n14\n01/12\n\n🖥️\n\n\n\n\n\n\n15\n08/12\n\n🖥️\n\n\n\n\n\n\n16\n15/12\n\n🖥️\n\n\n\n\n\n\n17\n22/12\n\n🖥️\n\n\n\n\n\n\n18\n29/12\n📖\n🖥️\n📋\n💻\n📝\n📔"
+    "text": "Semana\nFecha\nPreparación\nPresentación\nMaterial adicional\nPrueba\nTrabajo Final\n\n\n\n\n1\n25/08\n📖\n🖥️\n📋\n\n\n\n\n2\n01/09\n📖\n🖥️\n📋\n\n\n\n\n3\n08/09\n📖\n🖥️\n📋\n\n\n\n\n4\n15/09\n📖\n🖥️\n📋\n\n\n\n\n5\n29/09\n📖\n🖥️\n📋\n\n\n\n\n6\n06/10\n📖\n🖥️\n📋\n\n\n\n\n7\n13/10\n📖\n🖥️\n📋\n\n\n\n\n8\n20/10\n📖\n🖥️\n📋\n📝\n\n\n\n9\n27/10\n📖\n🖥️\n📋\n\n\n\n\n10\n10/11\n📖\n🖥️\n📋\n\n\n\n\n11\n17/11\n📖\n🖥️\n📋\n\n\n\n\n12\n24/11\n📖\n🖥️\n📋\n\n\n\n\n13\n01/11\n📖\n🖥️\n📋\n\n📔\n\n\n14\n08/12\n📖\n🖥️\n📋\n📝\n\n\n\n15\n15/12\n📖\n🖥️\n📋\n\n\n\n\n16\n22/12\n📖\n🖥️\n📋\n\n📔"
   },
   {
     "objectID": "pages/evaluaciones.html",
     "href": "pages/evaluaciones.html",
     "title": "Evaluaciones",
     "section": "",
-    "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (3)\n70%\n\n\nTalleres grupales e individuales. Presentaciones de informes (3)\n30%"
+    "text": "Tipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (2)\n50%\n\n\nTareas\n20%\n\n\nTrabajo final\n30%"
   },
   {
     "objectID": "pages/programa.html",
     "href": "pages/programa.html",
     "title": "Programa del curso",
     "section": "",
-    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y seños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos\n\n\n\nHerramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso\n\n\n\nModelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades\n\n\n\nCapacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa\n\n\n\nDiagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas\n\n\n\nControl de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
+    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y diseños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos\n\n\n\nHerramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso\n\n\n\nModelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades\n\n\n\nCapacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa\n\n\n\nDiagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas\n\n\n\nControl de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
+  },
+  {
+    "objectID": "pages/week1.html",
+    "href": "pages/week1.html",
+    "title": "Semana 1",
+    "section": "",
+    "text": "Leer el programa del curso"
+  },
+  {
+    "objectID": "pages/week1.html#presentación",
+    "href": "pages/week1.html#presentación",
+    "title": "Semana 1",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week1.html#material-adicional",
+    "href": "pages/week1.html#material-adicional",
+    "title": "Semana 1",
+    "section": "Material adicional",
+    "text": "Material adicional\n\nSección 1.3 y 1.4 de Introduction to statistical quality control.\nCapítulo 1 de Introduction to statistical process control.\nCapítulo 1 de Statistical process control, theory and practice."
+  },
+  {
+    "objectID": "pages/week10.html#presentación",
+    "href": "pages/week10.html#presentación",
+    "title": "Semana 10",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week10.html#material-adicional",
+    "href": "pages/week10.html#material-adicional",
+    "title": "Semana 10",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week11.html#presentación",
+    "href": "pages/week11.html#presentación",
+    "title": "Semana 11",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week11.html#material-adicional",
+    "href": "pages/week11.html#material-adicional",
+    "title": "Semana 11",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week12.html#presentación",
+    "href": "pages/week12.html#presentación",
+    "title": "Semana 12",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week12.html#material-adicional",
+    "href": "pages/week12.html#material-adicional",
+    "title": "Semana 12",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week13.html#presentación",
+    "href": "pages/week13.html#presentación",
+    "title": "Semana 13",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week13.html#material-adicional",
+    "href": "pages/week13.html#material-adicional",
+    "title": "Semana 13",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week14.html#presentación",
+    "href": "pages/week14.html#presentación",
+    "title": "Semana 14",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week14.html#material-adicional",
+    "href": "pages/week14.html#material-adicional",
+    "title": "Semana 14",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week15.html#presentación",
+    "href": "pages/week15.html#presentación",
+    "title": "Semana 15",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week15.html#material-adicional",
+    "href": "pages/week15.html#material-adicional",
+    "title": "Semana 15",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week16.html#presentación",
+    "href": "pages/week16.html#presentación",
+    "title": "Semana 16",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week16.html#material-adicional",
+    "href": "pages/week16.html#material-adicional",
+    "title": "Semana 16",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week2.html",
+    "href": "pages/week2.html",
+    "title": "Semana 2",
+    "section": "",
+    "text": "Leer secciones 1.3 y 1.4 de Introduction to statistical quality control."
+  },
+  {
+    "objectID": "pages/week2.html#presentación",
+    "href": "pages/week2.html#presentación",
+    "title": "Semana 2",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week2.html#material-adicional",
+    "href": "pages/week2.html#material-adicional",
+    "title": "Semana 2",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week3.html#presentación",
+    "href": "pages/week3.html#presentación",
+    "title": "Semana 3",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week3.html#material-adicional",
+    "href": "pages/week3.html#material-adicional",
+    "title": "Semana 3",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week4.html#presentación",
+    "href": "pages/week4.html#presentación",
+    "title": "Semana 4",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week4.html#material-adicional",
+    "href": "pages/week4.html#material-adicional",
+    "title": "Semana 4",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week5.html#presentación",
+    "href": "pages/week5.html#presentación",
+    "title": "Semana 5",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week5.html#material-adicional",
+    "href": "pages/week5.html#material-adicional",
+    "title": "Semana 5",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week6.html#presentación",
+    "href": "pages/week6.html#presentación",
+    "title": "Semana 6",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week6.html#material-adicional",
+    "href": "pages/week6.html#material-adicional",
+    "title": "Semana 6",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week7.html",
+    "href": "pages/week7.html",
+    "title": "Semana 7",
+    "section": "",
+    "text": "Instalar R y Python.\nSe recomienda también instalar Rstudio y Spyder"
+  },
+  {
+    "objectID": "pages/week7.html#presentación",
+    "href": "pages/week7.html#presentación",
+    "title": "Semana 7",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week7.html#material-adicional",
+    "href": "pages/week7.html#material-adicional",
+    "title": "Semana 7",
+    "section": "Material adicional",
+    "text": "Material adicional\nCapítulo 1 a 8 de Introducción a R en español\nCapítulo 1 y 2 de Python for probability, statistics, and machine learning"
+  },
+  {
+    "objectID": "pages/week8.html#presentación",
+    "href": "pages/week8.html#presentación",
+    "title": "Semana 8",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week8.html#material-adicional",
+    "href": "pages/week8.html#material-adicional",
+    "title": "Semana 8",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "pages/week9.html#presentación",
+    "href": "pages/week9.html#presentación",
+    "title": "Semana 9",
+    "section": "Presentación",
+    "text": "Presentación\nVer presentación en pantalla completa"
+  },
+  {
+    "objectID": "pages/week9.html#material-adicional",
+    "href": "pages/week9.html#material-adicional",
+    "title": "Semana 9",
+    "section": "Material adicional",
+    "text": "Material adicional"
+  },
+  {
+    "objectID": "slides/lec_week1.html#de-qué-trata-el-curso",
+    "href": "slides/lec_week1.html#de-qué-trata-el-curso",
+    "title": "Control de calidad",
+    "section": "¿De qué trata el curso?",
+    "text": "¿De qué trata el curso?\nEn este curso se estudian los fundamentos del control de la calidad y la aplicación de los métodos estadísticos de uso habitual en él, por lo cual se espera que al término del curso el alumno esté capacitado para aplicarlos en procesos relacionados con la producción de bienes y/o prestación de servicios."
+  },
+  {
+    "objectID": "slides/lec_week1.html#horario-de-clases",
+    "href": "slides/lec_week1.html#horario-de-clases",
+    "title": "Control de calidad",
+    "section": "Horario de clases",
+    "text": "Horario de clases\n\n\n\n\nDía\nHorario\nLugar\n\n\n\n\nCátedra #1\nJueves\n10:15 am - 11:45 am\nA definir\n\n\nCátedra #2\nJueves\n12.00 pm - 13:13 pm\nA definir\n\n\n\nPágina del curso\nUtilizaremos el Aula Virtual/Google Classroom y el sitio https://iest422-2022-02.netlify.app/. Ambas páginas tendrán la misma información, sin embargo, para efectos de entrega de informes, el medio oficial será el Aula Virtual/Google Classroom"
+  },
+  {
+    "objectID": "slides/lec_week1.html#bibliografía-principal-del-curso",
+    "href": "slides/lec_week1.html#bibliografía-principal-del-curso",
+    "title": "Control de calidad",
+    "section": "Bibliografía principal del curso",
+    "text": "Bibliografía principal del curso\n\n\n\n\n\n\nIntroduction to statistical quality control. Montgomery, Douglas C. 7th edition.\n\n\n\n\n\n\n\nStatistical Process Control, Theory and practice. Wetherill, G. Barrie, Brown, Don W.\n\n\n\n\n\n\n\nIntroduction to Statistical Process Control. Qiu, Peihua"
+  },
+  {
+    "objectID": "slides/lec_week1.html#introducción-al-control-de-calidad",
+    "href": "slides/lec_week1.html#introducción-al-control-de-calidad",
+    "title": "Control de calidad",
+    "section": "Introducción al control de calidad",
+    "text": "Introducción al control de calidad\n\nBreve historia del control de calidad\nControl total de la calidad\nFilosofías del control de calidad\nIngeniería de la calidad y diseños robustos\nMáxima calidad.\nTeoría seis sigma\nAspectos generales del control estadístico de procesos"
+  },
+  {
+    "objectID": "slides/lec_week1.html#herramientas-estadísticas-para-el-apoyo-de-un-plan-de-mejoramiento-de-la-calidad",
+    "href": "slides/lec_week1.html#herramientas-estadísticas-para-el-apoyo-de-un-plan-de-mejoramiento-de-la-calidad",
+    "title": "Control de calidad",
+    "section": "Herramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad",
+    "text": "Herramientas estadísticas para el apoyo de un plan de mejoramiento de la calidad\n\nTipos de datos\nDatos de atributos. Distribución binomial\nDatos contables distribución de Poisson\nOtras distribuciones discretas\nAplicaciones\nDiagramas de control\nEstimando el nivel medio y la variación en un proceso"
+  },
+  {
+    "objectID": "slides/lec_week1.html#modelamiento-de-la-calidad-de-un-proceso",
+    "href": "slides/lec_week1.html#modelamiento-de-la-calidad-de-un-proceso",
+    "title": "Control de calidad",
+    "section": "Modelamiento de la calidad de un proceso",
+    "text": "Modelamiento de la calidad de un proceso\n\nRazones para la variación en un proceso\nDescripción de la variación\nAlgunos modelos para la variación en un proceso\nEstudio de la variación en un proceso\nDistribución condicional, definiciones formales y teorema de existencia\nEsperanza y varianza condicional, propiedades, covarianza, coeficiente de correlación. Propiedades"
+  },
+  {
+    "objectID": "slides/lec_week1.html#capacidad-del-proceso",
+    "href": "slides/lec_week1.html#capacidad-del-proceso",
+    "title": "Control de calidad",
+    "section": "Capacidad del proceso",
+    "text": "Capacidad del proceso\n\nEstudio de la capacidad inicial de un proceso\nLímites de control de límites de especificación o tolerancia\nCapacidad relativa"
+  },
+  {
+    "objectID": "slides/lec_week1.html#diagramas-de-control-para-variables-continuas",
+    "href": "slides/lec_week1.html#diagramas-de-control-para-variables-continuas",
+    "title": "Control de calidad",
+    "section": "Diagramas de control para variables continuas",
+    "text": "Diagramas de control para variables continuas\n\nControl in‐out\nDiagramas de control para el nivel medio\nDiagramas de control para la dispersión en el proceso\nOtras técnicas de control. Sumas acumuladas"
+  },
+  {
+    "objectID": "slides/lec_week1.html#control-de-procesos-para-datos-discretos",
+    "href": "slides/lec_week1.html#control-de-procesos-para-datos-discretos",
+    "title": "Control de calidad",
+    "section": "Control de procesos para datos discretos",
+    "text": "Control de procesos para datos discretos\n\nDiagramas de Shewhart para datos contables\nDiagramas de Shewhart para datos por atributos\nDiagramas de Cusum para datos contables\nDiagramas de Cusum para datos de atributos\nNotas de muestreo"
+  },
+  {
+    "objectID": "slides/lec_week1.html#ponderaciones",
+    "href": "slides/lec_week1.html#ponderaciones",
+    "title": "Control de calidad",
+    "section": "Ponderaciones",
+    "text": "Ponderaciones\nLa metodología de evaluación es la siguiente:\n\n\n\nTipo de evaluación\nPorcentaje que corresponde\n\n\n\n\nEvaluaciones sumativas (2)\n50%\n\n\nTareas\n20%\n\n\nTrabajo final\n30%"
+  },
+  {
+    "objectID": "slides/lec_week1.html#metodología-del-curso",
+    "href": "slides/lec_week1.html#metodología-del-curso",
+    "title": "Control de calidad",
+    "section": "Metodología del curso",
+    "text": "Metodología del curso\n\nAntes de cada sesión, se mandará una lectura de preparación para la sesión\nEl enfoque principal será aplicado, pero sin dejar de lado los fundamentos matemáticos\nSe pondrá a disposición material adicional para estudiar"
+  },
+  {
+    "objectID": "slides/lec_week1.html#prerequisitos-del-curso",
+    "href": "slides/lec_week1.html#prerequisitos-del-curso",
+    "title": "Control de calidad",
+    "section": "Prerequisitos del curso",
+    "text": "Prerequisitos del curso\nOficialmente, el curso sólo requiere la aprobación de IEST 412: Muestreo II, pero a su vez se necesitará conocimiento general de teoría de probabilidad e inferencia."
+  },
+  {
+    "objectID": "slides/lec_week1.html#significado-de-calidad",
+    "href": "slides/lec_week1.html#significado-de-calidad",
+    "title": "Control de calidad",
+    "section": "Significado de calidad",
+    "text": "Significado de calidad\n\n¿Qué entienden por calidad?\n¿Por qué importa la calidad?\n¿Genera este una ventaja comparativa en la industria?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#dimensiones-de-calidad",
+    "href": "slides/lec_week1.html#dimensiones-de-calidad",
+    "title": "Control de calidad",
+    "section": "Dimensiones de calidad",
+    "text": "Dimensiones de calidad\nLa calidad de un producto puede ser descrito y evaluado de distintas maneras, por lo que se hace importante diferencias las distintas dimensiones de la calidad. Garvin (1987) clasifica estas dimensiones en 8 categorías:\n\nRendimiento\nFiabilidad\nDurabilidad\nUtilidad\nEstética\nCaracterísticas\nCalidad percibida\nConformidad con las normas"
+  },
+  {
+    "objectID": "slides/lec_week1.html#rendimiento",
+    "href": "slides/lec_week1.html#rendimiento",
+    "title": "Control de calidad",
+    "section": "Rendimiento",
+    "text": "Rendimiento\n\n¿El producto hará lo previsto?\n\n\nLos potenciales clientes usualmente evalúan un producto para determinar si realizará una función específica y determina qué tan bien la hará. Por ejemplo, cuando evaluamos la elección de un lenguaje de programación o software, analizamos las distintas características, funciones y velocidades de cómputo."
+  },
+  {
+    "objectID": "slides/lec_week1.html#fiabilidad",
+    "href": "slides/lec_week1.html#fiabilidad",
+    "title": "Control de calidad",
+    "section": "Fiabilidad",
+    "text": "Fiabilidad\n\n¿Qué tan frecuente el producto falla?\n\n\nProductos complejos, tales como electrodomésticos, automóviles o aviones, usualmente requieren una reparación a lo largo de su vida útil. Por ejemplo, se espera que un automóvil requiera algún tipo de reparación cada cierto tiempo, pero si estas reparaciones son muy frecuentes, entonces el consumidor lo categorizará como no confiable."
+  },
+  {
+    "objectID": "slides/lec_week1.html#durabilidad",
+    "href": "slides/lec_week1.html#durabilidad",
+    "title": "Control de calidad",
+    "section": "Durabilidad",
+    "text": "Durabilidad\n\n¿Qué tanto dura el producto?\n\n\nEsta dimensión es la vida útil del producto. Los consumidores quieren un producto que funcione satisfactoriamente en un largo periodo de tiempo. En la industria automotriz son ejemplos de rubros donde esta dimensión de la calidad es bastante importante para los consumidores."
+  },
+  {
+    "objectID": "slides/lec_week1.html#utilidad",
+    "href": "slides/lec_week1.html#utilidad",
+    "title": "Control de calidad",
+    "section": "Utilidad",
+    "text": "Utilidad\n\n¿Qué tan fácil es reparar el producto?\n\n\nExisten muchas industrias en donde la perspectiva de calidad del consumidor está directamente influenciada por qué tan rápido y económica una reparación o actividad rutinaria de mantenimiento puede realizarse. Ejemplo de estos son los electrodomésticos, automóviles y otros."
+  },
+  {
+    "objectID": "slides/lec_week1.html#estética",
+    "href": "slides/lec_week1.html#estética",
+    "title": "Control de calidad",
+    "section": "Estética",
+    "text": "Estética\n\n¿Qué aspecto tiene el producto?\n\n\nEste dimensión refiere al atractivo visual del producto, que toma en cuanta el estilo, color, forma, empaque, características táctiles, entre otros.\n\n\n\n¿Qué ejemplo se les ocurren?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#características",
+    "href": "slides/lec_week1.html#características",
+    "title": "Control de calidad",
+    "section": "Características",
+    "text": "Características\n\n¿Qué hace el producto?\n\n\nUsualmente, los consumidores asocian calidad alta con productos que tienen características adicionales, esto es, funciones adicionales a las básicas del producto.\n\n\n\n¿Qué ejemplos se les ocurren?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#calidad-percibida",
+    "href": "slides/lec_week1.html#calidad-percibida",
+    "title": "Control de calidad",
+    "section": "Calidad percibida",
+    "text": "Calidad percibida\n\n¿Qué reputación tiene la compañía y sus productos?\n\n\nEn muchos casos, los consumidores se basan en la reputación de la compañía respecto a la calidad de sus productos. Esta reputación está directamente influenciada por las fallas de sus productos que son altamente visibles al público general, o por cómo es tratado el cliente tras reportar una falla.\nLa calidad percibida, lealtad de los clientes y la repetición de negocios están cercanamente interconectados."
+  },
+  {
+    "objectID": "slides/lec_week1.html#conformidad-con-las-normas",
+    "href": "slides/lec_week1.html#conformidad-con-las-normas",
+    "title": "Control de calidad",
+    "section": "Conformidad con las normas",
+    "text": "Conformidad con las normas\n\n¿Es el producto hecho exactamente como fue diseñado?\n\n\nUsualmente pensamos en un producto de alta calidad como uno que cumple exactamente los requerimientos con los que fueron diseñados.\n\n\n\n¿Qué ejemplos se les ocurren de un caso en donde no ocurra esto?\n\n\n\nEstas ocho dimensiones son usualmente suficientes para describir la calidad en la mayoría de las industrias y negocios. Sin embargo, en los áreas de servicio y transacciones (como bancos, instituciones financieras, etc) podemos agregas 3 dimensiones adicionales:"
+  },
+  {
+    "objectID": "slides/lec_week1.html#responsabilidad",
+    "href": "slides/lec_week1.html#responsabilidad",
+    "title": "Control de calidad",
+    "section": "Responsabilidad",
+    "text": "Responsabilidad\n\n¿Cuánto demoró la empresa en proveer una respuesta a una solicitud de servicio?\n¿Qué tan dispuestos estuvieron a proveer una respuesta?\n¿Qué tan rápido se manejó la solicitud?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#profesionalismo",
+    "href": "slides/lec_week1.html#profesionalismo",
+    "title": "Control de calidad",
+    "section": "Profesionalismo",
+    "text": "Profesionalismo\nEsta dimensión refiere al conocimiento, experticia del proveedor del servicio, y se relaciona con la competencia de la organización para proveer los servicios requeridos"
+  },
+  {
+    "objectID": "slides/lec_week1.html#atención",
+    "href": "slides/lec_week1.html#atención",
+    "title": "Control de calidad",
+    "section": "Atención",
+    "text": "Atención\nLos consumidores usualmente quiere un trato amable y personalizado de parte del proveedor del servicio, quieren sentir que sus necesidades son importantes y están siendo abordadas cuidadosamente.\n\nPor lo que vemos que la noción de calidad es una entidad multidimensional, por lo que responder “¿Qué es la calidad?” o “¿Qué es un mejoramiento de la calidad?” no es fácil.\n\n\nLa definición tradicional de calidad se basa en la perspectiva que productos y servicios deben cumplir con los requerimientos de quienes lo utilizan. Así, calidad es aptitud para el uso"
+  },
+  {
+    "objectID": "slides/lec_week1.html#calidad-de-diseño-y-conformidad",
+    "href": "slides/lec_week1.html#calidad-de-diseño-y-conformidad",
+    "title": "Control de calidad",
+    "section": "Calidad de diseño y conformidad",
+    "text": "Calidad de diseño y conformidad\n\nLa calidad de diseño hace referencia a las especificaciones que deliberadamente se introducen en un producto.\nLa calidad de conformidad hace referencia a qué tan bien el producto se ajusta a las especificaciones para las cuales fue diseñado"
+  },
+  {
+    "objectID": "slides/lec_week1.html#definición-moderna-de-calidad",
+    "href": "slides/lec_week1.html#definición-moderna-de-calidad",
+    "title": "Control de calidad",
+    "section": "Definición moderna de calidad",
+    "text": "Definición moderna de calidad\nLa definición moderna de calidad es:\n\nCalidad es inversamente proporcional a variabilidad\n\nEsta definición implica que si la variabilidad en las características importantes de un producto disminuye, la calidad del producto aumenta.\n\n¿Qué ejemplos se les ocurren?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#definición-de-mejoramiento-de-la-calidad",
+    "href": "slides/lec_week1.html#definición-de-mejoramiento-de-la-calidad",
+    "title": "Control de calidad",
+    "section": "Definición de mejoramiento de la calidad",
+    "text": "Definición de mejoramiento de la calidad\nBajo la definición moderno de calidad, podemos definir claramente lo que se entiende por mejoramiento de la calidad:\n\nMejoramiento de la calidad es la reducción de la variabilidad de un proceso y productos.\n\nUsualmente, un exceso de variabilidad se traduce en algún tipo de pérdida\n\n¿Qué ejemplos se les ocurren?"
+  },
+  {
+    "objectID": "slides/lec_week1.html#terminología-en-control-de-calidad",
+    "href": "slides/lec_week1.html#terminología-en-control-de-calidad",
+    "title": "Control de calidad",
+    "section": "Terminología en control de calidad",
+    "text": "Terminología en control de calidad\nCada producto posee un número de elementos que en conjunto describen lo que el usuario o consumidor piensa como calidad. Estos parámetros son usualmente llamados características de calidad o critical-to-quality (CTQ). Estas características pueden ser de distintos tipos:\n\nFísicos: longitud, peso, voltaje, viscosidad\nSensoriales: sabor, apariencia, color\nTemporales: confiabilidad, durabilidad, capacidad de servicio\n\n\nNotar que los diferentes tipos de características de calidad puede relacionarse directa o indirectamente a las dimensiones de calidad que hemos visto."
+  },
+  {
+    "objectID": "slides/lec_week1.html#control-de-calidad",
+    "href": "slides/lec_week1.html#control-de-calidad",
+    "title": "Control de calidad",
+    "section": "Control de calidad",
+    "text": "Control de calidad\nEl control de calidad es un conjunto de actividades operativas, gerenciales y de ingeniería que utiliza una empresa para garantizar que las características de calidad de un producto estén en el nivel nominal o niveles requeridos y que la variabilidad alrededor de estos niveles deseados sea mínima.\n\nLa mayoría de las organizaciones ven difícil (y caro) proveer al cliente de productos que tienen características de calidad que sean siempre idénticas entre todas las unidades. La principal razón de esto es la variabilidad, pues debido a esto dos productos nunca serán idénticos.\nDebido a que la variabilidad sólo puede ser descrito en términos estadísticos, los métodos estadísticos toman un rol fundamental es los esfuerzos de mejoramiento de la calidad.\nUsualmente, las características de calidad se clasificas como atributos o variables, siendo los primeros discretos o categóricos, y los últimos, mediciones continuas."
+  },
+  {
+    "objectID": "slides/lec_week1.html#especificaciones",
+    "href": "slides/lec_week1.html#especificaciones",
+    "title": "Control de calidad",
+    "section": "Especificaciones",
+    "text": "Especificaciones\nLas características de calidad son frecuentemente evaluadas relativamente con sus especificaciones, esto es, lo medido respecto de lo que diseñado.\n\nUn valor de una medición que corresponde al valor deseado de esa característica de calidad es llamado nominal o valor objetivo para aquella característica. Estos valores objetivos están usualmente acotados por un rango que se pretende sean lo suficientemente cercano al valor deseado tal que si el valor se encuentra en este intervalo, no se impacte las funciones o rendimiento del producto.\n\n\nEl valor más alto permitido para las características se le llama upper specification limit (USL) o límite de especificación superior.\nEl valor más bajo permitido para las características se le llama lower specification limit (LSL) o límite de especificación inferior.\n\n\nSi una característica de la calidad se encuentra fuera de este rango, el producto en cuestión se le llama producto no conforme o nonconforming product, y son considerados defectuosos."
+  },
+  {
+    "objectID": "slides/lec_week1.html#historia-del-control-de-calidad",
+    "href": "slides/lec_week1.html#historia-del-control-de-calidad",
+    "title": "Control de calidad",
+    "section": "Historia del control de calidad",
+    "text": "Historia del control de calidad\nRevisar tabla 1.1 de Introduction to statistical quality control"
   }
 ]

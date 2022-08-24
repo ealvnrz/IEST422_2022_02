@@ -2,23 +2,21 @@
 title: "Calendario"
 ---
 
-| Semana | Fecha | Preparación | Presentación | Ejercicios | Talleres | Pruebas | Trabajo Final |
-|:-------:|:-------:|:--------:|:---------:|:-------:|:-------:|:-------:|:-------:|
-|   1    | 18/08 |             |      🖥️      |            |          |         |               |
-|   2    | 25/08 |             |      🖥️      |            |          |         |               |
-|   3    | 01/09 |             |      🖥️      |            |          |         |               |
-|   4    | 08/09 |             |      🖥️      |            |          |         |               |
-|   5    | 15/09 |             |      🖥️      |            |          |         |               |
-|   6    | 29/09 |             |      🖥️      |            |          |         |               |
-|   7    | 06/10 |             |      🖥️      |            |          |         |               |
-|   8    | 13/10 |             |      🖥️      |            |          |         |               |
-|   9    | 20/10 |             |      🖥️      |            |          |         |               |
-|   10   | 27/10 |             |      🖥️      |            |          |         |               |
-|   11   | 10/11 |             |      🖥️      |            |          |         |               |
-|   12   | 17/11 |             |      🖥️      |            |          |         |               |
-|   13   | 24/11 |             |      🖥️      |            |          |         |               |
-|   14   | 01/12 |             |      🖥️      |            |          |         |               |
-|   15   | 08/12 |             |      🖥️      |            |          |         |               |
-|   16   | 15/12 |             |      🖥️      |            |          |         |               |
-|   17   | 22/12 |             |      🖥️      |            |          |         |               |
-|   18   | 29/12 |     📖      |      🖥️      |     📋     |    💻    |   📝    |      📔       |
+|          Semana          | Fecha |              Preparación               |              Presentación               |              Material adicional               | Prueba | Trabajo Final |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|  [1](/pages/week1.html)  | 25/08 | [📖](../pages/week1.html#preparación)  | [🖥️](../pages/week1.html#presentación)  | [📋](../pages/week1.html#material-adicional)  |        |               |
+|  [2](/pages/week2.html)  | 01/09 | [📖](../pages/week2.html#preparación)  | [🖥️](../pages/week2.html#presentación)  | [📋](../pages/week2.html#material-adicional)  |        |               |
+|  [3](/pages/week3.html)  | 08/09 | [📖](../pages/week3.html#preparación)  | [🖥️](../pages/week3.html#presentación)  | [📋](../pages/week3.html#material-adicional)  |        |               |
+|  [4](/pages/week4.html)  | 15/09 | [📖](../pages/week4.html#preparación)  | [🖥️](../pages/week4.html#presentación)  | [📋](../pages/week4.html#material-adicional)  |        |               |
+|  [5](/pages/week5.html)  | 29/09 | [📖](../pages/week5.html#preparación)  | [🖥️](../pages/week5.html#presentación)  | [📋](../pages/week5.html#material-adicional)  |        |               |
+|  [6](/pages/week6.html)  | 06/10 | [📖](../pages/week6.html#preparación)  | [🖥️](../pages/week6.html#presentación)  | [📋](../pages/week6.html#material-adicional)  |        |               |
+|  [7](/pages/week7.html)  | 13/10 | [📖](../pages/week7.html#preparación)  | [🖥️](../pages/week7.html#presentación)  | [📋](../pages/week7.html#material-adicional)  |        |               |
+|  [8](/pages/week8.html)  | 20/10 | [📖](../pages/week8.html#preparación)  | [🖥️](../pages/week8.html#presentación)  | [📋](../pages/week9.html#material-adicional)  |   📝   |               |
+|  [9](/pages/week9.html)  | 27/10 | [📖](../pages/week9.html#preparación)  | [🖥️](../pages/week9.html#presentación)  | [📋](../pages/week9.html#material-adicional)  |        |               |
+| [10](/pages/week10.html) | 10/11 | [📖](../pages/week10.html#preparación) | [🖥️](../pages/week10.html#presentación) | [📋](../pages/week10.html#material-adicional) |        |               |
+| [11](/pages/week11.html) | 17/11 | [📖](../pages/week11.html#preparación) | [🖥️](../pages/week11.html#presentación) | [📋](../pages/week11.html#material-adicional) |        |               |
+| [12](/pages/week12.html) | 24/11 | [📖](../pages/week12.html#preparación) | [🖥️](../pages/week12.html#presentación) | [📋](../pages/week12.html#material-adicional) |        |               |
+| [13](/pages/week13.html) | 01/11 | [📖](../pages/week13.html#preparación) | [🖥️](../pages/week13.html#presentación) | [📋](../pages/week13.html#material-adicional) |        |      📔       |
+| [14](/pages/week14.html) | 08/12 | [📖](../pages/week14.html#preparación) | [🖥️](../pages/week14.html#presentación) | [📋](../pages/week14.html#material-adicional) |   📝   |               |
+| [15](/pages/week15.html) | 15/12 | [📖](../pages/week15.html#preparación) | [🖥️](../pages/week15.html#presentación) | [📋](../pages/week15.html#material-adicional) |        |               |
+| [16](/pages/week16.html) | 22/12 | [📖](../pages/week16.html#preparación) | [🖥️](../pages/week16.html#presentación) | [📋](../pages/week16.html#material-adicional) |        |      📔       |

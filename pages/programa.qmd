@@ -11,7 +11,7 @@ El programa oficial del curso está disponible [**acá**](/documents/IEST422_Con
 1.  Breve historia del control de calidad
 2.  Control total de la calidad
 3.  Filosofías del control de calidad
-4.  Ingeniería de la calidad y seños robustos
+4.  Ingeniería de la calidad y diseños robustos
 5.  Máxima calidad.
 6.  Teoría seis sigma
 7.  Aspectos generales del control estadístico de procesos

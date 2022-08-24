@@ -1,0 +1,23 @@
+---
+title: "Semana 1"
+subtitle: "Bienvenida al curso"
+---
+
+## Preparación
+
+Leer el [programa del curso](/documents/IEST422_Control_de_calidad.pdf "Programa IEST 422")
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week1.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week1.html" height="630" width="900"></iframe>
+```
+
+## Material adicional
+
+- Sección 1.3 y 1.4 de Introduction to statistical quality control.
+- Capítulo 1 de Introduction to statistical process control.
+- Capítulo 1 de Statistical process control, theory and practice.
+

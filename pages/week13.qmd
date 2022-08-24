@@ -1,0 +1,17 @@
+---
+title: "Semana 13"
+subtitle: ""
+---
+
+## Preparación
+
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week13.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week13.html" height="630" width="900"></iframe>
+```
+
+## Material adicional

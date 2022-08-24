@@ -27,6 +27,40 @@ website:
             text: Evaluaciones
           - href: pages/calendario.qmd
             text: Calendario
+      - section: "Material"
+        contents:
+          - href: pages/week1.qmd
+            text: "Semana 1"
+          - href: pages/week2.qmd
+            text: "Semana 2"          
+          - href: pages/week3.qmd
+            text: "Semana 3"
+          - href: pages/week4.qmd
+            text: "Semana 4"
+          - href: pages/week5.qmd
+            text: "Semana 5"
+          - href: pages/week6.qmd
+            text: "Semana 6"
+          - href: pages/week7.qmd
+            text: "Semana 7"
+          - href: pages/week8.qmd
+            text: "Semana 8"
+          - href: pages/week9.qmd
+            text: "Semana 9"
+          - href: pages/week10.qmd
+            text: "Semana 10"
+          - href: pages/week11.qmd
+            text: "Semana 11"
+          - href: pages/week12.qmd
+            text: "Semana 12"
+          - href: pages/week13.qmd
+            text: "Semana 13"
+          - href: pages/week14.qmd
+            text: "Semana 14"
+          - href: pages/week15.qmd
+            text: "Semana 15"
+          - href: pages/week16.qmd
+            text: "Semana 16"
            
 format:
   html:

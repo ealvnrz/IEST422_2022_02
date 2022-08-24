@@ -1,0 +1,17 @@
+---
+title: "Semana 14"
+subtitle: ""
+---
+
+## Preparación
+
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week14.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week14.html" height="630" width="900"></iframe>
+```
+
+## Material adicional

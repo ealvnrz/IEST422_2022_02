@@ -1,0 +1,23 @@
+---
+title: "Semana 7"
+subtitle: ""
+---
+
+## Preparación
+
+- Instalar [R](https://www.r-project.org/) y [Python](https://www.python.org/).
+- Se recomienda también instalar [Rstudio](https://www.rstudio.com/) y [Spyder](https://www.spyder-ide.org/)
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week7.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week7.html" height="630" width="900"></iframe>
+```
+
+## Material adicional
+
+Capítulo 1 a 8 de [Introducción a R en español](https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf)
+
+Capítulo 1 y 2 de [Python for probability, statistics, and machine learning](https://github.com/YikaiZhangskye/ML/blob/master/Unpingco%20J.%20-%20Python%20for%20Probability%2C%20Statistics%2C%20and%20Machine%20Learning%20-%202016.pdf)

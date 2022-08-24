@@ -12,12 +12,12 @@ Por su naturaleza aplicada y ser un curso de años superiores, se dará un espec
 
 |            | Día    | Horario             | Lugar     |
 |------------|--------|---------------------|-----------|
-| Cátedra #1 | Jueves | 10:15 am - 11:45 am | A definir |
-| Cátedra #2 | Jueves | 12.00 pm - 13:13 pm | A definir |
+| Cátedra #1 | Jueves | 10:15 am - 11:45 am | 6A |
+| Cátedra #2 | Jueves | 12.00 pm - 13:13 pm | 6A |
 
 # Instructor
 
-![](images/placeholder.png){style="float:right;padding: 0 0 0 10px;" fig-alt="EAN" width="200"}
+![](images/e.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="EAN" width="200"}
 
 Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es candidato a Doctor en estadística en la [Universidad de Valparaíso](https://www.uv.cl/) en el área de estadística espacial, particularmente en el estudio de campos aleatorios y cópulas. Es Licenciado en Estadística de la [Pontificia Universidad Católica de Valparaíso](http://www.pucv.cl). Actualmente, presta servicios de consultoría al [Instituto de Fomento Pesquero](http://www.ifop.cl) en modelamiento espacio-temporal.
 

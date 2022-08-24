@@ -1,0 +1,19 @@
+---
+title: "Semana 2"
+subtitle: "Métodos estadísticos y aspectos administrativos en el control de calidad"
+---
+
+## Preparación
+
+Leer secciones 1.3 y 1.4 de Introduction to statistical quality control.
+
+## Presentación
+
+[Ver presentación en pantalla completa](../slides/lec_week2.html)
+
+```{=html}
+<iframe class="slide-deck" src="../slides/lec_week2.html" height="630" width="900"></iframe>
+```
+
+## Material adicional
+
