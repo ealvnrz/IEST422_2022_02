@@ -12,8 +12,8 @@ Por su naturaleza aplicada y ser un curso de años superiores, se dará un espec
 
 |            | Día    | Horario             | Lugar     |
 |------------|--------|---------------------|-----------|
-| Cátedra #1 | Jueves | 10:15 am - 11:45 am | 6A |
-| Cátedra #2 | Jueves | 12.00 pm - 13:13 pm | 6A |
+| Cátedra #1 | Jueves | 12:00 pm - 13:30 pm | 6A |
+| Cátedra #2 | Jueves | 14.30 pm - 16:00 pm | 6A |
 
 # Instructor
 
