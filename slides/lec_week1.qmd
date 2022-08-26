@@ -32,8 +32,8 @@ En este curso se estudian los fundamentos del control de la calidad y la aplicac
 
 |            | Día    | Horario             | Lugar     |
 |------------|--------|---------------------|-----------|
-| Cátedra #1 | Jueves | 10:15 am - 11:45 am | A definir |
-| Cátedra #2 | Jueves | 12.00 pm - 13:13 pm | A definir |
+| Cátedra #1 | Jueves | 12:00 pm - 13:30 pm | 6A |
+| Cátedra #2 | Jueves | 14.30 pm - 16:00 pm | 6A |
 
 ### Página del curso
 
@@ -115,7 +115,7 @@ La metodología de evaluación es la siguiente:
 
 ## Metodología del curso
 
--   Antes de cada sesión, se mandará una lectura de preparación para la sesión
+-   Antes de cada clase, se mandará una lectura de preparación para la sesión
 
 -   El enfoque principal será aplicado, pero sin dejar de lado los fundamentos matemáticos
 
