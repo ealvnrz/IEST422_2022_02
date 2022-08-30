@@ -1,6 +1,6 @@
 ---
 title: "Semana 2"
-subtitle: "Métodos estadísticos y aspectos administrativos en el control de calidad"
+subtitle: "Herramientas y filosofías del control de calidad"
 ---
 
 ## Preparación
@@ -17,3 +17,4 @@ Leer secciones 1.3 y 1.4 de Introduction to statistical quality control.
 
 ## Material adicional
 
+Leer sección 1.4 y Capítulo 2 de Introduction to statistical quality control.

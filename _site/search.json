@@ -172,7 +172,7 @@
     "href": "pages/week2.html#material-adicional",
     "title": "Semana 2",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\nLeer sección 1.4 y Capítulo 2 de Introduction to statistical quality control."
   },
   {
     "objectID": "pages/week3.html#presentación",
@@ -502,5 +502,124 @@
     "title": "Control de calidad",
     "section": "Historia del control de calidad",
     "text": "Historia del control de calidad\nRevisar tabla 1.1 de Introduction to statistical quality control"
+  },
+  {
+    "objectID": "slides/lec_week2.html#proceso-de-producción",
+    "href": "slides/lec_week2.html#proceso-de-producción",
+    "title": "Control de calidad",
+    "section": "Proceso de producción",
+    "text": "Proceso de producción"
+  },
+  {
+    "objectID": "slides/lec_week2.html#diagramas-de-control",
+    "href": "slides/lec_week2.html#diagramas-de-control",
+    "title": "Control de calidad",
+    "section": "Diagramas de control",
+    "text": "Diagramas de control\nLos diagramas de control son una de las principales características del control estadístico de procesos.\n\nEste tipo de visualización grafica la media de las mediciones de una característica de la calidad de muestras tomadas desde un proceso versus el tiempo. El diagrama de control además especifica una línea central y sus límites de control.\nUsualmente, el diagrama de control es aplicado a las salidas del proceso, pero existen casos en los cuales también es útil aplicarlo en las entradas."
+  },
+  {
+    "objectID": "slides/lec_week2.html#monitoreo-del-proceso",
+    "href": "slides/lec_week2.html#monitoreo-del-proceso",
+    "title": "Control de calidad",
+    "section": "Monitoreo del proceso",
+    "text": "Monitoreo del proceso\nEl uso sistemático de diagramas de control permite identificar cuando fuentes de variabilidad inusuales están presente, permitiendo la oportuna investigación y rectificación del proceso."
+  },
+  {
+    "objectID": "slides/lec_week2.html#diseño-de-experimentos",
+    "href": "slides/lec_week2.html#diseño-de-experimentos",
+    "title": "Control de calidad",
+    "section": "Diseño de experimentos",
+    "text": "Diseño de experimentos\nEl diseño de experimentos es especialmente útil para encontrar las principales variables que influencias las características de la calidad en las que se tiene interés en un proceso dado. A modo general, el diseño de experimentos sistemáticamente varía los factores controlables de entrada del proceso y determina los efectos de estos factores en la variable respuesta o salida.\nParticularmente, los diseños de experimentos factoriales son especialmente útiles para el control de calidad."
+  },
+  {
+    "objectID": "slides/lec_week2.html#muestreo-de-aceptación",
+    "href": "slides/lec_week2.html#muestreo-de-aceptación",
+    "title": "Control de calidad",
+    "section": "Muestreo de aceptación",
+    "text": "Muestreo de aceptación\nEste tipo de muestreo está estrechamente relacionado con la inspección y prueba de productos, que es una de los primeros aspectos del control de calidad. La inspección puede ocurrir en varias etapas del proceso.\nEl muestreo de aceptación, definido como la inspección y clasificación de una muestra seleccionada aleatoriamente desde un lote y la decisión sobre la disposición del lote, usualmente este tipo de muestreo ocurre en dos etapas: inspección de los materiales de entrada o componentes o en al final de la producción.\nDistintas variaciones del muestreo de aceptación son posibles:"
+  },
+  {
+    "objectID": "slides/lec_week2.html#evolución-del-uso-de-las-herramientas",
+    "href": "slides/lec_week2.html#evolución-del-uso-de-las-herramientas",
+    "title": "Control de calidad",
+    "section": "Evolución del uso de las herramientas",
+    "text": "Evolución del uso de las herramientas\nLos sistemas de control de calidad modernos usualmente enfatizan más el control estadístico de proceso que el muestreo de aceptación, debido a que este último tiende a reforzar una visión conformista de la calidad.\nLa evolución usual de las herramientas del control de calidad en las empresas es:\n\nEl objetivo principal del control de calidad es la reducción sistemática de la variabilidad en las características de calidad principales del producto."
+  },
+  {
+    "objectID": "slides/lec_week2.html#filosofías-del-control-de-calidad",
+    "href": "slides/lec_week2.html#filosofías-del-control-de-calidad",
+    "title": "Control de calidad",
+    "section": "Filosofías del control de calidad",
+    "text": "Filosofías del control de calidad\nEn términos de la filosofía de la implementación y gestión del control de calidad, tres autores destacan:\n\nW. Edwards Deming\nJ. M. Juran\nA. V. Feigenbaum"
+  },
+  {
+    "objectID": "slides/lec_week2.html#filosfía-de-deming",
+    "href": "slides/lec_week2.html#filosfía-de-deming",
+    "title": "Control de calidad",
+    "section": "Filosfía de Deming",
+    "text": "Filosfía de Deming\nEsta filosofía nos entrega una marco para la implementación de mejoras en la calidad y productividad. Se puede resumir en 14 puntos para la gestión\n\nCrear una constancia de los objetivos del mejoramiento de productos y servicios\nAdoptar una nueva filosofía que reconozca que estamos en una era económica diferente\nNo confiar en las inspecciones masivas de control de calidad\nNo solo considerar el precios de los proveedores, sino también la calidad de sus insumos\nConcentrarse en la mejora continua\nPracticar métodos de capacitación modernos e invertir en la capacitación de los empleados\nMejorar el liderazgo y practicar métodos modernos de supervisión\nExpulsar el miedo\nRemover las barreras entre las áreas funcionales del negocio\nEliminar objetivos, slogans y metas numéricas de los empleados\nEliminar cuotas numéricas y normas de trabajo\nRemover las barreras que desalientan a los empleados a hacer su trabajo\nInstaurar un programa continuo de educación para los empelados\nCrear una estructura de gerencia que defienda los 13 puntos anteriores"
+  },
+  {
+    "objectID": "slides/lec_week2.html#enfermedades-mortales-de-la-gestión-de-deming",
+    "href": "slides/lec_week2.html#enfermedades-mortales-de-la-gestión-de-deming",
+    "title": "Control de calidad",
+    "section": "“Enfermedades mortales” de la gestión de Deming",
+    "text": "“Enfermedades mortales” de la gestión de Deming\n\nFalta de consistencia en los objetivos\nÉnfasis en ganancias de corto plazo\nEvaluaciones de rendimiento\nMovilidad de la gerencia\nAdministrar una compañía sólo basándose en las figuras visibles\nCostos médicos excesivos\nAdjudicaciones por daños legales excesivos"
+  },
+  {
+    "objectID": "slides/lec_week2.html#ciclo-de-shewhart",
+    "href": "slides/lec_week2.html#ciclo-de-shewhart",
+    "title": "Control de calidad",
+    "section": "Ciclo de Shewhart",
+    "text": "Ciclo de Shewhart"
+  },
+  {
+    "objectID": "slides/lec_week2.html#filosofía-de-juran",
+    "href": "slides/lec_week2.html#filosofía-de-juran",
+    "title": "Control de calidad",
+    "section": "Filosofía de Juran",
+    "text": "Filosofía de Juran\nLa filosofía de Juran se enfoca en tres componentes principales:\n\nPlanear\nControlar\nMejorar\n\n\nConocidos como la trilogía de Juran"
+  },
+  {
+    "objectID": "slides/lec_week2.html#filosofía-de-feigenbaum",
+    "href": "slides/lec_week2.html#filosofía-de-feigenbaum",
+    "title": "Control de calidad",
+    "section": "Filosofía de Feigenbaum",
+    "text": "Filosofía de Feigenbaum\nLa filosofía de Feigenbaum se enfoca en tres componentes principales:\n\nLiderazgo de calidad\nTecnología de calidad\nCompromiso organizacional"
+  },
+  {
+    "objectID": "slides/lec_week2.html#gestión-de-la-calidad-total",
+    "href": "slides/lec_week2.html#gestión-de-la-calidad-total",
+    "title": "Control de calidad",
+    "section": "Gestión de la calidad total",
+    "text": "Gestión de la calidad total\nLa gestión de la calidad total o TQM por sus siglas en inglés (Total Quality Management) es una estrategia para implementar y gestionar las actividades de mejora de la calidad a lo largo de una empresa. Esta estrategia toma como base las filosofías de Deming y Juran. Involucra un espectro más amplio de conceptos e ideas, entre ellos: organizaciones participativas y cultura del trabajo, integración de la mejora de la calidad como objetivo de la empresa, entre otros.\nUsualmente, las organizaciones que han implementado esta estrategia tienen equipos dedicados sólo a la gestión e iniciativa de mejoras de la calidad en los distintos niveles. Entre las principales razones por el poco éxito de esta estrategia se encuentras:\n\nPoco compromiso e involucramiento de la gerencia\nUso inadecuado de los métodos estadísticos\nEnfoque muy general\nMucho enfoque en capacitación generalizada en vez de educación técnica enfocada"
+  },
+  {
+    "objectID": "slides/lec_week2.html#sistemas-y-estándares-de-calidad",
+    "href": "slides/lec_week2.html#sistemas-y-estándares-de-calidad",
+    "title": "Control de calidad",
+    "section": "Sistemas y estándares de calidad",
+    "text": "Sistemas y estándares de calidad\nLa organización de estándares internacionales o ISO por sus siglas en inglés (International Standards Organization), ha desarrollado una serie de estándares para sistemas de calidad, siendo el primero publicado en 1987.\nEn la actualidad, la versión vigente es la serie ISO 9000, que aplica estándares genéricos aplicables a la mayoría de las empresas, en particular:\n\nISO 9000:2005, Sistema de manejo de calidad: Fundamentos y vocabulario\nISO 9001:2008, Sistema de manejo de calidad: Requerimientos\nISO 9004:2009, Sistema de manejo de calidad: Directrices para la mejora del rendimiento"
+  },
+  {
+    "objectID": "slides/lec_week2.html#seis-sigma",
+    "href": "slides/lec_week2.html#seis-sigma",
+    "title": "Control de calidad",
+    "section": "Seis sigma",
+    "text": "Seis sigma\nUsualmente los productos con muchos componentes tienen muchas oportunidades para ocurran defectos o fallen. Motorola desarrollo el programa Seis Sigma a final de los 80 como respuesta a la demanda de sus productos. El enfoque principal de esta metodología es reducir la variabilidad en los características principales de la calidad de tal manera que las fallas y defectos sean extremadamente poco frecuentes."
+  },
+  {
+    "objectID": "slides/lec_week2.html#seis-sigma-distribución-normal",
+    "href": "slides/lec_week2.html#seis-sigma-distribución-normal",
+    "title": "Control de calidad",
+    "section": "Seis sigma: distribución normal",
+    "text": "Seis sigma: distribución normal"
+  },
+  {
+    "objectID": "pages/week3.html",
+    "href": "pages/week3.html",
+    "title": "Semana 3",
+    "section": "",
+    "text": "Leer capítulo 3 Introduction to statistical quality control."
   }
 ]

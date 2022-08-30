@@ -1,0 +1,190 @@
+---
+title: "Control de calidad"
+subtitle: "IEST 422 - 2022/02"
+author: "Eloy Alvarado Narváez"
+institute: "Universidad de Valparaíso"
+date: 01/09/22
+format: 
+  revealjs:
+    theme: slides.scss
+    touch: true
+    slide-level: 2
+incremental: true
+slide-number: true
+lang: es
+highlight-style: github
+width: 1600
+height: 900
+logo: images/logo_uv.png
+transition: fade
+footer: "IEST 422 - Semana 2"
+execute:
+  freeze: auto
+---
+
+# Principales herramientas para el C.C.
+
+Las principales herramientas que son usadas en el control de calidad:
+
+- Control estadístico de procesos
+
+- Diseño de esperimentos
+
+- Muestreo (y en particular, muestreo de aceptación)
+
+## Proceso de producción
+
+![](images/week2/prod_process.png){fig-align="center"}
+
+## Diagramas de control
+
+Los diagramas de control son una de las principales características del control estadístico de procesos.
+
+![](images/week2/control_chart.png){fig-align="center"}
+
+Este tipo de visualización grafica la media de las mediciones de una característica de la calidad de muestras tomadas desde un proceso versus el tiempo. El diagrama de control además especifica una línea central y sus límites de control.
+
+Usualmente, el diagrama de control es aplicado a las salidas del proceso, pero existen casos en los cuales también es útil aplicarlo en las entradas.
+
+## Monitoreo del proceso
+
+El uso **sistemático** de diagramas de control permite identificar cuando fuentes de variabilidad inusuales están presente, permitiendo la oportuna investigación y rectificación del proceso.
+
+## Diseño de experimentos
+
+El diseño de experimentos es especialmente útil para encontrar las principales variables que influencias las características de la calidad en las que se tiene interés en un proceso dado. A modo general, el diseño de experimentos sistemáticamente varía los factores controlables de entrada del proceso y determina los efectos de estos factores en la variable respuesta o salida.
+
+Particularmente, los **diseños de experimentos factoriales** son especialmente útiles para el control de calidad.
+
+![](images/week2/factor.png){fig-align="center"}
+
+## Muestreo de aceptación
+
+Este tipo de muestreo está estrechamente relacionado con la inspección y prueba de productos, que es una de los primeros aspectos del control de calidad. **La inspección puede ocurrir en varias etapas del proceso**.
+
+El muestreo de aceptación, definido como la inspección y clasificación de una muestra seleccionada aleatoriamente desde un lote y la decisión sobre la disposición del lote, usualmente este tipo de muestreo ocurre en dos etapas: inspección de los materiales de entrada o componentes o en al final de la producción.
+
+Distintas variaciones del muestreo de aceptación son posibles:
+
+![](images/week2/acept.png){fig-align="center"}
+
+## Evolución del uso de las herramientas
+
+Los sistemas de control de calidad modernos usualmente enfatizan más el control estadístico de proceso que el muestreo de aceptación, debido a que este último tiende a reforzar una **visión conformista de la calidad**.
+
+La evolución usual de las herramientas del control de calidad en las empresas es:
+
+![](images/week2/tools.png){fig-align="center"}
+
+El objetivo principal del control de calidad es la **reducción sistemática de la variabilidad** en las características de calidad principales del producto.
+ 
+# Aspectos de gestión de la mejora de calidad
+
+Las herramientas del control de calidad deben ser implementadas dentro de un sistema de gestión que se enfoque en el mejoramiento de calidad. Una gestión efectiva de la calidad involucra la correcta ejecución de tres actividades:
+
+- Planificación de calidad
+
+- Aseguramiento de la calidad
+
+- Mejoramiento y control de la calidad
+
+## Filosofías del control de calidad
+
+En términos de la filosofía de la implementación y gestión del control de calidad, tres autores destacan:
+
+- W. Edwards Deming
+
+- J. M. Juran
+
+- A. V. Feigenbaum
+
+## Filosfía de Deming {.scrollable}
+
+Esta filosofía nos entrega una marco para la implementación de mejoras en la calidad y productividad. Se puede resumir en 14 puntos para la gestión
+
+- Crear una constancia de los objetivos del mejoramiento de productos y servicios
+- Adoptar una nueva filosofía que reconozca que estamos en una era económica diferente
+- No confiar en las inspecciones masivas de control de calidad
+- No solo considerar el precios de los proveedores, sino también la calidad de sus insumos
+- Concentrarse en la mejora continua
+- Practicar métodos de capacitación modernos e invertir en la capacitación de los empleados
+- Mejorar el liderazgo y practicar métodos modernos de supervisión
+- Expulsar el miedo
+- Remover las barreras entre las áreas funcionales del negocio
+- Eliminar objetivos, *slogans* y metas numéricas de los empleados
+- Eliminar cuotas numéricas y normas de trabajo
+- Remover las barreras que desalientan a los empleados a hacer su trabajo
+- Instaurar un programa continuo de educación para los empelados
+- Crear una estructura de gerencia que defienda los 13 puntos anteriores
+
+## "Enfermedades mortales" de la gestión de Deming
+
+1. Falta de consistencia en los objetivos
+2. Énfasis en ganancias de corto plazo
+3. Evaluaciones de rendimiento
+4. Movilidad de la gerencia
+5. Administrar una compañía sólo basándose en las figuras visibles
+6. Costos médicos excesivos
+7. Adjudicaciones por daños legales excesivos
+
+## Ciclo de Shewhart
+
+![](images/week2/ciclo.png){fig-align="center"}
+
+## Filosofía de Juran
+
+La filosofía de Juran se enfoca en tres componentes principales:
+
+- Planear
+- Controlar
+- Mejorar
+
+. . .
+
+Conocidos como la trilogía de Juran
+
+## Filosofía de Feigenbaum
+
+La filosofía de Feigenbaum se enfoca en tres componentes principales:
+
+- Liderazgo de calidad
+- Tecnología de calidad
+- Compromiso organizacional
+
+## Gestión de la calidad total
+
+La gestión de la calidad total o **TQM** por sus siglas en inglés (*Total Quality Management*) es una estrategia para implementar y gestionar las actividades de mejora de la calidad a lo largo de una empresa. Esta estrategia toma como base las filosofías de Deming y Juran. Involucra un espectro más amplio de conceptos e ideas, entre ellos: organizaciones participativas y cultura del trabajo, integración de la mejora de la calidad como objetivo de la empresa, entre otros.
+
+Usualmente, las organizaciones que han implementado esta estrategia tienen equipos dedicados sólo a la gestión e iniciativa de mejoras de la calidad en los distintos niveles. Entre las principales razones por el poco éxito de esta estrategia se encuentras:
+
+- Poco compromiso e involucramiento de la gerencia
+- Uso inadecuado de los métodos estadísticos
+- Enfoque muy general
+- Mucho enfoque en capacitación generalizada en vez de educación técnica enfocada
+
+## Sistemas y estándares de calidad
+
+La organización de estándares internacionales o **ISO** por sus siglas en inglés (*International Standards Organization*), ha desarrollado una serie de estándares para sistemas de calidad, siendo el primero publicado en 1987.
+
+En la actualidad, la versión vigente es la serie ISO 9000, que aplica estándares genéricos aplicables a la mayoría de las empresas, en particular:
+
+- ISO 9000:2005, Sistema de manejo de calidad: Fundamentos y vocabulario
+- ISO 9001:2008, Sistema de manejo de calidad: Requerimientos
+- ISO 9004:2009, Sistema de manejo de calidad: Directrices para la mejora del rendimiento
+
+## Seis sigma
+
+Usualmente los productos con muchos componentes tienen muchas oportunidades para ocurran defectos o fallen. Motorola desarrollo el programa **Seis Sigma** a final de los 80 como respuesta a la demanda de sus productos. El enfoque principal de esta metodología es reducir la variabilidad en los características principales de la calidad de tal manera que las **fallas y defectos sean extremadamente poco frecuentes**.
+
+## Seis sigma: distribución normal
+
+![](images/week2/6s.png){fig-align="center"}
+
+# ¿Qué veremos la próxima semana?
+
+- Herramientas estadísticas en el control de calidad
+
+
+# ¿Qué deben preparar para la próxima semana?
+
+- Leer capítulo 3 de Introduction to statistical quality control.
