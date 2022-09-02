@@ -28,7 +28,7 @@ Las principales herramientas que son usadas en el control de calidad:
 
 - Control estadístico de procesos
 
-- Diseño de esperimentos
+- Diseño de experimentos
 
 - Muestreo (y en particular, muestreo de aceptación)
 
