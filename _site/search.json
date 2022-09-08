@@ -621,5 +621,173 @@
     "title": "Semana 3",
     "section": "",
     "text": "Leer capítulo 3 Introduction to statistical quality control."
+  },
+  {
+    "objectID": "slides/lec_week3.html#tipos-de-variable",
+    "href": "slides/lec_week3.html#tipos-de-variable",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Tipos de variable",
+    "text": "Tipos de variable\n\nVariables Cualitativas: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.\nVariables Cuantitativas (o numéricas): Si los posibles valores para los elementos de una población, son cantidades o números, se habla de variables cuantitativas. Ejemplos: kms por litro de gasolina de un auto, temperatura, duración de un examen, etc.\n\nDiscretas: Se habla de variables discretas, cuando el conjunto de valores posibles es finito o infinito numerable. Ejemplos: Cantidad de crías por camada, número de alumnos por carrera, etc.\nContinuas: Son aquellas que pueden asumir infinitos valores. Ejemplos: sueldo de una persona, tiempo que tarda un animal en alcanzar un peso previamente determinado, etc."
+  },
+  {
+    "objectID": "slides/lec_week3.html#escalas-de-medición",
+    "href": "slides/lec_week3.html#escalas-de-medición",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Escalas de medición",
+    "text": "Escalas de medición\n\nEscalas de Medición para variables cualitativas:\n\nNominal: Es aquella escala en donde las categorías (o los posibles valores de la variable), no pueden ser ordenadas en un sentido de magnitud. Ejemplos: colores, profesión, etc.\nOrdinal: Cuando las categorías admiten una ordenación (no alfabética), se habla de escala ordinal. Ejemplo: Nivel Socio-económico (alto, medio o bajo), sistema de evaluación cualitativa (insuficiente, suficiente, bueno, muy bueno), etc.\n\nEscalas de Medición para variables cuantitativas:\n\nIntervalar: Son aquellas que poseen un punto de referencia (o cero) relativo, en el sentido de que si se cambia de unidad de medición, el punto de referencia difiere entre una unidad de medida y otra. Ejemplo: temperatura (Celcius - Fahrenheit).\nRazón: Son aquellas que poseen un cero absoluto (es decir, único). Incluso permiten hacer comparaciones por cocientes. Ejemplo: Peso de una persona, distancias, etc."
+  },
+  {
+    "objectID": "slides/lec_week3.html#definición-básica",
+    "href": "slides/lec_week3.html#definición-básica",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Definición Básica",
+    "text": "Definición Básica\nUna variable aleatoria, es una función que permite trabajar cualquier espacio muestral de manera cuantitativa. Se dice que \\(X\\) es una variable aleatoria si es una función que toma los elementos de \\(\\Omega\\) y los transforma en puntos sobre la recta de los reales. Esto es:\n\\[\\begin{align*}\n  X: \\quad &\\Omega \\longrightarrow \\mathbb{R}\\\\\n           &\\omega \\longrightarrow X(\\omega)\n\\end{align*}\\]\n\nEl conjunto de todas las posibles realizaciones es llamado el soporte y lo denotamos por \\(R_X\\)."
+  },
+  {
+    "objectID": "slides/lec_week3.html#tipos-de-variables-aleatorias",
+    "href": "slides/lec_week3.html#tipos-de-variables-aleatorias",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Tipos de variables aleatorias",
+    "text": "Tipos de variables aleatorias\nSe dice que \\(X\\) es una variable aleatoria si es una función que toma valores en probabilidad, es decir, no se puede predecir con certeza sus resultados.\nUna variable aleatoria es siempre cuantitativa y se puede clasificar en los siguientes grupos:\n\\[X(\\omega) \\begin{cases}\n\\text{Discreto}\n\\begin{cases}\n\\text{Finito}\\\\\n\\text{Infinito}\n\\end{cases}\\\\\n\\text{Continuo}\n\\begin{cases}\n\\text{Acotados}\\\\\n\\text{No Acotados}\n\\end{cases}\n\\end{cases}\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#variables-aleatorias-discretas",
+    "href": "slides/lec_week3.html#variables-aleatorias-discretas",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Variables aleatorias discretas",
+    "text": "Variables aleatorias discretas\nUna variable aleatoria \\(X\\) es llamada discreta si:\n\nSu soporte \\(R_X\\) es un conjunto numerable.\nExiste una función \\(p_X:\\mathbb{R}\\rightarrow [0,1]\\), llamada la función de masa de probabilidad de \\(X\\), tal que, para cualquier \\(x\\in \\mathbb{R}\\):\n\n\n\\[p_X(x)\\begin{cases} \\mathbb{P}(X=x) \\quad &\\text{si } x\\in R_X\\\\ 0 \\quad &\\text{si } x\\notin R_X\\end{cases}\\]\n\n\nEsta función tiene dos características principales:\n\nno-negatividad: \\(p_X(x)\\geq 0\\) para cualquier \\(x\\in \\mathbb{R}\\).\nSuma sobre su soporte es 1: \\(\\sum_{x\\in R_X}p_X(x)=1\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#variables-aleatorias-continuas",
+    "href": "slides/lec_week3.html#variables-aleatorias-continuas",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Variables aleatorias continuas",
+    "text": "Variables aleatorias continuas\nUna variable aleatoria \\(X\\) es llamada continua si:\n\nSu soporte \\(R_X\\) es un conjunto no-numerable.\nExiste una función \\(f_X:\\mathbb{R}\\rightarrow [0,1]\\), llamada función de densidad de probabilidad de \\(X\\), tal que, para cualquier intervalo \\([a,b]\\subseteq \\mathbb{R}\\):\n\n\n\\[\\mathbb{P}(X\\in [a,b])=\\int_{a}^{b}f_X(x)dx\\]\n\n\nEsta función tiene dos características principales:\n\nno-negatividad: \\(f_X(x)\\geq 0\\) para cualquier \\(x\\in \\mathbb{R}\\).\nIntegral sobre \\(\\mathbb{R}\\) es 1: \\(\\int_{-\\infty}^{\\infty} f_X(x)dx=1\\)."
+  },
+  {
+    "objectID": "slides/lec_week3.html#función-de-distribución",
+    "href": "slides/lec_week3.html#función-de-distribución",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Función de distribución",
+    "text": "Función de distribución\nLas variables aleatorias son usualmente caracterizadas en términos de sus funciones de distribución.\n\nSea \\(X\\) una variable aleatoria. La función de distribución de \\(X\\) es una función \\(F_X:\\mathbb{R}\\rightarrow [0,1]\\) tal que:\n\\[F_X(x)=\\mathbb{P}(X\\leq x), \\forall x\\in \\mathbb{R}\\]\n\n\nSi conocemos la función de distribución de una variable aleatoria \\(X\\), entonces podemos fácilmente calcular la probabilidad que \\(X\\) pertenezca a un intervalo \\((a,b] \\subseteq \\mathbb{R}\\) como:\n\\[\\mathbb{P}(a<X<b)=F_X(b)-F_X(a)\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#valores-esperados",
+    "href": "slides/lec_week3.html#valores-esperados",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Valores esperados",
+    "text": "Valores esperados\nSea \\(X\\) una variable aleatoria, entonces se define el valor esperado de una función real \\(g(X)\\), como:\n\\[\\mathbb{E}[g(X)]= \\begin{cases} \\sum_{x\\in \\mathbb{R}} g(X)\\mathbb{P}(X=x)\\\\ \\int_{x\\in \\mathbb{R}} g(X)f(x)dx \\end{cases}\\]\nSi \\(g(X)=X\\), diremos que el valor esperado o esperanza matemática de \\(X\\) es:\n\\[\\mathbb{E}(X)=\\begin{cases}\\sum_{x\\in \\mathbb{R}} x \\mathbb{P}(X=x)\\\\ \\int_{x\\in \\mathbb{R}} x f(x)dx \\end{cases}\\]\nPara variables de tipo discreta y continua, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week3.html#propiedades-de-los-valores-esperados",
+    "href": "slides/lec_week3.html#propiedades-de-los-valores-esperados",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Propiedades de los valores esperados",
+    "text": "Propiedades de los valores esperados\nSean \\(a\\) y \\(b\\) constantes, \\(X\\) una variable aleatoria entonces se cumple que:\n\n\\(\\mathbb{E}(a)=a\\)\n\\(\\mathbb{E}(X)=\\mu=\\) constante\n\\(\\mathbb{E}(aX)=a\\mathbb{E}(X)\\)\n\\(\\mathbb{E}(aX+b)=\\mathbb{E}(aX)+\\mathbb{E}(b)=a\\mathbb{E}(X)+b\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#varianza",
+    "href": "slides/lec_week3.html#varianza",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Varianza",
+    "text": "Varianza\nSea \\(X\\) una variable aleatoria, se define el la varianza de \\(X\\) como:\n\\[\\mathbb{E}[(X-\\mathbb{E}(X))^2]=V(X)=\\begin{cases}\\sum_{x\\in\\mathbb{R}} (X-\\mathbb{E}(X))^2\\mathbb{P}(X=x)\\\\ \\int_{x\\in\\mathbb{R}}(X-\\mathbb{E}(X))^2f_{X}(x)dx\\end{cases}\\]\nPara variables de tipo discreta y continua, respectivamente."
+  },
+  {
+    "objectID": "slides/lec_week3.html#propiedades-de-la-varianza",
+    "href": "slides/lec_week3.html#propiedades-de-la-varianza",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Propiedades de la varianza",
+    "text": "Propiedades de la varianza\nSea \\(a\\) y \\(b\\) constantes, \\(X\\) una variable aleatoria, entonces se cumple:\n\n\\(\\mathbb{V}(a)=0\\)\n\\(\\mathbb{V}(X)=\\sigma^2=\\) constante\n\\(\\mathbb{V}(aX)=a^2 \\mathbb{V}(X)\\)\n\\(\\mathbb{V}(aX+b)=\\mathbb{V}(aX)+\\mathbb{V}(b)=a^2\\mathbb{V}(X)+0=a^2\\mathbb{V}(X)\\)\n\\(\\mathbb{V}(X)=\\mathbb{E}(X^2)-(\\mathbb{E}(X))^2\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-binomial",
+    "href": "slides/lec_week3.html#distribución-binomial",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución binomial",
+    "text": "Distribución binomial\nSea \\(X\\) una variable aleatoria que representa el número de éxitos en \\(n\\) ensayos y \\(p\\) la probabilidad de éxito con cualquiera de éstos. Se dice entonces que \\(X\\) tiene una distribución binomial con función de probabilidad:\n\\[\\mathbb{P}(X=k)= {{n}\\choose{k}}p^k(1-p)^{n-k} \\hspace{20pt} k=1,2,\\cdots,n\\]\nEn donde \\({{n}\\choose{k}}\\) es el coeficiente binomial, esto es:\n\\[{{n}\\choose{k}}=\\dfrac{n!}{k!(n-k)!}\\]\nSi \\(n=1\\) diremos que \\(X\\) sigue una distribución Bernoulli."
+  },
+  {
+    "objectID": "slides/lec_week3.html#propiedades-de-la-distribución-binomial",
+    "href": "slides/lec_week3.html#propiedades-de-la-distribución-binomial",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Propiedades de la distribución binomial",
+    "text": "Propiedades de la distribución binomial\nSi \\(X\\) tiene una distribución binomial, entonces se cumple que:\n\n\\(\\mathbb{E}[X]=np\\)\n\\(\\mathbb{V}[X]=np(1-p)\\)\n\n\nEs claro ver que si \\(X\\) tiene una distribución bernoulli, entonces:\n\n\\(\\mathbb{E}[X]=p\\)\n\\(\\mathbb{V}[X]=p(1-p)\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-de-poisson",
+    "href": "slides/lec_week3.html#distribución-de-poisson",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución de Poisson",
+    "text": "Distribución de Poisson\nSea \\(X\\) una variable aleatoria que representa el número de eventos aleatorios independientes que ocurren a una rapidez constante sobre el tiempo o el espacio. Se dice entonces que la variable aleatoria \\(X\\) tiene una distribución de Poisson con función de probabilidad:\n\\[\\mathbb{P}(X=k)=\\dfrac{e^{-\\lambda}\\lambda^k}{k!} \\hspace{20pt} k=0,1,\\cdots,n,\\cdots\\]\nEn donde \\(\\lambda>0\\) representa el número promedio de ocurrencias del evento aleatorio por unidad de tiempo. Además, si \\(X\\) sigue una distribución de Poisson se cumple que:\n\n\\(\\mathbb{E}[X]=\\lambda\\)\n\\(\\mathbb{V}[X]=\\lambda\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-geométrica",
+    "href": "slides/lec_week3.html#distribución-geométrica",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución geométrica",
+    "text": "Distribución geométrica\nSea \\(X\\) una variable aleatoria que representa el número de fallas que ocurren antes de que se presente el primer éxito.Se dice entonces que la variable aleatoria \\(X\\) tiene una distribución geométrica con función de probabilidad:\n\\[\\mathbb{P}(X=k)=(1-p)^{k-1}p \\quad \\quad k=1,2,\\cdots\\]\nEn donde \\(p\\) es la probabilidad de éxito. Además, Si \\(X\\) sigue una distribución geométrica, entonces se cumple que:\n\n\\(\\mathbb{E}(X)=\\dfrac{1}{p}\\)\n\\(\\mathbb{V}(X)=\\dfrac{(1-p)}{p^2}\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-hipergeométrica",
+    "href": "slides/lec_week3.html#distribución-hipergeométrica",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución hipergeométrica",
+    "text": "Distribución hipergeométrica\nSea \\(N\\) el número total de objetos de una población finita, de manera tal que \\(k\\) de éstos es de un tipo y \\(N-k\\) de otros. Si se selecciona una muestra aleatoria de la población constituida por \\(n\\) objetos de la probabilidad de que \\(x\\) sea de un tipo exactamente y \\(n-x\\) sea del otro, está dada por la función de probabilidad hipergeométrica:\n\\[\\displaystyle \\mathbb{P}(X=x)= \\dfrac{{{k}\\choose{x}} {{N-k}\\choose{n-x}}  }{  {{N}\\choose{n}}}\\quad \\quad x=1,2,\\cdots,n \\quad; x \\leq k\\quad ;n-x\\leq N-k\\]\nSi \\(X\\) sigue una distribución hipergeométrica y si \\(p=k/N\\)\n\n\\(\\mathbb{E}(X)=np\\)\n\\(\\mathbb{V}(X)=np(1-p)\\left( \\dfrac{N-n}{N-1}\\right)\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-binomial-negativa",
+    "href": "slides/lec_week3.html#distribución-binomial-negativa",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución binomial negativa",
+    "text": "Distribución binomial negativa\nDe manera similar a la distribución binomial, si se desea modelar el número de éxito en \\(n\\) ensayos hasta encontrar el \\(r\\)-ésimo utilizaremos la distribución binomial negativa\n\\[\\mathbb{P}(X=x)= {{x-1}\\choose{r-1}}p^r(1-p)^{x-r} \\hspace{20pt} x=r,r+1,r+2\\cdots\\]\ndonde \\(r \\in \\mathbb{N}\\) y \\(x\\) el ensayo en el cual ocurre el \\(r\\)-ésimo éxito. La media y varianza de esta distribución son:\n\n\\(\\mathbb{E}(X)=\\dfrac{r}{p}\\)\n\\(\\mathbb{V}(X)=\\dfrac{r(1-p)}{p^2}\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-normal",
+    "href": "slides/lec_week3.html#distribución-normal",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución normal",
+    "text": "Distribución normal\nSea \\(X\\) una variable aleatoria que toma valores reales, diremos que \\(X\\) sigue una distribución normal (o Gaussiana) si su función de densidad está por:\n\\[f_{X}(x)=\\dfrac{1}{\\sqrt{2\\pi}\\sigma}\\exp\\left[ -\\dfrac{1}{2}\\left(\\dfrac{x-\\mu}{\\sigma}\\right) ^2\\right],\\]\nEn donde los parámetros de la distribución son \\(\\mu\\) y \\(\\sigma\\) satisfacen las condiciones:\n\\[-\\infty<\\mu<\\infty, \\quad \\sigma^2>0\\]"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-exponencial",
+    "href": "slides/lec_week3.html#distribución-exponencial",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución exponencial",
+    "text": "Distribución exponencial\nSea \\(X\\) una variable aleatoria continua que toma valores positivos, diremos que \\(X\\) sigue una distribución exponencial con parámetro \\(\\alpha>0\\) si su función de densidad está dada por:\n\\[f_{X}(x)=\\begin{cases}\\alpha e^{-\\alpha x} \\quad &x\\geq 0 \\\\0 \\quad &e.o.c\\end{cases}\\]\nAdemás se cumple que:\n\n\\(\\mathbb{E}(X)=\\dfrac{1}{\\alpha}\\)\n\n\\(\\mathbb{V}(X)=\\dfrac{1}{\\alpha^2}\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#función-gamma",
+    "href": "slides/lec_week3.html#función-gamma",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Función gamma",
+    "text": "Función gamma\nLa función gamma denotada por \\(\\Gamma\\) está definida por:\n\\[\\Gamma(p)=\\int_{0}^{\\infty} x^{p-1} e^{-x}dx \\hspace{20pt} p>0\\]\nEsta función cumple las siguientes propiedades:\n\n\\(\\Gamma(n)=(n-1)!\\)\n\n\\(\\Gamma(1/2)=\\sqrt{\\pi}\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-gamma",
+    "href": "slides/lec_week3.html#distribución-gamma",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución gamma",
+    "text": "Distribución gamma\nSea \\(X\\) una variable aleatoria continua que toma valores positivos. Diremos que \\(X\\) sigue una distribución Gamma si su función de densidad está dada por:\n\\[f_{X}(x)=\\begin{cases}\\dfrac{\\alpha}{\\Gamma(r)}(\\alpha x)^{r-1}e^{-\\alpha x} \\quad &x>0\\\\0 \\quad &e.o.c,\\end{cases}\\]\nEn donde los parámetros \\(r\\) y \\(\\alpha\\) son positivos.\nEs claro ver que un caso particular de la distribución Gamma es la distribución exponencial (\\(r=1\\)). Si \\(X\\) se distribuye Gamma entonces se cumple:\n\n\\(\\mathbb{E}(X)=r/\\alpha\\)\n\n\\(\\mathbb{V}(X)=r/\\alpha^2\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-t-student",
+    "href": "slides/lec_week3.html#distribución-t-student",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución t-student",
+    "text": "Distribución t-student\nSea \\(X\\) una variable aleatoria continua que toma valores reales, diremos que \\(X\\) sigue una distribución t-student con \\(\\nu\\) grados de libertad, si su función de densidad de probabilidad está dada por:\n\\[f(t) = \\dfrac{\\Gamma(\\dfrac{\\nu+1}{2})} {\\sqrt{\\nu\\pi}\\,\\Gamma(\\dfrac{\\nu}{2})} \\left(1+\\dfrac{t^2}{\\nu} \\right)^{\\!-\\dfrac{\\nu+1}{2}},\\]\ndonde \\(\\Gamma\\) es la función gamma. Si \\(X\\) se distribuye t-student entonces:\n\n\\(\\mathbb{E}(X)=0\\) para \\(\\nu>1\\). Indefinida para otros valores.\n\n\\(\\mathbb{V}(X)=\\dfrac{\\nu}{\\nu -2}\\) para \\(\\nu>2\\). Indefinida para otros valores."
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-lognormal",
+    "href": "slides/lec_week3.html#distribución-lognormal",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución lognormal",
+    "text": "Distribución lognormal\nSea \\(W\\) una distribución normal con media \\(\\mu\\) y varianza \\(\\sigma^2\\), entonces \\(X=\\exp(W)\\) es una variable aleatoria lognormal, con función de densidad:\n\\[f(X)=\\dfrac{1}{x\\sigma\\sqrt{2\\pi}}\\exp \\left( -\\dfrac{(\\ln(x)-\\mu)^2}{2\\sigma^2}\\right)\\]\nSu esperanza y varianza están dadas por:\n\n\\(\\mathbb{E}(X)=\\exp\\left(\\mu+\\dfrac{\\sigma^2}{2}\\right)\\)\n\\(\\mathbb{V}(X)=(\\exp(\\sigma^2)-1)\\exp(2\\mu+\\sigma^2)\\)"
+  },
+  {
+    "objectID": "slides/lec_week3.html#distribución-weibull",
+    "href": "slides/lec_week3.html#distribución-weibull",
+    "title": "Métodos estadísticos en el control de calidad",
+    "section": "Distribución Weibull",
+    "text": "Distribución Weibull\nSea \\(X\\) un variable aleatoria con distribución Weibull, entonces su densidad de probabilidad está dada por:\n\\[f(x)=\\dfrac{\\beta}{\\theta}\\left(\\dfrac{x}{\\theta}\\right)^{\\beta-1}\\exp\\left[-\\left(\\dfrac{x}{\\theta}\\right)^{\\beta}\\right]\\quad x\\geq 0\\]\ndonde \\(\\theta>0\\) es el parámetro de escala y \\(\\beta>0\\) es el parámetro de forma. Su esperanza y varianza están dadas por:\n\n\\(\\mathbb{E}(X)=\\theta\\Gamma\\left(1+\\dfrac{1}{\\beta}\\right)\\)\n\\(\\mathbb{V}(X)=\\theta^2\\left[\\Gamma\\left(1+\\dfrac{2}{\\beta}\\right)-\\left[\\Gamma\\left(1+\\dfrac{1}{\\beta}\\right)\\right]^2\\right]\\)"
   }
 ]

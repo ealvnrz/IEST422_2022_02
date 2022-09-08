@@ -1,0 +1,353 @@
+---
+title: "Métodos estadísticos en el control de calidad"
+subtitle: "IEST 422 - 2022/02"
+author: "Eloy Alvarado Narváez"
+institute: "Universidad de Valparaíso"
+date: 08/09/22
+format: 
+  revealjs:
+    theme: slides.scss
+    touch: true
+    slide-level: 2
+incremental: true
+slide-number: true
+lang: es
+highlight-style: github
+width: 1600
+height: 900
+logo: images/logo_uv.png
+transition: fade
+footer: "IEST 422 - Semana 3"
+execute:
+  freeze: auto
+---
+
+# Conceptos básicos
+
+## Tipos de variable
+
+-   **Variables Cualitativas**: Cuando los elementos de una población son clasificados en categorías o clases excluyentes, se habla de variables cualitativas. Ejemplos: estado civil, lugar de procedencia, marca de artículos, etc.
+
+-   **Variables Cuantitativas (o numéricas)**: Si los posibles valores para los elementos de una población, son cantidades o números, se habla de variables cuantitativas. Ejemplos: kms por litro de gasolina de un auto, temperatura, duración de un examen, etc.
+
+    -   **Discretas**: Se habla de variables discretas, cuando el conjunto de valores posibles es finito o infinito numerable. Ejemplos: Cantidad de crías por camada, número de alumnos por carrera, etc.
+    -   **Continuas**: Son aquellas que pueden asumir infinitos valores. Ejemplos: sueldo de una persona, tiempo que tarda un animal en alcanzar un peso previamente determinado, etc.
+
+## Escalas de medición
+
+-   Escalas de Medición para variables cualitativas:
+    -   **Nominal**: Es aquella escala en donde las categorías (o los posibles valores de la variable), no pueden ser ordenadas en un sentido de magnitud. Ejemplos: colores, profesión, etc.
+    -   **Ordinal**: Cuando las categorías admiten una ordenación (no alfabética), se habla de escala ordinal. Ejemplo: Nivel Socio-económico (alto, medio o bajo), sistema de evaluación cualitativa (insuficiente, suficiente, bueno, muy bueno), etc.
+-   Escalas de Medición para variables cuantitativas:
+    -   **Intervalar**: Son aquellas que poseen un punto de referencia (o cero) relativo, en el sentido de que si se cambia de unidad de medición, el punto de referencia difiere entre una unidad de medida y otra. Ejemplo: temperatura (Celcius - Fahrenheit).
+    -   **Razón:** Son aquellas que poseen un cero absoluto (es decir, único). Incluso permiten hacer comparaciones por cocientes. Ejemplo: Peso de una persona, distancias, etc.
+
+
+# Variables aleatorias
+
+## Definición Básica
+
+Una **variable aleatoria**, es una función que permite trabajar cualquier espacio muestral de manera cuantitativa. Se dice que $X$ es una variable aleatoria si es una función que toma los elementos de $\Omega$ y los transforma en puntos sobre la recta de los reales. Esto es:
+
+```{=tex}
+\begin{align*}
+  X: \quad &\Omega \longrightarrow \mathbb{R}\\
+           &\omega \longrightarrow X(\omega)
+\end{align*}
+```
+. . .
+
+El conjunto de todas las posibles realizaciones es llamado el **soporte** y lo denotamos por $R_X$.
+
+## Tipos de variables aleatorias
+
+Se dice que $X$ es una variable aleatoria si es una función que toma valores en probabilidad, es decir, no se puede predecir con certeza sus resultados.
+
+**Una variable aleatoria es siempre cuantitativa** y se puede clasificar en los siguientes grupos:
+
+$$X(\omega) \begin{cases}
+\text{Discreto}
+\begin{cases}
+\text{Finito}\\
+\text{Infinito}
+\end{cases}\\
+\text{Continuo}
+\begin{cases}
+\text{Acotados}\\
+\text{No Acotados}
+\end{cases}
+\end{cases}$$
+
+## Variables aleatorias discretas
+
+Una variable aleatoria $X$ es llamada **discreta** si:
+
+1.  Su soporte $R_X$ es un conjunto *numerable*.
+2.  Existe una función $p_X:\mathbb{R}\rightarrow [0,1]$, llamada la **función de masa de probabilidad** de $X$, tal que, para cualquier $x\in \mathbb{R}$:
+
+::: {.fragment}
+$$p_X(x)\begin{cases} \mathbb{P}(X=x) \quad &\text{si } x\in R_X\\ 0 \quad &\text{si } x\notin R_X\end{cases}$$
+:::
+
+. . . 
+
+Esta función tiene dos características principales:
+
+1. **no-negatividad**: $p_X(x)\geq 0$ para cualquier $x\in \mathbb{R}$.
+2. **Suma sobre su soporte es 1**: $\sum_{x\in R_X}p_X(x)=1$
+
+## Variables aleatorias continuas
+
+Una variable aleatoria $X$ es llamada **continua** si:
+
+1. Su soporte $R_X$ es un conjunto *no-numerable*.
+2. Existe una función $f_X:\mathbb{R}\rightarrow [0,1]$, llamada **función de densidad de probabilidad** de $X$, tal que, para cualquier intervalo $[a,b]\subseteq \mathbb{R}$:
+
+:::{.fragment}
+$$\mathbb{P}(X\in [a,b])=\int_{a}^{b}f_X(x)dx$$
+:::
+
+. . . 
+
+Esta función tiene dos características principales:
+
+1. **no-negatividad**: $f_X(x)\geq 0$ para cualquier $x\in \mathbb{R}$.
+2. **Integral sobre $\mathbb{R}$ es 1**: $\int_{-\infty}^{\infty} f_X(x)dx=1$.
+
+
+## Función de distribución
+
+Las variables aleatorias son usualmente caracterizadas en términos de sus funciones de distribución.
+
+. . . 
+
+Sea $X$ una variable aleatoria. La **función de distribución** de $X$ es una función $F_X:\mathbb{R}\rightarrow [0,1]$ tal que:
+
+$$F_X(x)=\mathbb{P}(X\leq x), \forall x\in \mathbb{R}$$
+
+. . .
+
+Si conocemos la función de distribución de una variable aleatoria $X$, entonces podemos fácilmente calcular la probabilidad que $X$ pertenezca a un intervalo $(a,b] \subseteq \mathbb{R}$ como:
+
+$$\mathbb{P}(a<X<b)=F_X(b)-F_X(a)$$
+
+## Valores esperados
+
+Sea $X$ una variable aleatoria, entonces se define el valor esperado de una función real $g(X)$, como:
+
+$$\mathbb{E}[g(X)]= \begin{cases} \sum_{x\in \mathbb{R}} g(X)\mathbb{P}(X=x)\\ \int_{x\in \mathbb{R}} g(X)f(x)dx \end{cases}$$
+
+
+Si $g(X)=X$, diremos que el valor esperado o esperanza matemática de $X$ es:
+$$\mathbb{E}(X)=\begin{cases}\sum_{x\in \mathbb{R}} x \mathbb{P}(X=x)\\ \int_{x\in \mathbb{R}} x f(x)dx \end{cases}$$
+
+Para variables de tipo discreta y continua, respectivamente.
+
+## Propiedades de los valores esperados
+
+Sean $a$ y $b$ constantes, $X$ una variable aleatoria entonces se cumple que:
+
+- $\mathbb{E}(a)=a$
+- $\mathbb{E}(X)=\mu=$ constante
+- $\mathbb{E}(aX)=a\mathbb{E}(X)$
+- $\mathbb{E}(aX+b)=\mathbb{E}(aX)+\mathbb{E}(b)=a\mathbb{E}(X)+b$
+
+## Varianza
+
+Sea $X$ una variable aleatoria, se define el la **varianza** de $X$ como:
+
+$$\mathbb{E}[(X-\mathbb{E}(X))^2]=V(X)=\begin{cases}\sum_{x\in\mathbb{R}} (X-\mathbb{E}(X))^2\mathbb{P}(X=x)\\ \int_{x\in\mathbb{R}}(X-\mathbb{E}(X))^2f_{X}(x)dx\end{cases}$$
+
+Para variables de tipo discreta y continua, respectivamente.
+
+## Propiedades de la varianza
+
+Sea $a$ y $b$ constantes, $X$ una variable aleatoria, entonces se cumple:
+
+
+- $\mathbb{V}(a)=0$
+- $\mathbb{V}(X)=\sigma^2=$ constante
+- $\mathbb{V}(aX)=a^2 \mathbb{V}(X)$
+- $\mathbb{V}(aX+b)=\mathbb{V}(aX)+\mathbb{V}(b)=a^2\mathbb{V}(X)+0=a^2\mathbb{V}(X)$
+- $\mathbb{V}(X)=\mathbb{E}(X^2)-(\mathbb{E}(X))^2$
+
+# Distribuciones discretas
+
+## Distribución binomial 
+
+Sea $X$ una variable aleatoria que representa el número de éxitos en $n$ ensayos y $p$ la probabilidad de éxito con cualquiera de éstos. Se dice entonces que $X$ tiene una distribución binomial con función de probabilidad:
+
+$$\mathbb{P}(X=k)= {{n}\choose{k}}p^k(1-p)^{n-k} \hspace{20pt} k=1,2,\cdots,n$$
+En donde ${{n}\choose{k}}$ es el coeficiente binomial, esto es: 
+
+$${{n}\choose{k}}=\dfrac{n!}{k!(n-k)!}$$
+
+Si $n=1$ diremos que $X$ sigue una distribución Bernoulli.
+
+## Propiedades de la distribución binomial
+
+Si $X$ tiene una distribución binomial, entonces se cumple que:
+
+- $\mathbb{E}[X]=np$
+- $\mathbb{V}[X]=np(1-p)$
+
+. . . 
+
+Es claro ver que si $X$ tiene una distribución bernoulli, entonces:
+
+- $\mathbb{E}[X]=p$
+- $\mathbb{V}[X]=p(1-p)$
+
+## Distribución de Poisson
+
+Sea $X$ una variable aleatoria que representa el número de eventos aleatorios independientes que ocurren a una rapidez constante sobre el tiempo o el espacio. Se dice entonces que la variable aleatoria $X$ tiene una distribución de Poisson con función de probabilidad:
+
+$$\mathbb{P}(X=k)=\dfrac{e^{-\lambda}\lambda^k}{k!} \hspace{20pt} k=0,1,\cdots,n,\cdots$$
+
+En donde $\lambda>0$ representa el número promedio de ocurrencias del evento aleatorio por unidad de tiempo. Además, si $X$ sigue una distribución de Poisson se cumple que:
+
+- $\mathbb{E}[X]=\lambda$
+- $\mathbb{V}[X]=\lambda$
+
+## Distribución geométrica
+
+Sea $X$ una variable aleatoria que representa el número de fallas que ocurren antes de que se presente el primer éxito.Se dice entonces que la variable aleatoria $X$ tiene una distribución geométrica con función de probabilidad:
+
+$$\mathbb{P}(X=k)=(1-p)^{k-1}p \quad \quad k=1,2,\cdots$$
+
+En donde $p$ es la probabilidad de éxito. Además, Si $X$ sigue una distribución geométrica, entonces se cumple que:
+
+- $\mathbb{E}(X)=\dfrac{1}{p}$
+- $\mathbb{V}(X)=\dfrac{(1-p)}{p^2}$
+
+## Distribución hipergeométrica
+
+Sea $N$ el número total de objetos de una población finita, de manera tal que $k$ de éstos es de un tipo y $N-k$ de otros. Si se selecciona una muestra aleatoria de la población constituida por $n$ objetos de la probabilidad de que $x$ sea de un tipo exactamente y $n-x$ sea del otro, está dada por la función de probabilidad hipergeométrica:
+
+$$\displaystyle \mathbb{P}(X=x)= \dfrac{{{k}\choose{x}} {{N-k}\choose{n-x}}  }{  {{N}\choose{n}}}\quad \quad x=1,2,\cdots,n \quad; x \leq k\quad ;n-x\leq N-k$$
+
+Si $X$ sigue una distribución hipergeométrica y si $p=k/N$
+
+- $\mathbb{E}(X)=np$
+- $\mathbb{V}(X)=np(1-p)\left( \dfrac{N-n}{N-1}\right)$
+
+## Distribución binomial negativa
+
+De manera similar a la distribución binomial, si se desea modelar el número de éxito en $n$ ensayos **hasta encontrar el $r$-ésimo** utilizaremos la distribución binomial negativa
+
+$$\mathbb{P}(X=x)= {{x-1}\choose{r-1}}p^r(1-p)^{x-r} \hspace{20pt} x=r,r+1,r+2\cdots$$
+
+donde $r \in \mathbb{N}$ y $x$ el ensayo en el cual ocurre el $r$-ésimo éxito. La media y varianza de esta distribución son:
+
+- $\mathbb{E}(X)=\dfrac{r}{p}$
+- $\mathbb{V}(X)=\dfrac{r(1-p)}{p^2}$
+
+# Distribuciones continuas
+
+## Distribución normal
+
+Sea $X$ una variable aleatoria que toma valores reales, diremos que $X$ sigue una distribución normal (o Gaussiana) si su función de densidad está por:
+
+$$f_{X}(x)=\dfrac{1}{\sqrt{2\pi}\sigma}\exp\left[ -\dfrac{1}{2}\left(\dfrac{x-\mu}{\sigma}\right) ^2\right],$$
+
+En donde los parámetros de la distribución son $\mu$ y $\sigma$ satisfacen las condiciones:
+
+$$-\infty<\mu<\infty, \quad \sigma^2>0$$
+
+# Distribución uniforme
+
+Sea $X$ una variable aleatoria continua, diremos que $X$ sigue una distribución uniforme sobre el intervalo $(a,b)$ si su función de densidad de probabilidad está dada por:
+
+$$f_{X}(x)=\begin{cases}1/(b-a) \quad &a\leq x \leq b\\0 \quad &e.o.c\end{cases}$$
+
+Los parámetros de la distribución cumplen las condiciones:
+
+$$-\infty<a<\infty,\quad -\infty<b<\infty$$
+
+- $\mathbb{E}(X)=\dfrac{(a+b)}{2}$    
+- $\mathbb{V}(X)=\dfrac{(b-a)^2}{12}$ 
+
+## Distribución exponencial
+
+Sea $X$ una variable aleatoria continua que toma valores positivos, diremos que $X$ sigue una distribución exponencial con parámetro $\alpha>0$ si su función de densidad está dada por:
+
+$$f_{X}(x)=\begin{cases}\alpha e^{-\alpha x} \quad &x\geq 0 \\0 \quad &e.o.c\end{cases}$$
+Además se cumple que:
+
+- $\mathbb{E}(X)=\dfrac{1}{\alpha}$     
+- $\mathbb{V}(X)=\dfrac{1}{\alpha^2}$  
+
+## Función gamma
+
+La **función gamma** denotada por $\Gamma$ está definida por:
+
+$$\Gamma(p)=\int_{0}^{\infty} x^{p-1} e^{-x}dx \hspace{20pt} p>0$$
+
+Esta función cumple las siguientes propiedades:
+
+- $\Gamma(n)=(n-1)!$       
+- $\Gamma(1/2)=\sqrt{\pi}$ 
+
+## Distribución gamma
+
+Sea $X$ una variable aleatoria continua que toma valores positivos. Diremos que $X$ sigue una distribución Gamma si su función de densidad está dada por:
+
+$$f_{X}(x)=\begin{cases}\dfrac{\alpha}{\Gamma(r)}(\alpha x)^{r-1}e^{-\alpha x} \quad &x>0\\0 \quad &e.o.c,\end{cases}$$
+En donde los parámetros $r$ y $\alpha$ son positivos.
+
+Es claro ver que un caso particular de la distribución Gamma es la distribución exponencial ($r=1$). Si $X$ se distribuye Gamma entonces se cumple:
+
+- $\mathbb{E}(X)=r/\alpha$   
+- $\mathbb{V}(X)=r/\alpha^2$ 
+
+## Distribución t-student
+
+Sea $X$ una variable aleatoria continua que toma valores reales, diremos que $X$ sigue una distribución t-student con $\nu$ grados de libertad, si su función de densidad de probabilidad está dada por:
+
+$$f(t) = \dfrac{\Gamma(\dfrac{\nu+1}{2})} {\sqrt{\nu\pi}\,\Gamma(\dfrac{\nu}{2})} \left(1+\dfrac{t^2}{\nu} \right)^{\!-\dfrac{\nu+1}{2}},$$
+donde $\Gamma$ es la función gamma. Si $X$ se distribuye t-student entonces:
+
+- $\mathbb{E}(X)=0$ para $\nu>1$. Indefinida para otros valores.                   
+- $\mathbb{V}(X)=\dfrac{\nu}{\nu -2}$ para $\nu>2$. Indefinida para otros valores. 
+
+## Distribución lognormal
+
+Sea $W$ una distribución normal con media $\mu$ y varianza $\sigma^2$, entonces $X=\exp(W)$ es una variable aleatoria lognormal, con función de densidad:
+
+$$f(X)=\dfrac{1}{x\sigma\sqrt{2\pi}}\exp \left( -\dfrac{(\ln(x)-\mu)^2}{2\sigma^2}\right)$$
+
+Su esperanza y varianza están dadas por:
+
+  - $\mathbb{E}(X)=\exp\left(\mu+\dfrac{\sigma^2}{2}\right)$
+  
+  - $\mathbb{V}(X)=(\exp(\sigma^2)-1)\exp(2\mu+\sigma^2)$
+  
+## Distribución Weibull
+
+Sea $X$ un variable aleatoria con distribución Weibull, entonces su densidad de probabilidad está dada por:
+
+$$f(x)=\dfrac{\beta}{\theta}\left(\dfrac{x}{\theta}\right)^{\beta-1}\exp\left[-\left(\dfrac{x}{\theta}\right)^{\beta}\right]\quad x\geq 0$$
+
+donde $\theta>0$ es el parámetro de **escala** y $\beta>0$ es el parámetro de **forma**. Su esperanza y varianza están dadas por:
+
+  - $\mathbb{E}(X)=\theta\Gamma\left(1+\dfrac{1}{\beta}\right)$
+  
+  - $\mathbb{V}(X)=\theta^2\left[\Gamma\left(1+\dfrac{2}{\beta}\right)-\left[\Gamma\left(1+\dfrac{1}{\beta}\right)\right]^2\right]$
+  
+# Teorema del límite central
+
+Sean $X_1,X_2,\dots,X_n$, $n$ variables aleatorias i.i.d. con una distribución de probabilidad no especificada y que tienen una media $\mu$ y varianza $\sigma^2$ finita. El promedio muestral 
+
+$$\overline{X}=(X_1+X_2+\cdots+X_n)/n$$
+tiene una distribución con media $\mu$ y varianza $\sigma^2/n$ que tiende hacia una distribución normal conforme $n\rightarrow\infty$. 
+
+En otras palabras, la variable aleatoria $(\overline{X}-\mu)/(\sigma/\sqrt{n})$ tiene como límite una distribución normal estándar.
+
+# ¿Qué veremos la próxima semana?
+
+- Inferencia
+- Diagramas de control
+
+# ¿Qué deben preparar para la próxima semana?
+
+- Leer capítulo 4 de Introduction to statistical quality control.

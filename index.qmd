@@ -21,6 +21,8 @@ Por su naturaleza aplicada y ser un curso de años superiores, se dará un espec
 
 Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es candidato a Doctor en estadística en la [Universidad de Valparaíso](https://www.uv.cl/) en el área de estadística espacial, particularmente en el estudio de campos aleatorios y cópulas. Es Licenciado en Estadística de la [Pontificia Universidad Católica de Valparaíso](http://www.pucv.cl). Actualmente, presta servicios de consultoría al [Instituto de Fomento Pesquero](http://www.ifop.cl) en modelamiento espacio-temporal.
 
+Contacto: [eloy.alvarado@uv.cl](mailto:eloy.alvarado@uv.cl)
+
 # Pre-requisitos
 
 Oficialmente, el curso sólo requiere la aprobación de IEST 412: Muestreo II, pero a su vez se necesitará conocimiento general de teoría de probabilidad e inferencia.
