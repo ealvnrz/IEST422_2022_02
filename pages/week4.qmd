@@ -1,11 +1,11 @@
 ---
 title: "Semana 4"
-subtitle: ""
+subtitle: "Inferencia sobre procesos de calidad y diagramas de control"
 ---
 
 ## Preparación
 
-
+Leer capítulo 4-5.2 de Introduction to statistical quality control.
 
 ## Presentación
 

@@ -789,5 +789,173 @@
     "title": "Métodos estadísticos en el control de calidad",
     "section": "Distribución Weibull",
     "text": "Distribución Weibull\nSea \\(X\\) un variable aleatoria con distribución Weibull, entonces su densidad de probabilidad está dada por:\n\\[f(x)=\\dfrac{\\beta}{\\theta}\\left(\\dfrac{x}{\\theta}\\right)^{\\beta-1}\\exp\\left[-\\left(\\dfrac{x}{\\theta}\\right)^{\\beta}\\right]\\quad x\\geq 0\\]\ndonde \\(\\theta>0\\) es el parámetro de escala y \\(\\beta>0\\) es el parámetro de forma. Su esperanza y varianza están dadas por:\n\n\\(\\mathbb{E}(X)=\\theta\\Gamma\\left(1+\\dfrac{1}{\\beta}\\right)\\)\n\\(\\mathbb{V}(X)=\\theta^2\\left[\\Gamma\\left(1+\\dfrac{2}{\\beta}\\right)-\\left[\\Gamma\\left(1+\\dfrac{1}{\\beta}\\right)\\right]^2\\right]\\)"
+  },
+  {
+    "objectID": "slides/lec_week4.html#muestreo-desde-una-distribución-normal",
+    "href": "slides/lec_week4.html#muestreo-desde-una-distribución-normal",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Muestreo desde una distribución normal",
+    "text": "Muestreo desde una distribución normal\nSupongamos que \\(x\\) es una variable aleatoria normalmente distribuida con media \\(\\mu\\) y varianza \\(\\sigma^2\\). Si \\(x_1,x_2,\\dots,x_n\\) es una muestra aleatoria de tamaño \\(n\\) desde este proceso, entonces la distribución de su media muestral \\(\\overline{x}\\) es \\(N(\\mu,\\sigma^2/n)\\).\n\n¿Por qué pasa esto?\n\n\nEsta propiedad de la media muestral no está restringida exclusivamente para el caso de muestras desde una distribución normal."
+  },
+  {
+    "objectID": "slides/lec_week4.html#distribución-chi-cuadrado",
+    "href": "slides/lec_week4.html#distribución-chi-cuadrado",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Distribución Chi cuadrado",
+    "text": "Distribución Chi cuadrado\nUna distribución muestral importante definida en términos de la distrivución normal es la distribución \\(\\chi^2\\). Si \\(x_1,x_2,\\dots,x_n\\) son variables aleatoria normales i.i.d. con media cero y varianza unitaria, entonces la variable aleatoria:\n\\[y=x_{1}^{2}+x_{2}^{2}+\\dots+x_{n}^{2}\\]\nse distribuye chi cuadrado con \\(n\\) grados de libertad. La distribución de probabilidad chi cuadrado con \\(n\\) grados de libertad es:\n\\[f(y)=\\dfrac{1}{2^n\\Gamma(\\dfrac{n}{2})}y^{(n/2)-1}\\exp(-y/2)\\]\nLa distribución es sesgada con media \\(\\mu=n\\) y varianza \\(\\sigma^2=2n\\)"
+  },
+  {
+    "objectID": "slides/lec_week4.html#muestreo-desde-una-distribución-binomial",
+    "href": "slides/lec_week4.html#muestreo-desde-una-distribución-binomial",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Muestreo desde una distribución binomial",
+    "text": "Muestreo desde una distribución binomial\nSupongamos que una muestra aleatoria \\(x_1,x_2.\\dots,x_n\\) es tomada desde un proceso Bernoulli con probabilidad constante de éxito \\(p\\). Entonces la suma de las observaciones muestrales\n\\[x=x_1+x_2+\\dots+x_n\\]\ntiene una distribución binomial con parámetros \\(n\\) y \\(p\\). Además, debido a que cada \\(x_i\\) es 0 o 1, la media muestral:\n\\[\\overline{x}=\\dfrac{1}{n}\\sum_{i=1}^{n}x_i\\]\nes una variable aleatoria discreta que puede tomar valores en\n\\[\\{0,1/n,2/n,\\dots,(n-1)/n,1\\}.\\]"
+  },
+  {
+    "objectID": "slides/lec_week4.html#muestreo-desde-una-distribución-binomial-continuación",
+    "href": "slides/lec_week4.html#muestreo-desde-una-distribución-binomial-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Muestreo desde una distribución binomial: continuación",
+    "text": "Muestreo desde una distribución binomial: continuación\nLa distribución de \\(\\overline{x}\\) puede ser obtenida desde el caso binomial como:\n\\[\\mathbb{P}(\\overline{x}\\leq a)=\\mathbb{P}(x\\leq an)=\\sum_{k=0}^{[an]}\\binom{n}{k}p^k(1-p)^{n-k}\\]\ndonde \\([an]\\) es el mayor entero menor o igual a \\(an\\). La media y varianza de \\(x\\) son\n\\[\\mu_x=p \\quad \\quad \\sigma_{x}^{2}=\\dfrac{p(1-p)}{n},\\]\nrespectivamente."
+  },
+  {
+    "objectID": "slides/lec_week4.html#muestreo-desde-una-distribución-poisson",
+    "href": "slides/lec_week4.html#muestreo-desde-una-distribución-poisson",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Muestreo desde una distribución Poisson",
+    "text": "Muestreo desde una distribución Poisson\nConsideremos una muestra aleatoria \\(x_1,x_2,\\dots,x_n\\) de tamaño \\(n\\) desde una distribución Poisson con parámetro \\(\\lambda\\). La distribución de la suma muestral\n\\[x=x_1+x_2+\\dots+x_n\\]\nes también Poisson con parámetro \\(n\\lambda\\). Más generalmente, la suma de \\(n\\) variables aleatorias independientes Poisson se distribuye Poisson con parámetro igual a la suma de los parámetros individuales. Consideremos la distribución de la media muestral\n\\[\\overline{x}=\\dfrac{1}{n}\\sum_{i=1}^{n}x_i\\]"
+  },
+  {
+    "objectID": "slides/lec_week4.html#muestreo-desde-una-distribución-poisson-continuación",
+    "href": "slides/lec_week4.html#muestreo-desde-una-distribución-poisson-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Muestreo desde una distribución Poisson: continuación",
+    "text": "Muestreo desde una distribución Poisson: continuación\nSu distribución de probabilidad es:\n\\[\\mathbb{P}(x\\leq a)=\\mathbb{P}(x\\leq an)=\\sum_{k=0}^{[an]}\\dfrac{\\exp(-n\\lambda)(n\\lambda)^k}{k!}\\]\nDonde su media y varianza son:\n\\[\\mu_x=\\lambda \\quad \\quad \\sigma_{x}^{2}=\\dfrac{\\lambda}{n},\\]\nrespectivamente."
+  },
+  {
+    "objectID": "slides/lec_week4.html#estimadores-puntales",
+    "href": "slides/lec_week4.html#estimadores-puntales",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Estimadores puntales",
+    "text": "Estimadores puntales\nLa media y varianza muestral \\(\\overline{x}\\) y \\(s^2\\) son estimadores insesgados de la media y varianza poblacional \\(\\mu\\) y \\(\\sigma^2\\), respectivamente.\n\nLa desviación estándar muestral \\(s\\) no es un estimador insesgado de la desviación estándar poblacional, de hecho se tiene que para el caso normal:\n\\[\\mathbb{E}(s)=\\left(\\dfrac{2}{n-1}\\right)^{1/2}\\dfrac{\\Gamma(n/2)}{\\Gamma((n-1)/2)}\\sigma\\]\n\n\nTarea N°1: Demostrar el enunciado anterior"
+  },
+  {
+    "objectID": "slides/lec_week4.html#estimadores-puntuales-continuación",
+    "href": "slides/lec_week4.html#estimadores-puntuales-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Estimadores puntuales: continuación",
+    "text": "Estimadores puntuales: continuación\nEn muchas aplicaciones estadísticas dentro del contexto de control de calidad, es conveniente estimar la desviación estándar por el método del rango.\n\nSea \\(x_1,x_2,\\dots,x_n\\) una muestra aleatoria de \\(n\\) observaciones desde una distribución normal con medial \\(\\mu\\) y varianza \\(\\sigma^2\\). El rango de la muestra es:\n\\[R=\\max(x_i)-\\min(x_i)=x_{máx}-x_{mín}\\]\nLa variable aleatoria \\(W=R/\\sigma\\) es llamado el rango relativo, y un estimador insesgado para la desviación estándar \\(\\sigma\\) de una distribución normal es:\n\\[\\hat{\\sigma}=\\dfrac{R}{d_2}\\]\ndonde \\(d_2\\) es una constante que depende del tamaño de la muestra."
+  },
+  {
+    "objectID": "slides/lec_week4.html#tarea-n1",
+    "href": "slides/lec_week4.html#tarea-n1",
+    "title": "Inferencia sobre procesos de calidad",
+    "section": "Tarea N°1",
+    "text": "Tarea N°1\nasdf"
+  },
+  {
+    "objectID": "slides/lec_week4.html#herramientas-del-control-estadístico-de-procesos",
+    "href": "slides/lec_week4.html#herramientas-del-control-estadístico-de-procesos",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Herramientas del control estadístico de procesos",
+    "text": "Herramientas del control estadístico de procesos\nEntre las herramientas más destacables se encuentran:\n\nHistograma y diagrama de tallo y hoja\nHoja de control\nDiagrama de Pareto\nDiagrama causa-efecto\nDiagrama de concentración de defectos\nDiagrama de dispersión\nDiagrama de control\n\n\nSi bien estas son las principales herramientas del control estadístico de procesos, estas solo refieren al aspecto técnico. Para la correcta implementación de un sistema de control de calidad, más dimensiones deben ser consideradas."
+  },
+  {
+    "objectID": "slides/lec_week4.html#razones-para-la-variación-en-un-proceso",
+    "href": "slides/lec_week4.html#razones-para-la-variación-en-un-proceso",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Razones para la variación en un proceso",
+    "text": "Razones para la variación en un proceso\nEn cualquier proceso productivo, independiente de que tan bueno sea el diseño, siempre existirá una variabilidad inherente. Esta variabilidad natural o ruido de fondo es el efecto acumulado de muchas pequeñas causas inevitables.\nEn el contexto de control estadístico de procesos, esta variabilidad natural se le llama sistema estable de causas aleatorias.\n\nUn proceso se dice que está bajo control estadístico si la variablidad es solo debido a causas aleatorias\n\nOtro tipo de variabilidad pueden ocasionalmente estar presentes en la salida de un proceso. Esta variablidad en las características importantes para la calidad usualmente provienen de 3 fuentes:\n\nMáquinas mal ajustadas o controladas\nErrores del operador\nMateriales defectuosos"
+  },
+  {
+    "objectID": "slides/lec_week4.html#razones-para-la-variación-en-un-proceso-continuación",
+    "href": "slides/lec_week4.html#razones-para-la-variación-en-un-proceso-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Razones para la variación en un proceso: continuación",
+    "text": "Razones para la variación en un proceso: continuación\nEste último tipo de variabilidad es usualmente más grande que el ruido de fondo, y por lo general conlleva en un nivel inaceptable de rendimiento. A este tipo de fuentes de variación (que no son las inherentes al proceso) les llamamos causas asignables de variación.\nUn proceso que está operando bajo la presencia de causas asignables de variación se dice que está fuera de control.\n\nGeneralmente los procesos operarán bajo un estado de control por periodos relativamente largos de tiempo. Sin embargo, ningún proceso es estable para siempre, y eventualemente causas asignables de variación ocurrirán.\n\nUn objetivo principal del control estadístico de procesos es la rápida detección de estas ocurrencias para que una investigación (y posterior corrección) pueda ser llevada a cabo."
+  },
+  {
+    "objectID": "slides/lec_week4.html#principios-básicos",
+    "href": "slides/lec_week4.html#principios-básicos",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Principios básicos",
+    "text": "Principios básicos"
+  },
+  {
+    "objectID": "slides/lec_week4.html#principios-básicos-continuación",
+    "href": "slides/lec_week4.html#principios-básicos-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Principios básicos: continuación",
+    "text": "Principios básicos: continuación\nExiste una estrecha relación entre los diagramas de control y las pruebas de hipótesis, por ejemplo si el eje vertical en la figura anterior fuera \\(\\overline{x}\\), entonces podremos interpretar nuestros límites de control como los límites de decisión.\nEjemplo\nSupongamos que el ancho de flujo (una medida de cuanto se expande un elemento debido a un proceso de horneado) puede ser controlado con una media de \\(1.5\\) micrónes y se sabe que la desviación estándar del ancho de flujo es \\(0.15\\) micrónes. Cada hora, una muestra de tamaño 5 es tomada, y se calcula su media muestral.\nDebido a que la media es \\(1.5\\) micrónes y le desviación estándar \\(0.15\\), se tiene que para \\(n=5\\) la desviación estándar de la media muestral \\(\\overline{x}\\) es:\n\\[\\sigma_{\\overline{x}}=\\dfrac{\\sigma}{\\sqrt{n}}=\\dfrac{0.15}{\\sqrt{5}}=0.0671\\]"
+  },
+  {
+    "objectID": "slides/lec_week4.html#ejemplo-continuación",
+    "href": "slides/lec_week4.html#ejemplo-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Ejemplo: continuación",
+    "text": "Ejemplo: continuación\nPor lo que, si el proceso está en control con una media de 1.5 micrónes, sigue que (por teorema del límite central) esperaríamos que el \\(100(1-\\alpha)\\%\\) de las medias muestrales \\(\\overline{x}\\) caigan entre \\(1.5+Z_{\\alpha/2}(0.0671)\\) y \\(1.5-Z_{\\alpha/2}(0.0671)\\), aproximando el cuantil a 3 (de manera arbitraria):\n\\[UCL=1.5+3(0.0671)=1.70013 \\quad \\quad LCL=1.5-3(0.0671)=1.2987\\]\n\nEstos límites son típicamente llamados límites de control tres sigma."
+  },
+  {
+    "objectID": "slides/lec_week4.html#ejemplo-continuación-1",
+    "href": "slides/lec_week4.html#ejemplo-continuación-1",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Ejemplo: continuación",
+    "text": "Ejemplo: continuación\nNotar que escoger los límites de control es equivalente a determinar la región crítica de un test de hipótesis:\n\\[H_0: \\mu=1.5 \\quad \\quad H_1= \\mu \\neq 1.5\\]\ndonde \\(\\sigma=0.15\\) es conocido.\nEn esencia, el diagrama de control prueba esta hipótesis repetidamente en diferentes tiempos. Así, podemos dar un modelo general para un diagrama de control: Sea \\(w\\) un estadístico muestral que mide alguna característica de la calidad de interés, y supongamos que la media de \\(w\\) es \\(\\mu_w\\) y su desviación estandar es \\(\\sigma_w\\). Entonces la línea central, UCL y LCL serán:\n\\[UCL=\\mu_w+L\\sigma_w \\quad \\quad CL= \\mu_w \\quad \\quad LCL=\\mu_w-L\\sigma_w\\]\ndonde \\(L\\) es la distancia de los límites de control a la línea central, expresado en unidades de la desviación estándar."
+  },
+  {
+    "objectID": "slides/lec_week4.html#usos-del-diagrama-de-control",
+    "href": "slides/lec_week4.html#usos-del-diagrama-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Usos del diagrama de control",
+    "text": "Usos del diagrama de control\nEl diagrama de control es un dispositivo para describir de manera precisa exactamente lo que se entiende por control estadístico, por lo que puede ser ocupado de varias maneras. En muchas aplicaciones, es usado en el monitoreo de procesos on-line o de vigilancia.\nEl uso más importante de los diagramas de control es mejorar el proceso. Hemos visto que, generalmente:\n\nLa mayoría de los procesos no operan en un estado de control estadístico\nConsecuentemente, el uso rutinario y atento de los diagramas de control asistirán en identificar causas asignables. Si estas causas pueden ser eliminadas del proceso, la variabilidad se verá reducida y el proceso mejorará.\nEl diagrama de control sólo detectará causas asignables. La acción de administradores, operadores e ingenieros será usualmente necesario para eliminar estas causas asignables."
+  },
+  {
+    "objectID": "slides/lec_week4.html#usos-del-diagrama-de-control-continuación",
+    "href": "slides/lec_week4.html#usos-del-diagrama-de-control-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Usos del diagrama de control: continuación",
+    "text": "Usos del diagrama de control: continuación"
+  },
+  {
+    "objectID": "slides/lec_week4.html#acción-correctiva",
+    "href": "slides/lec_week4.html#acción-correctiva",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Acción correctiva",
+    "text": "Acción correctiva\nDebido a que el control estadístico de procesos sólo detecta las causas, es importante que los especialistas puedan encontrar la raíz del problema, por lo que desarrollar un sistema efectivo de acción correctiva es primordial para la correcta implementación del control de calidad.\nUna parte importante del proceso de acción correctiva asociado al uso de diagramas de control es el out-of-control-action plan (OCAP). Un OCAP es un diagrama de flujo o descripción escrita de la secuencia de actividades que deben ser llevadas a cabo tras las ocurrencia de un evento de activacción (que usualmente son las señales de fuera de control de un diagrama de control).\nLos OCAP consisten en checkpoints, que son potenciales causas asignables. y terminators, que son acciones a tomar para resolver la condición de fuera de control.\nLos OCAP son un documento vivo en el sentido que serán modificados a lo largo del tiempo conforme más información del proceso se obtiene."
+  },
+  {
+    "objectID": "slides/lec_week4.html#diagrama-de-control-estimación",
+    "href": "slides/lec_week4.html#diagrama-de-control-estimación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Diagrama de control: estimación",
+    "text": "Diagrama de control: estimación\nTambién podemos usar el diagrama de control como un dispositivo de estimación. Esto es, desde un diagrama de control que exhibe control estadístico, podemos estimar cierto parámetros del proceso (como la media, desviación estándar, etc). Luego, estas estimaciones pueden ser utilizados para determinar la capacidad del proceso para producir productos aceptables. Estos estudios proceso-capacidad tienen gran importancia en problemas de administración y gestión que puedan ocurrir a lo largo de un ciclo productivo.\n\n¿Ejemplos?"
+  },
+  {
+    "objectID": "slides/lec_week4.html#tipos-de-diagrama-de-control",
+    "href": "slides/lec_week4.html#tipos-de-diagrama-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Tipos de diagrama de control",
+    "text": "Tipos de diagrama de control\nLos diagramas de control pueden ser clasificados en dos clases generales:\n\nDiagrama de control de variables\nDiagrama de control de atributos\n\nOtra importante consideración en el uso de diagramas de control es el tipo de varibilidad"
+  },
+  {
+    "objectID": "slides/lec_week4.html#tipo-de-variabilidad",
+    "href": "slides/lec_week4.html#tipo-de-variabilidad",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Tipo de variabilidad",
+    "text": "Tipo de variabilidad"
+  },
+  {
+    "objectID": "slides/lec_week4.html#razones-para-el-uso-de-diagramas-de-control",
+    "href": "slides/lec_week4.html#razones-para-el-uso-de-diagramas-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Razones para el uso de diagramas de control",
+    "text": "Razones para el uso de diagramas de control\n\nEs una técnica provada para mejorar la productividad\nSon efectivos para la prevención de defectos\nPrevienen ajustes innecesarios al proceso\nProveen información de diagnóstico\nProveen información de la capacidad del proceso"
+  },
+  {
+    "objectID": "pages/week4.html",
+    "href": "pages/week4.html",
+    "title": "Semana 4",
+    "section": "",
+    "text": "Leer capítulo 4-5.2 de Introduction to statistical quality control."
   }
 ]
