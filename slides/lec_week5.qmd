@@ -1,5 +1,5 @@
 ---
-title: "Inferencia sobre procesos de calidad y diagramas de control"
+title: "Límites de control"
 subtitle: "IEST 422 - 2022/02"
 author: "Eloy Alvarado Narváez"
 institute: "Universidad de Valparaíso"
