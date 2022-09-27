@@ -214,7 +214,7 @@
     "href": "pages/week5.html#material-adicional",
     "title": "Semana 5",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\nCapítulo 3. Introduction to Statistical Process Control\nCapítulo 5. Statistical Process Control, Theory and practice."
   },
   {
     "objectID": "pages/week6.html#presentación",
@@ -955,6 +955,174 @@
     "objectID": "pages/week4.html",
     "href": "pages/week4.html",
     "title": "Semana 4",
+    "section": "",
+    "text": "Leer capítulo 4-5.2 de Introduction to statistical quality control."
+  },
+  {
+    "objectID": "slides/lec_week5.html#elección-de-los-límites-de-control",
+    "href": "slides/lec_week5.html#elección-de-los-límites-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Elección de los límites de control",
+    "text": "Elección de los límites de control\nLa elección es los límites de control es crucial para el control estadístico de procesos, pues son los umbrales desde los cuales la empresa debe tomar acciones correctivas. Si movemos los límites de control lejos de la línea central, estaremos reduciendo el riesgo de cometer un error tipo I, pero a la vez estaremos incrementando el riesgo de cometer un error tipo II (que un punto esté dentro de las bandas, pero que en realidad está fuera de control).\nSi movemos los límites de control más cerca de la línea central, el efecto contrario ocurre.\nComo hemos visto antes, estas bandas son intervalos de confianza, en los cuales independiente de la distribución de la característica importante para la calidad se utilizan bandas en múltiplos de su desviación estándar.\nUsualmente, se justifica una banda de 3 sigma dado que han dado buenos resultados en la práctica, sin embargo, en los casos en donde la verdadera distribución de la característica en estudio no del todo conocida, el cálculo de estos límites se dificulta."
+  },
+  {
+    "objectID": "slides/lec_week5.html#dos-límites-de-control",
+    "href": "slides/lec_week5.html#dos-límites-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Dos límites de control",
+    "text": "Dos límites de control"
+  },
+  {
+    "objectID": "slides/lec_week5.html#dos-límites-de-control-1",
+    "href": "slides/lec_week5.html#dos-límites-de-control-1",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Dos límites de control",
+    "text": "Dos límites de control\nAlgunos analistas sugieren utilizar dos límites o bandas de control en los diagramas de control, tal como se ve en la figura anterior. Las bandas exteriores, usualmente, se definen como límites de acción y activarán una búsqueda activa de alguna causa asignable para ser corregida.\nEn cuanto a los límites interiores, se definen usualmente como límites de advertencia. Si uno o más puntos caen dentro de estas bandas (o muy cercano al límite de advertencia), debemos sospechar que el proceso podría no estar operando correctamente.\nUna posible medida a tomar en estos casos es aumentar la frecuencia de muestreo o aumentar el tamaño de muestra. Esquemas de control estadístico de procesos que admiten un cambio en el tamaño de muestra o en la frecuencia de esta, se les llama muestreo adaptativo."
+  },
+  {
+    "objectID": "slides/lec_week5.html#dos-límites-de-control-continuación",
+    "href": "slides/lec_week5.html#dos-límites-de-control-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Dos límites de control: continuación",
+    "text": "Dos límites de control: continuación\nAlgunos analistas sugieren utilizar dos límites o bandas de control en los diagramas de control, tal como se ve en la figura anterior. Las bandas exteriores, usualmente, se definen como límites de acción y activarán una búsqueda activa de alguna causa asignable para ser corregida.\nEn cuanto a los límites interiores, se definen usualmente como límites de advertencia. Si uno o más puntos caen dentro de estas bandas (o muy cercano al límite de advertencia), debemos sospechar que el proceso podría no estar operando correctamente.\nUna posible medida a tomar en estos casos es aumentar la frecuencia de muestreo o aumentar el tamaño de muestra. Esquemas de control estadístico de procesos que admiten un cambio en el tamaño de muestra o en la frecuencia de esta, se les llama muestreo adaptativo."
+  },
+  {
+    "objectID": "slides/lec_week5.html#límites-de-advertencia",
+    "href": "slides/lec_week5.html#límites-de-advertencia",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Límites de advertencia",
+    "text": "Límites de advertencia\n\nEl uso de límites de advertencia incrementará la sensibilidad del diagrama de control, esto es, permite al diagrama identificar más rápidamente cambios en el proceso en estudio.\nUna desventaja del uso de estos límites, es que tiende a confundir al personal.\nOtra desventaja, es que aumenta el riesgo de falsas alarmas."
+  },
+  {
+    "objectID": "slides/lec_week5.html#tamaños-de-muestra",
+    "href": "slides/lec_week5.html#tamaños-de-muestra",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Tamaños de muestra",
+    "text": "Tamaños de muestra\nEn el diseño de un diagrama de control, debemos especificar el tamaño de muestra y la frecuencia de muestreo. En general, muestras más grandes harán más fáciles detectar cambios en el proceso.\nEn cuanto a la frecuencia de muestreo, idealmente desearemos tomar muestras grandes lo más frecuente posible, pero usualmente esto no es posible debido a restricciones económicas. Así, el problema es determinar el esfuerzo de muestreo, esto es, o tomamos pequeñas muestras a cortos intervalos de tiempo o tomamos muestras grandes a intervalos largos de tiempo. En la actualidad, se tiende a optar por la primera opción: muestras pequeñas a intervalos regulares cortos."
+  },
+  {
+    "objectID": "slides/lec_week5.html#arl",
+    "href": "slides/lec_week5.html#arl",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "ARL",
+    "text": "ARL\nOtra forma de evaluar la decisión entre tamaño de muestra y frecuencia de muestreo es a través del coeficiente ARL: average run length del diagrama de control. Este coeficiente, es el promedio de número de puntos que deben ser graficados antes que un punto indique que el proceso esté fuera de control. Si las observaciones del proceso son no correlacionadas, entonces el ARL se calcula como:\n\\[ARL=\\dfrac{1}{p}\\]\ndonde \\(p\\) es la probabilidad que un punto exceda los límites de control.\nSupongamos que se obtiene un \\(ARL=370\\), esto significa que incluso si el proceso se mantiene bajo control, esperaremos en promedio que una observación cada 370 caiga fuera de las bandas de control."
+  },
+  {
+    "objectID": "slides/lec_week5.html#críticas-al-uso-de-arl",
+    "href": "slides/lec_week5.html#críticas-al-uso-de-arl",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Críticas al uso de ARL",
+    "text": "Críticas al uso de ARL\nDebido a que la distribución subyacente es una distribución geométrica, destacan dos preocupaciones:\n\nLa desviación estándar del run length es muy grande\nLa distribución geométrica es muy asimétrica, por lo que la media de la distribución (ARL) no es necesariamente un valor representativo de la variable en estudio."
+  },
+  {
+    "objectID": "slides/lec_week5.html#ats",
+    "href": "slides/lec_week5.html#ats",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "ATS",
+    "text": "ATS\nOcasionalmente es conveniente expresar el desempeño de un diagrama de control en términos del tiempo promedio en que ocurre una señal, o ATS por sus siglas en inglés (average time to signal). Si las muestras son tomadas a intervalos regulares de tiempo que están separados por \\(h\\) horas, entonces:\n\\[ATS=ARL*h\\]"
+  },
+  {
+    "objectID": "slides/lec_week5.html#subgrupos-racionales",
+    "href": "slides/lec_week5.html#subgrupos-racionales",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Subgrupos racionales",
+    "text": "Subgrupos racionales\nUna idea fundamental en el uso de diagramas de control es la recolección de datos muestrales de acuerdo a lo que Shewhart llamo como subgrupos racionales.\nSupongamos que utilizamos un diagrama de control \\(x\\) para detectar cambios en la medio del proceso. Entonces, el concepto de subgrupo racional significa que subgrupos o muestras deben ser seleccionadas tal que si una causa asignable está presente, la probabilidad para la diferencia entre subgrupos sea maximizada, mientras que la probabilidad de diferencia debido a estas causas asignables dentro de un subgrupo sea minimizada.\nCuando un diagrama de control se aplica a un proceso productivo, el orden del tiempo de producción es una base lógica para subgrupo racional. Incluso si el orden del tiempo se preserva, es posible formar grupos erróneamente."
+  },
+  {
+    "objectID": "slides/lec_week5.html#construcción-de-subgrupos-racionales",
+    "href": "slides/lec_week5.html#construcción-de-subgrupos-racionales",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Construcción de subgrupos racionales",
+    "text": "Construcción de subgrupos racionales\nEn general dos tipos de enfoque son aplicados para la construcción de subgrupos racionales:\nEn el primero, cada muestra consiste en unidades que fueron producidas al mismo tiempo (o muy cercanas entre sí). Idealmente, quisiéramos tomar unidades consecutivas de producción. Este enfoque es utilizado cuando el objetivo principal del diagrama de control es detectar cambios en el proceso: minimiza la probabilidad de variabilidad debido a causas asignables dentro de una muestra, y maximiza la probabilidad de variabilidad entre muestras si una cauga asignable se presenta."
+  },
+  {
+    "objectID": "slides/lec_week5.html#subgrupos-racionales-2-enfoques",
+    "href": "slides/lec_week5.html#subgrupos-racionales-2-enfoques",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Subgrupos racionales: 2 enfoques",
+    "text": "Subgrupos racionales: 2 enfoques"
+  },
+  {
+    "objectID": "slides/lec_week5.html#subgrup",
+    "href": "slides/lec_week5.html#subgrup",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Subgrup",
+    "text": "Subgrup"
+  },
+  {
+    "objectID": "slides/lec_week5.html#construcción-de-subgrupos-racionales-continuación",
+    "href": "slides/lec_week5.html#construcción-de-subgrupos-racionales-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Construcción de subgrupos racionales: continuación",
+    "text": "Construcción de subgrupos racionales: continuación\nEn el segundo enfoque, cada muestra consiste en unidades de producto que son representativas de todas las muestras que han sido producidas desde que fue tomada la última muestra. Esencialmente, cada subgrupo es un muestreo aleatorio de todas las salidas del proceso sobre el intervalo de muestreo. Este método de subgrupos racionales es frecuentemente usado cuando un diagrama de control es empleado para tomar decisiones sobre la aceptación de todas las unidades de un producto que han sido producidas desde la última muestra.\nSi bien estos dos enfoques son los principales, dependiendo de la naturaleza del proceso, otro tipo de subgrupos racionales pueden ser utilizados. ## Subgrupos racionales: 2 enfoques"
+  },
+  {
+    "objectID": "slides/lec_week5.html#análisis-de-patrones-en-un-diagrama-de-control",
+    "href": "slides/lec_week5.html#análisis-de-patrones-en-un-diagrama-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Análisis de patrones en un diagrama de control",
+    "text": "Análisis de patrones en un diagrama de control\nLos patrones en un diagrama de control deben ser estudiados cuidadosamente. Un diagrama de control puede indicar una condicional fuera de control cuando uno o más puntos caen fuera de los límites de control o cuando los puntos muestras un patrón o comportamiento no aleatorio."
+  },
+  {
+    "objectID": "slides/lec_week5.html#análisis-de-patrones-en-un-diagrama-de-control-1",
+    "href": "slides/lec_week5.html#análisis-de-patrones-en-un-diagrama-de-control-1",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Análisis de patrones en un diagrama de control",
+    "text": "Análisis de patrones en un diagrama de control\nAsí, el problema es reconocer patrones. La habilidad de interpretar un patrón particular en término de causas asignables requiere experiencia y conocimiento del proceso. Esto es, además de saber los principios estadísticos de los diagramas de control, debemos entender la naturaleza del proceso en estudio. En la literatura se sugieren las siguientes reglas para detectar patrones no aleatorios en diagramas de control. Específicamente, se sugiere concluir que el proceso está fuera de control si:\n\nUn punto está fuera de las bandas 3-sigma\nDos de tres puntos consecutivos caen fuera de la banda de advertencia 2-sigma\nCuatro de cada cinco puntos consecutivos están a una distancia de 1-sigma o más desde la línea central o\nOcho puntos consecutivos caen en el mismo lado de la línea central\n\n\nEstas reglas aplican a cada lado de la línea central."
+  },
+  {
+    "objectID": "slides/lec_week5.html#zonas-en-diagramas-de-control",
+    "href": "slides/lec_week5.html#zonas-en-diagramas-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Zonas en diagramas de control",
+    "text": "Zonas en diagramas de control"
+  },
+  {
+    "objectID": "slides/lec_week5.html#zonas-en-diagramas-de-control-continuación",
+    "href": "slides/lec_week5.html#zonas-en-diagramas-de-control-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Zonas en diagramas de control: continuación",
+    "text": "Zonas en diagramas de control: continuación\nAdicionalmente, a las reglas anteriores se agregan:\n\nSeis puntos consecutivamente incrementan o decrecen\nQuince puntos seguidos en la zona C\nCatorce puntos seguidos alternándose sobre y bajo la línea de central\nOcho puntos seguidos en ambos lados de la línea central sin ninguno de ellos en la zona C\nUn patrón inusual o no aleatorio en los datos\nUno o más puntos cerca los límites de advertencia o control"
+  },
+  {
+    "objectID": "slides/lec_week5.html#hoja-de-control",
+    "href": "slides/lec_week5.html#hoja-de-control",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Hoja de control",
+    "text": "Hoja de control"
+  },
+  {
+    "objectID": "slides/lec_week5.html#diagrama-de-pareto",
+    "href": "slides/lec_week5.html#diagrama-de-pareto",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Diagrama de Pareto",
+    "text": "Diagrama de Pareto"
+  },
+  {
+    "objectID": "slides/lec_week5.html#diagrama-de-pareto-continuación",
+    "href": "slides/lec_week5.html#diagrama-de-pareto-continuación",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Diagrama de Pareto: continuación",
+    "text": "Diagrama de Pareto: continuación"
+  },
+  {
+    "objectID": "slides/lec_week5.html#diagrama-de-causa-efecto",
+    "href": "slides/lec_week5.html#diagrama-de-causa-efecto",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Diagrama de causa-efecto",
+    "text": "Diagrama de causa-efecto"
+  },
+  {
+    "objectID": "slides/lec_week5.html#diagrama-de-concentración-de-defectos",
+    "href": "slides/lec_week5.html#diagrama-de-concentración-de-defectos",
+    "title": "Inferencia sobre procesos de calidad y diagramas de control",
+    "section": "Diagrama de concentración de defectos",
+    "text": "Diagrama de concentración de defectos"
+  },
+  {
+    "objectID": "pages/week5.html",
+    "href": "pages/week5.html",
+    "title": "Semana 5",
     "section": "",
     "text": "Leer capítulo 4-5.2 de Introduction to statistical quality control."
   }

@@ -1,11 +1,11 @@
 ---
 title: "Semana 5"
-subtitle: ""
+subtitle: "Límites de control"
 ---
 
 ## Preparación
 
-
+Leer capítulo 4-5.2 de Introduction to statistical quality control.
 
 ## Presentación
 
@@ -16,3 +16,7 @@ subtitle: ""
 ```
 
 ## Material adicional
+
+Capítulo 3. Introduction to Statistical Process Control
+
+Capítulo 5. Statistical Process Control, Theory and practice.
