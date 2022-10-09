@@ -19,7 +19,7 @@ Por su naturaleza aplicada y ser un curso de años superiores, se dará un espec
 
 ![](images/e.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="EAN" width="200"}
 
-Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es candidato a Doctor en estadística en la [Universidad de Valparaíso](https://www.uv.cl/) en el área de estadística espacial, particularmente en el estudio de campos aleatorios y cópulas. Es Licenciado en Estadística de la [Pontificia Universidad Católica de Valparaíso](http://www.pucv.cl). Actualmente, presta servicios de consultoría al [Instituto de Fomento Pesquero](http://www.ifop.cl) en modelamiento espacio-temporal.
+Prof. [Eloy Alvarado Narváez](https://ealvnrz.netlify.com/) es Doctor en estadística de la [Universidad de Valparaíso](https://www.uv.cl/) en el área de estadística espacial, particularmente en el estudio de campos aleatorios y cópulas. Es Licenciado en Estadística de la [Pontificia Universidad Católica de Valparaíso](http://www.pucv.cl). Actualmente, presta servicios de consultoría al [Instituto de Fomento Pesquero](http://www.ifop.cl) en modelamiento espacio-temporal.
 
 Contacto: [eloy.alvarado@uv.cl](mailto:eloy.alvarado@uv.cl)
 
