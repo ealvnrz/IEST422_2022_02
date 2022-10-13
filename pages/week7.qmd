@@ -1,13 +1,12 @@
 ---
 title: "Semana 7"
-subtitle: ""
+subtitle: "Diagramas de control para variables"
 ---
 
 ## Preparación
 
-- Instalar [R](https://www.r-project.org/) y [Python](https://www.python.org/).
-- Se recomienda también instalar [Rstudio](https://www.rstudio.com/) y [Spyder](https://www.spyder-ide.org/)
-
+ Leer capítulo 6 de Introduction to statistical quality control.
+ 
 ## Presentación
 
 [Ver presentación en pantalla completa](../slides/lec_week7.html)
@@ -18,6 +17,6 @@ subtitle: ""
 
 ## Material adicional
 
-Capítulo 1 a 8 de [Introducción a R en español](https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf)
+- Leer capítulo 6 de Introduction to statistical quality control.
 
-Capítulo 1 y 2 de [Python for probability, statistics, and machine learning](https://github.com/YikaiZhangskye/ML/blob/master/Unpingco%20J.%20-%20Python%20for%20Probability%2C%20Statistics%2C%20and%20Machine%20Learning%20-%202016.pdf)
+- Revisar paquete **qcc** de R.

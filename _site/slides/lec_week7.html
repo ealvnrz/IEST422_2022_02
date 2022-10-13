@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.0.36">
+
+  <meta name="author" content="Eloy Alvarado Narváez">
+  <title>IEST 422 - Control de Calidad - Diagramas de control para variables</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Diagramas de control para variables</h1>
+  <p class="subtitle">IEST 422 - 2022/02</p>
+  <p class="author">Eloy Alvarado Narváez</p>
+  <p class="institute">Universidad de Valparaíso</p>
+  <p class="date">13/10/22</p>
+</section>
+
+<section>
+<section id="introducción" class="title-slide slide level1 center">
+<h1>Introducción</h1>
+<p>Muchas características de interés pueden ser expresadas en términos de una <strong>medición numérica</strong>. Un característica de calidad <strong>medible</strong>, como dimensiones, peso, volumen, etc, la llamamos <strong>variable</strong>.</p>
+<p>Los diagramas de control son una de las herramientas más utilizadas en el proceso <strong>DMAIC</strong> (<em>Define, Measure, Analyze, Improve and Control</em>) en la etapa de de análisis y de control.</p>
+<p>Cuando tratamos con características de la calidad que son variables, es usualmente necesario monitorear su valor medio y variabilidad. El monitoreo es usualmente realizado mediante diagramas de control, en donde usualmente se les llama <strong>diagramas de control de <span class="math inline">\(\overline{x}\)</span></strong> y <strong>diagramas de control de <span class="math inline">\(s\)</span></strong>, respectivamente.</p>
+<p>Alternativamente, es posible utilizar un diagrama de control para el rango para estudiar la variabilidad (<strong>diagramas de control de R</strong>)</p>
+</section>
+<section id="ejemplo-diagramas" class="slide level2">
+<h2>Ejemplo diagramas</h2>
+
+<img data-src="images/week7/mean_s_control.png" class="r-stretch quarto-figure-center"></section></section>
+<section>
+<section id="diagramas-de-control-para-la-media-y-el-rango" class="title-slide slide level1 center">
+<h1>Diagramas de control para la media y el rango</h1>
+
+</section>
+<section id="fundamentos-estadísticos-para-los-diagramas" class="slide level2">
+<h2>Fundamentos estadísticos para los diagramas</h2>
+<p>Supongamos que la característica de calidad está normalmente distribuida con media <span class="math inline">\(\mu\)</span> y desviación estándar <span class="math inline">\(\sigma\)</span>, ambos conocidos. Si <span class="math inline">\(x_1,x_2,\dots,x_n\)</span> es una muestra de tamaño <span class="math inline">\(n\)</span>, entonces la media de esta muestra es:</p>
+<p><span class="math display">\[\overline{x}=\dfrac{x_1,x_2,\dots,x_n}{n}\]</span></p>
+<p>y sabemos que <span class="math inline">\(\overline{x}\)</span> es normal con media <span class="math inline">\(\mu\)</span> y desviación estándar <span class="math inline">\(\sigma_{\overline{x}}=\sigma/\sqrt{n}\)</span>. Además, <span class="math inline">\(1-\alpha\)</span> es la probabilidad de que una media muestral esté entre:</p>
+<p><span class="math display">\[[\mu-Z_{\alpha/2} \sigma_{\overline{x}};\mu+Z_{\alpha/2} \sigma_{\overline{x}}]\]</span></p>
+<p>Por lo que, si <span class="math inline">\(\mu\)</span> y <span class="math inline">\(\sigma\)</span> son conocidos, la ecuación anterior puede ser usada para determinar los límites de control para medias muestrales.</p>
+</section>
+<section id="fundamentos-estadísticos-para-los-diagramas-continuación" class="slide level2 small">
+<h2>Fundamentos estadísticos para los diagramas: continuación</h2>
+<p>En lo anterior, asumimos que la distribución de la característica de la calidad es normal. Sin embargo, el resultado anterior son también aproximadamente correctos, incluso en los casos en donde la distribución subyacente no cumple el supuesto distribucional, debido al teorema de límite central.</p>
+<p>En la práctica, usualmente no sabremos <span class="math inline">\(\mu\)</span> ni <span class="math inline">\(\sigma\)</span>, por que estos valores deben ser estimados de muestra preliminares o subgrupos obtenidos de procesos que se piensan están bajo control. Estas estimaciones deben usualmente ser basadas en 20 a 25 muestras mínimo.</p>
+<p>Supongamos que <span class="math inline">\(m\)</span> muestras están disponibles, cada una conteniendo <span class="math inline">\(n\)</span> observaciones de la característica de calidad. Típicamente, <span class="math inline">\(n\)</span> será pequeño (<span class="math inline">\(\sim4,5,6\)</span>). Sea <span class="math inline">\(\overline{x}_1,\overline{x}_2,\dots,\overline{x}_m\)</span> las medias de cada una de las muestras. Entonces el mejor estimador de <span class="math inline">\(\mu\)</span>, la media del proceso, es el promedio:</p>
+<p><span class="math display">\[\overline{x}=\dfrac{\overline{x}_1+\overline{x}_2+\dots+\overline{x}_m}{m}\]</span></p>
+<p>Por lo que <span class="math inline">\(\overline{x}\)</span> será usado como línea central en el diagrama de control para la media.</p>
+</section>
+<section id="fundamentos-estadísticos-para-los-diagramas-continuación-1" class="slide level2">
+<h2>Fundamentos estadísticos para los diagramas: continuación</h2>
+<p>Para construir los límites de control, debemos estimar la desviación estándar <span class="math inline">\(\sigma\)</span>. Es posible estimar la desviación estándar poblacional desde las desviaciones estándar muestrales o desde los rangos de <span class="math inline">\(m\)</span> muestras. Utilizando el método de rangos: Si <span class="math inline">\(x_1,x_2,\dots,x_n\)</span> es una muestra de tamaño <span class="math inline">\(n\)</span>, entonces el rango de la muestra es la diferencia entre el valor máximo y mínimo.</p>
+<p><span class="math display">\[R=x_{\max}-x_{\min}\]</span></p>
+<p>Luego, sean <span class="math inline">\(R_1,R_2,\dots,R_m\)</span> los rangos de las <span class="math inline">\(m\)</span> muestras. El rango promedio será:</p>
+<p><span class="math display">\[\overline{R}=\dfrac{R_1+R_2+\dots+R_m}{m}\]</span></p>
+</section>
+<section id="límites-de-control-media-y-d.e." class="slide level2">
+<h2>Límites de control: media y d.e.</h2>
+<p>Por lo anterior, los límites de control y línea central para un diagrama de control para la media estarán dados por:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;= \overline{x}+A_2 \overline{R}\\
+CL&amp;= \overline{x}\\
+LCL&amp;= \overline{x}-A_2 \overline{R}
+\end{align*}\]</span></p>
+<p>y para el diagrama de control para el rango:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;= D_4 \overline{R}\\
+CL&amp;= \overline{R}\\
+LCL&amp;= D_3 \overline{R}
+\end{align*}\]</span></p>
+<p>En donde <span class="math inline">\(A_2,D_3\)</span> y <span class="math inline">\(D_4\)</span> son valores tabulados. (<strong>revisar como se llegan a estas ecuaciones</strong>)</p>
+</section>
+<section id="fases-para-la-aplicación-de-los-diagramas-de-control-etapa-i" class="slide level2">
+<h2>Fases para la aplicación de los diagramas de control: Etapa I</h2>
+<p>La primera fase de la aplicación de estos diagramas, una vez construido los diagramas de control desde muestras preliminares, es tratar estos límites de control como <strong>límites de control a prueba</strong>.</p>
+<p>Estos límites nos permitirán determinar si:</p>
+<div class="fragment">
+<ul>
+<li class="fragment"><p>El proceso estaba en control cuando las <span class="math inline">\(m\)</span> muestras preliminares fueron seleccionadas.</p></li>
+<li class="fragment"><p>El proceso estaba en control cuando las <span class="math inline">\(m\)</span> muestras preliminares fueran obtenidas.</p></li>
+<li class="fragment"><p>Graficar los valores de <span class="math inline">\(\overline{x}\)</span> y <span class="math inline">\(R\)</span> para cada muestra en el diagrama y analizar los resultados.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Si la hipótesis de que los datos de los cuales construimos nuestros límites de control a prueba provienen desde datos controlados, es <strong>rechazada</strong>, entonces debemos <strong>revisar</strong> nuestros <strong>límites de control a prueba</strong>.</p>
+</div>
+</section>
+<section id="ejemplo" class="slide level2">
+<h2>Ejemplo</h2>
+
+<img data-src="images/week7/table.png" class="r-stretch quarto-figure-center"></section>
+<section id="ejemplo-continuación" class="slide level2">
+<h2>Ejemplo: continuación</h2>
+<p>Comenzando con el diagrama de control <span class="math inline">\(R\)</span>, la línea central será:</p>
+<p><span class="math display">\[\overline{R}=\dfrac{\sum_{i=1}^{25}R_i}{25}=\dfrac{8.1302}{25}=0.32521\]</span></p>
+<p>Para muestras de tamaño <span class="math inline">\(n=5\)</span>, se tiene que <span class="math inline">\(D_3=0\)</span> y <span class="math inline">\(D_4=2.114\)</span>. Por lo que, los límites de control para el diagrama <span class="math inline">\(R\)</span> serán:</p>
+<p><span class="math display">\[\begin{align*}
+LCL&amp;=\overline{R}D_3=0\\
+UCL&amp;=\overline{R}D_4=0.32521(2.114)=0.68749
+\end{align*}\]</span></p>
+</section>
+<section id="ejemplo-continuación-1" class="slide level2">
+<h2>Ejemplo: continuación</h2>
+<p>Para el diagrama de control para la media, la línea central será:</p>
+<p><span class="math display">\[\overline{x}=\dfrac{\sum_{i=1}^{25}\overline{x}_i}{25}=\dfrac{37.64}{25}=1.5056\]</span></p>
+<p>Para muestras de tamaño <span class="math inline">\(n=5\)</span>, se tiene que <span class="math inline">\(A_2=0.577\)</span>, Por lo que, los límites de control para el diagrama <span class="math inline">\(\overline{x}\)</span> serán:</p>
+<p><span class="math display">\[\begin{align*}
+LCL&amp;=\overline{x}-A_2\overline{R}=1.5056-0.5777*0.32521=1.31795\\
+UCL&amp;=\overline{x}+A_2\overline{R}=1.5056+0.5777*0.32521=1.69325
+\end{align*}\]</span></p>
+</section>
+<section id="ejemplo-continuación-2" class="slide level2">
+<h2>Ejemplo: continuación</h2>
+
+<img data-src="images/week7/ex1.png" class="r-stretch quarto-figure-center"></section>
+<section id="estimación-de-la-capacidad-del-proceso" class="slide level2">
+<h2>Estimación de la capacidad del proceso</h2>
+<p>Los diagramas de control para la media y el rango nos entregan información sobre el desempeño o <strong>capacidad del proceso</strong>. Para el ejemplo, desde el diagrama de control para la media nos permite estimar el flujo medio del proceso en estudio como <span class="math inline">\(\overline{x}=1.5056\)</span> micrones. Y la desviación estándar del proceso puede ser estimada como:</p>
+<p><span class="math display">\[\hat{\sigma}=\dfrac{\overline{R}}{d_2}=\dfrac{0.32521}{2.326}=0.1398 \text{ micrones}\]</span></p>
+<p>donde el valor de <span class="math inline">\(d_2\)</span> para muestras de tamaño 5 está dado por tabla.</p>
+</section>
+<section id="estimación-de-la-capacidad-del-proceso-continuación" class="slide level2">
+<h2>Estimación de la capacidad del proceso: continuación</h2>
+<p>Así, si asumimos que la variable en estudio está normalmente distribuida, con media 1.5056 y desviación estándar 0.1398, podemos estimar la fracción de productos defectuosas (dado un límite de especificación <span class="math inline">\(1.5 \pm 0.5\)</span>) como:</p>
+<p><span class="math display">\[\begin{align*}
+p&amp;=\mathbb{P}(x&lt;1)+\mathbb{P}(x&gt;2)\\
+&amp;=\Phi\left( \dfrac{1-1.5056}{0.1398}\right)+ 1- \Phi\left( \dfrac{2-1.5056}{0.1398}\right)\\
+&amp;=\Phi(-3.61660)+1-\Phi(3.53648)\\
+&amp;\approx 0.00015+1-0.9998\\
+&amp;\approx 0.00035\\
+\end{align*}\]</span></p>
+<p>que es equivalente a 350 partes por millón, o que <span class="math inline">\(0.035\%\)</span> de los productos estarán fuera de los límites de especificación.</p>
+</section>
+<section id="estimación-de-la-capacidad-del-proceso-continuación-1" class="slide level2">
+<h2>Estimación de la capacidad del proceso: continuación</h2>
+<p>Otra forma de expresar la capacidad del proceso es en términos de la relación de capacidad del proceso o <strong>PCR</strong> <span class="math inline">\(C_p\)</span> por sus siglas en inglés (process capability ratio), obtenido como:</p>
+<p><span class="math display">\[C_p=\dfrac{USL-LSL}{6\sigma}\]</span></p>
+<p>Si no tenemos acceso a <span class="math inline">\(\sigma\)</span> utilizaremos <span class="math inline">\(\hat{\sigma}\)</span>, obteniendo <span class="math inline">\(\hat{C}_p\)</span>. Para nuestro ejemplo, tendremos que <span class="math inline">\(\hat{\sigma}=0.1398\)</span>, luego:</p>
+<p><span class="math display">\[\hat{C}_p=\dfrac{2-1}{6*0.1398}=\dfrac{1}{0.8388}=1.192\]</span></p>
+</section>
+<section id="estimación-de-la-capacidad-del-proceso-continuación-2" class="slide level2">
+<h2>Estimación de la capacidad del proceso: continuación</h2>
+<p>El PCR <span class="math inline">\(C_p\)</span> puede ser interpretado como:</p>
+<p><span class="math display">\[P=\left( \dfrac{1}{C_p} \right) 100\%\]</span></p>
+<p>es simplemente el porcentaje de la banda de especificación que el proceso utiliza. En nuestro ejemplo:</p>
+<p><span class="math display">\[\hat{P}=\left( \dfrac{1}{\hat{C}_p} \right) 100\%=\left(\dfrac{1}{1.192}\right)100\%=83.89\]</span></p>
+<p>Esto es, el proceso utiliza aproximadamente <span class="math inline">\(84\%\)</span> de la banda de especificación.</p>
+</section>
+<section id="estimación-de-la-capacidad-del-proceso-continuación-3" class="slide level2">
+<h2>Estimación de la capacidad del proceso: continuación</h2>
+
+<img data-src="images/week7/ex2.png" class="r-stretch quarto-figure-center"></section>
+<section id="revisión-de-los-límites-de-control-y-línea-central" class="slide level2">
+<h2>Revisión de los límites de control y línea central</h2>
+<p>Para el uso efectivo de diagramas de control se requiere implementar una <strong>revisión periódica</strong> de los límites de control y línea central. Usualmente se definen periodos regulares, ya sean 1 vez por semana, mes o cada cierto número de muestras.</p>
+<p>En algunos casos se reemplazará la línea central con un valor objetivo (<span class="math inline">\(\overline{\overline{x}}_0\)</span>). Si el diagrama de control para el rango está bajo control, este cambio nos será útil para cambiar la media del proceso a la media deseada.</p>
+</section>
+<section id="fases-para-la-aplicación-de-los-diagramas-de-control-etapa-ii" class="slide level2">
+<h2>Fases para la aplicación de los diagramas de control: Etapa II</h2>
+<p>Una vez los límites de control y línea central fueron establecidos y rectificados, usaremos el diagrama de control para monitorear la producción futura. Esta es la segunda etapa en el uso de diagramas de control.</p>
+
+<img data-src="images/week7/ex3.png" class="r-stretch quarto-figure-center"></section>
+<section id="fases-para-la-aplicación-de-los-diagramas-de-control-etapa-ii-1" class="slide level2">
+<h2>Fases para la aplicación de los diagramas de control: Etapa II</h2>
+
+<img data-src="images/week7/ex4.png" class="r-stretch quarto-figure-center"></section>
+<section id="fases-para-la-aplicación-de-los-diagramas-de-control-etapa-ii-2" class="slide level2">
+<h2>Fases para la aplicación de los diagramas de control: Etapa II</h2>
+<p>El diagrama anterior se le conoce como diagrama de tolerancia, que nos ayuda a encontrar patrones en los datos. Se compone de diagramas de cajas o boxplot para las distintas muestras obtenidas.</p>
+</section>
+<section id="límites-de-control-límites-de-especificación-y-límites-naturales-de-tolerancia." class="slide level2">
+<h2>Límites de control, límites de especificación y límites naturales de tolerancia.</h2>
+<p>Un punto que debe ser enfatizado es que <strong>no existe</strong> una conexión o relación entre los <strong>límites de control</strong> en los diagramas para la media y rango y los <strong>límites de especificación</strong> del proceso. Los límites de control están dados por la variabilidad natural del proceso, esto es, dependen de los <strong>límites naturales de tolerancia del proceso</strong>. En cambio, los <strong>límites de especificación</strong> son determinados externamente, estos pueden ser establecidos por gerencia, ingenieros, consumidores, etc. Sin embargo, se debe tener conocimiento de la variabilidad inherente del proceso cuando se determinan o establecen los límites de especificación.</p>
+<p><strong>No existe relación matemática o estadística entre los límites de control y límites de especificación</strong></p>
+</section>
+<section id="subgrupos-racionales" class="slide level2">
+<h2>Subgrupos racionales</h2>
+<p>Los subgrupos racionales tienen un rol importante en los diagramas de control para la media y el rango. El diagrama de control para la media monitorea la calidad media del proceso (de la variable en estudio), por lo que, las muestras deben ser seleccionadas de tal manera que maximice la probabilidad de cambios en la media del proceso entre muestras, y así detectar más fácilmente los puntos u observaciones fuera de control.</p>
+<p>En cambio, en el diagrama de control para el rango se mide la variabilidad <strong>dentro</strong> de una muestra, por lo que las muestras deben seleccionarse de modo que la variabilidad dentro de las muestras mida solo causas aleatorias.</p>
+<p>En otras palabras, el diagrama de control para la media monitorea la <strong>variabilidad entre las muestras</strong>, mientras que el diagrama de control para el rango monitorea la <strong>variabilidad dentro de las muestras</strong></p>
+</section>
+<section id="cambio-del-tamaño-muestral" class="slide level2">
+<h2>Cambio del tamaño muestral</h2>
+<p>En lo anterior no hemos cambiado el tamaño muestral para la confección de diagramas de control para la media o rango. Sin embargo, existen situaciones en donde el tamaño de muestra no es constante. Usualmente, en este tipo de contexto, el tamaño de todas las muestras varía constantemente.</p>
+<p>Cuando los tamaños de muestras cambian constantemente, los diagramas de control para la media y el rango no son usualmente utilizados, debido a que las líneas centrales cambiarán constantemente provocando interpretaciones erróneas.</p>
+<p>Otra situación, es cuando deseamos realizar un <strong>cambio permanente</strong> en el tamaño de muestra debido a costos o el proceso exhibe buena estabilidad, y se desea utilizar menos recursos en su monitoreo. En este caso, es fácil recalcular los nuevos límites de control a partir de los antiguos sin recolectar muestras adicionales basadas en el nuevo tamaño de la muestra.</p>
+</section>
+<section id="cambio-del-tamaño-muestral-continuación" class="slide level2">
+<h2>Cambio del tamaño muestral: continuación</h2>
+<p>Sean</p>
+<ul>
+<li class="fragment"><p><span class="math inline">\(\overline{R}_{old}\)</span>: rango medio de las muestras con tamaño de muestra antiguo</p></li>
+<li class="fragment"><p><span class="math inline">\(\overline{R}_{new}\)</span>: rango medio de las muestras con el nuevo tamaño de muestra</p></li>
+<li class="fragment"><p><span class="math inline">\(n_{old}\)</span>: tamaño de muestra antiguo</p></li>
+<li class="fragment"><p><span class="math inline">\(n_{new}\)</span>: tamaño de muestra nuevo</p></li>
+<li class="fragment"><p><span class="math inline">\(d_2(old)\)</span>: factor <span class="math inline">\(d_2\)</span> para el tamaño de muestra antiguo</p></li>
+<li class="fragment"><p><span class="math inline">\(d_2(new)\)</span>: factor <span class="math inline">\(d_2\)</span> para el nuevo tamaño de muestra</p></li>
+</ul>
+</section>
+<section id="cambio-del-tamaño-muestral-continuación-1" class="slide level2">
+<h2>Cambio del tamaño muestral: continuación</h2>
+<p>Para el diagrama de control para la media, los nuevos límites de control estarán dados por:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;=\overline{x}+A_2\left(\dfrac{d_2(new)}{d_2(old)}\right)\overline{R}_{old}\\
+LCL&amp;=\overline{x}-A_2\left(\dfrac{d_2(new)}{d_2(old)}\right)\overline{R}_{old}
+\end{align*}\]</span></p>
+<p>donde la línea central <span class="math inline">\(\overline{\overline{x}}\)</span> no cambia y el factor <span class="math inline">\(A_2\)</span> es seleccionado para el nuevo tamaño muestral.</p>
+</section>
+<section id="cambio-del-tamaño-muestral-continuación-2" class="slide level2">
+<h2>Cambio del tamaño muestral: continuación</h2>
+<p>Para el diagrama de control para el rango, los nuevos límites de control estarán dados por:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;=D_4\left(\dfrac{d_2(new)}{d_2(old)}\right)\overline{R}_{old}\\
+CL&amp;=\overline{R}_{new}=\left(\dfrac{d_2(new)}{d_2(old)}\right)\overline{R}_{old}\\
+LCL&amp;=\max \left( 0,D_3\dfrac{d_2(new)}{d_2(old)}\overline{R}_{old}\right)
+\end{align*}\]</span></p>
+<p>donde <span class="math inline">\(D_3\)</span> y <span class="math inline">\(D_4\)</span> son seleccionados para el nuevo tamaño muestral. (<strong>revisar ejemplo 6.2 Montgomery</strong>)</p>
+</section>
+<section id="diagramas-de-control-basado-en-valores-estándar" class="slide level2">
+<h2>Diagramas de control basado en valores estándar</h2>
+<p>Cuando es posible especificar los valores estándar para la media y desviación estándar del proceso, podremos realizar los límites de control fácilmente como, para el diagrama de control para la media:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;=\mu+3\dfrac{\sigma}{\sqrt{n}}\\
+CL&amp;=\mu \\
+LCL&amp;=\mu-3\dfrac{\sigma}{\sqrt{n}}
+\end{align*}\]</span></p>
+<p>La cantidad <span class="math inline">\(3/\sqrt{n}=A\)</span>, es una constante que depende de <span class="math inline">\(n\)</span> que está tabulada. por lo que podemos reescribir lo anterior como:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;=\mu+A\sigma\\
+CL&amp;=\mu \\
+LCL&amp;=\mu-A\sigma
+\end{align*}\]</span></p>
+</section>
+<section id="diagramas-de-control-basado-en-valores-estándar-continuación" class="slide level2">
+<h2>Diagramas de control basado en valores estándar: continuación</h2>
+<p>Para el diagrama de control para el rango. Recordando que <span class="math inline">\(\sigma=R/d_2\)</span>, donde <span class="math inline">\(d_2\)</span> es la media de la distribución de los rangos relativos y, <span class="math inline">\(\sigma_R=d_3\sigma\)</span>, donde <span class="math inline">\(d_3\)</span> es la desviación estándar de la distribución de los rangos relativos, se tiene que:</p>
+<p><span class="math display">\[\begin{align*}
+UCL&amp;=d_2\sigma+3d_3\sigma\\
+CL&amp;=d_2\sigma \\
+LCL&amp;=d_2\sigma-3d_3\sigma
+\end{align*}\]</span></p>
+</section>
+<section id="interpretación-de-los-diagramas-de-control-para-la-media-y-rango" class="slide level2">
+<h2>Interpretación de los diagramas de control para la media y rango</h2>
+<p>En estos diagramas podremos encontrarnos con distintos patrones que usualmente ocurren, junto a sus causas frecuentes:</p>
+<ol type="1">
+<li class="fragment"><p><strong>Patrones cíclicos</strong>: cambios sistemáticos del ambiente (temperatura, fatiga del operador, fluctuaciones de voltaje, etc)</p></li>
+<li class="fragment"><p><strong>Mixtura</strong>: “sobre-control”</p></li>
+<li class="fragment"><p><strong>Cambio en el nivel del proceso</strong>: nuevos trabajadores, cambio de metodología o maquinaria.</p></li>
+<li class="fragment"><p><strong>Tendencia</strong>: Fatiga del operador o supervisión.</p></li>
+<li class="fragment"><p><strong>Estratificación</strong>: Cálculo erróneo de límites de control, diferentes distribuciones en las muestras.</p></li>
+</ol>
+</section>
+<section id="interpretación-de-los-diagramas-de-control-para-la-media-y-rango-1" class="slide level2">
+<h2>Interpretación de los diagramas de control para la media y rango</h2>
+
+<img data-src="images/week7/d1.png" class="r-stretch quarto-figure-center"></section>
+<section id="interpretación-de-los-diagramas-de-control-para-la-media-y-rango-2" class="slide level2">
+<h2>Interpretación de los diagramas de control para la media y rango</h2>
+
+<img data-src="images/week7/d2.png" class="r-stretch quarto-figure-center"></section>
+<section id="interpretación-de-los-diagramas-de-control-para-la-media-y-rango-3" class="slide level2">
+<h2>Interpretación de los diagramas de control para la media y rango</h2>
+
+<img data-src="images/week7/d3.png" class="r-stretch quarto-figure-center"></section></section>
+<section id="diagramas-de-control-para-la-media-y-desviación-estándar" class="title-slide slide level1 center">
+<h1>Diagramas de control para la media y desviación estándar</h1>
+<p>A pesar de que los diagramas de control para la media y el rango son los más utilizados, hay situaciones en las cuales es deseable estimar la desviación estándar del proceso directamente (en vez de indirectamente vía el rango). Generalmente, los diagramas de control para la media y la desviación estándar son preferidos cuando:</p>
+<ol type="1">
+<li class="fragment"><p>El tamaño de muestra <span class="math inline">\(n\)</span> es moderadamente grande (<span class="math inline">\(n&gt;10\)</span>) o cuando</p></li>
+<li class="fragment"><p>El tamaño de muestra <span class="math inline">\(n\)</span> es variable.</p></li>
+</ol>
+</section>
+
+<section id="qué-veremos-la-próxima-semana" class="title-slide slide level1 center">
+<h1>¿Qué veremos la próxima semana?</h1>
+<ul>
+<li class="fragment">Diagramas de control para variables (finalización) e implementación en R.</li>
+</ul>
+</section>
+
+<section id="qué-deben-preparar-para-la-próxima-semana" class="title-slide slide level1 center">
+<h1>¿Qué deben preparar para la próxima semana?</h1>
+<ul>
+<li class="fragment"><p>Leer capítulo 6 de Introduction to statistical quality control.</p></li>
+<li class="fragment"><p>Revisar paquete <strong>qcc</strong> de R.</p></li>
+</ul>
+
+
+<img src="images/logo_uv.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p>IEST 422 - Semana 7</p>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copiada");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          let href = ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>
