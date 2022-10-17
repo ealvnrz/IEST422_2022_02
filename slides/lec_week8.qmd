@@ -1,0 +1,166 @@
+---
+title: "Diagramas de control para variables: continuación"
+subtitle: "IEST 422 - 2022/02"
+author: "Eloy Alvarado Narváez"
+institute: "Universidad de Valparaíso"
+date: 17/10/22
+format: 
+  revealjs:
+    theme: slides.scss
+    touch: true
+    slide-level: 2
+incremental: true
+slide-number: true
+lang: es
+highlight-style: github
+width: 1600
+height: 900
+logo: images/logo_uv.png
+transition: fade
+footer: "IEST 422 - Semana 8"
+execute:
+  freeze: auto
+---
+
+# Diagramas de control para la media y desviación estándar
+
+Hemos visto que en los casos:
+
+1. El tamaño de muestra $n$ es moderadamente grande ($n>10$) o cuando
+
+2. El tamaño de muestra $n$ es variable.
+
+. . .
+
+Los diagramas de control para media y desviación estándar son preferidos.
+
+## Construcción de diagramas de control para la media y d.e.
+
+La construcción de los diagramas de control para la media y la desviación estándar, requerirá la misma secuencia de pasos que la construcción de diagramas de control para la media y el rango, excepto que cada muestra debe ser calculada con la media muestral y su respectiva desviación estándar $s$.
+
+## Ejemplo
+
+![](images/week8/ex.png){fig-align="center"}
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Si $\sigma^2$ es la varianza desconocida de la distribución de probabilidad subyacente, entonces un estimador insesgado para este parámetro poblaciones es:
+
+$$s^2=\dfrac{\sum_{i=1}^{n}(x_i-\overline{x})^2}{n-1}$$
+Pero sabemos, que la desviación estándar $s$ **no es** un estimador insesgado de $\sigma$. Particularmente, $s$ estima $c_4 \sigma$ en donde $c_4$ es una constante que depende del tamaño de muestra $n$. Más aún, la desviación estándar de $s$ es $\sigma\sqrt{1-c_{4}^{2}}$. Podemos utilizar esta información para la confección de este tipo de diagramas.
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Consideremos el caso en donde el valor estándar está dado por $\sigma$ (esto es, varianza conocida). Debido a que $\mathbb{E}(s)=c_4\sigma$, la línea central para el diagrama es $c_4\sigma$, los límites de control $3-\sigma$ para $s$ serán:
+
+\begin{align*}
+UCL&= c_4 \sigma + 3\sigma \sqrt{1-c_{4}^{2}}\\
+LCL&= c_4 \sigma - 3\sigma \sqrt{1-c_{4}^{2}}
+\end{align*}
+
+en donde podemos definir las constantes:
+
+$$B_5=c_4-3\sqrt{1-c_{4}^{2}}, \quad B_6=c_4+3\sqrt{1-c_{4}^{2}}$$
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Por lo que tendremos que los límites de control para la desviación estándar estarán dados por:
+
+\begin{align*}
+UCL&= B_6 \sigma \\
+CL&= c_4 \sigma\\
+LCL&= B_5 \sigma
+\end{align*}
+
+En donde $B_5$ y $B_6$ son valores tabulados para distintos tamaños de muestra. En cuanto a los parámetros para el diagrama de control para la media, estos serán los mismos que hemos visto antes.
+
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+En caso de que no sepamos el valor de $\sigma$, este debe ser estimado desde datos pasados. Supongamos que $m$ muestra preliminares están disponibles, cada una de tamaño $n$, y sea $s_i$ la desviación estándar de la muestra $i-$ésima. El promedio de las $m$ desviación estándar es:
+
+$$\overline{s}=\dfrac{1}{m}\sum_{i=1}^{m}s_i$$
+
+El estadístico $\overline{s}/c_4$ es una estimador insesgado para $\sigma$. 
+
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Por lo tanto, los parámetros para el diagrama de control de $s$ serán:
+
+\begin{align*}
+UCL&= \overline{s}+3\dfrac{\overline{s}}{c_4}\sqrt{1-c_{4}^{2}} \\
+CL&= \overline{s} \\
+LCL&= \overline{s}-3\dfrac{\overline{s}}{c_4}\sqrt{1-c_{4}^{2}}
+\end{align*}
+
+Luego, definiendo las constantes:
+
+$$B_3=1-\dfrac{3}{c_4}\sqrt{1-c_{4}^{2}}, \quad B_6=1+\dfrac{3}{c_4}\sqrt{1-c_{4}^{2}}$$
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Podremos reescribir los límites de control como:
+
+\begin{align*}
+UCL&= B_4 \overline{s} \\
+CL&= \overline{s} \\
+LCL&= B_3 \overline{s}
+\end{align*}
+
+En donde notamos que: $B_4=B_6/c_4$ y $B_3=B_5/c_4$.
+
+## Construcción de diagramas de control para la media y d.e.: continuación
+
+Cuando $\overline{s}/c_4$ es usado para estimar $\sigma$, podremos definir los límites de control para su correspondiente diagrama para la media como:
+
+\begin{align*}
+UCL&= \overline{x} + \dfrac{3\overline{s}}{c_4 \sqrt{n}} \\
+CL&= \overline{x} \\
+LCL&= \overline{x} - \dfrac{3\overline{s}}{c_4 \sqrt{n}} 
+\end{align*}
+
+Luego, definiendo la constante $A_3=3/(c_4\sqrt{n})$. Se puede reescribir lo anterior como:
+
+\begin{align*}
+UCL&= \overline{x} + A_3 \overline{s} \\
+CL&= \overline{x} \\
+LCL&= \overline{x} - A_3 \overline{s}
+\end{align*}
+
+## Diagrama de control para la media y d.e. con tamaño de muestra variable
+
+En el caso de los diagramas de media y desviación estándar es relativamente fácil de aplicar en casos en los que el tamaño de muestra es variable. Si $n_i$ es el número de observaciones en la muestra $i-$ésima, entonces usamos:
+
+$$\overline{x}=\dfrac{\sum_{i=1}^{m}n_i \overline{x}_i}{\sum_{i=1}^{m}n_i}$$
+y,
+
+$$\overline{s}=\left[ \dfrac{\sum_{i=1}^{m}(n_i-1)s_{i}^{2}}{\sum_{i=1}^{m}n_i-m}\right]^{1/2}$$
+como línea central de los diagramas para la media y desviación estándar, respectivamente.
+
+# Diagrama de control para $s^2$
+
+La mayoría de las implementaciones de diagramas de control en la industria utilizan los diagramas de control para $R$ o $s$ dependiendo del tamaño de muestra disponible. Sin embargo, es posible utilizar directamente un diagrama de control para la varianza muestral $s^2$. En este caso, los parámetros asociados al diagrama serán:
+
+\begin{align*}
+UCL&= \dfrac{\overline{s}}{n-1}\chi^2_{\alpha/2,n-1} \\
+CL&= \overline{s}^2 \\
+LCL&= \dfrac{\overline{s}}{n-1}\chi^2_{1-\alpha/2,n-1}
+\end{align*}
+
+# Diagramas de control para mediciones individuales
+
+En muchas situaciones, el diagrama de control para mediciones individuales es particularmente útil. En este caso, se utiliza el rango móvil de dos observaciones consecutivas como la pase para estimar la variabilidad del proceso. Definimos el rango móvil como:
+
+$$MR_i=|x_i-x_{i-1}|$$
+
+En base a esto, podemos contruir un diagrama de control respectivo.
+
+# ¿Qué veremos la próxima semana?
+
+- implementación en R.
+
+# ¿Qué deben preparar para la próxima semana?
+
+- Estudiar para la prueba #1
+
+- Revisar paquete **qcc** de R.

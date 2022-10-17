@@ -1363,5 +1363,89 @@
     "title": "Diagramas de control para variables",
     "section": "Interpretación de los diagramas de control para la media y rango",
     "text": "Interpretación de los diagramas de control para la media y rango"
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.",
+    "text": "Construcción de diagramas de control para la media y d.e.\nLa construcción de los diagramas de control para la media y la desviación estándar, requerirá la misma secuencia de pasos que la construcción de diagramas de control para la media y el rango, excepto que cada muestra debe ser calculada con la media muestral y su respectiva desviación estándar \\(s\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejemplo",
+    "href": "slides/lec_week8.html#ejemplo",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Ejemplo",
+    "text": "Ejemplo"
+  },
+  {
+    "objectID": "slides/lec_week8.html#ejemplo-continuación",
+    "href": "slides/lec_week8.html#ejemplo-continuación",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Ejemplo: continuación",
+    "text": "Ejemplo: continuación\nas"
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nSi \\(\\sigma^2\\) es la varianza desconocida de la distribución de probabilidad subyacente, entonces un estimador insesgado para este parámetro poblaciones es:\n\\[s^2=\\dfrac{\\sum_{i=1}^{n}(x_i-\\overline{x})^2}{n-1}\\]\nPero sabemos, que la desviación estándar \\(s\\) no es un estimador insesgado de \\(\\sigma\\). Particularmente, \\(s\\) estima \\(c_4 \\sigma\\) en donde \\(c_4\\) es una constante que depende del tamaño de muestra \\(n\\). Más aún, la desviación estándar de \\(s\\) es \\(\\sigma\\sqrt{1-c_{4}^{2}}\\). Podemos utilizar esta información para la confección de este tipo de diagramas."
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-1",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-1",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nConsideremos el caso en donde el valor estándar está dado por \\(\\sigma\\) (esto es, varianza conocida). Debido a que \\(\\mathbb{E}(s)=c_4\\sigma\\), la línea central para el diagrama es \\(c_4\\sigma\\), los límites de control \\(3-\\sigma\\) para \\(s\\) serán:\n\\[\\begin{align*}\nUCL&= c_4 \\sigma + 3\\sigma \\sqrt{1-c_{4}^{2}}\\\\\nLCL&= c_4 \\sigma - 3\\sigma \\sqrt{1-c_{4}^{2}}\n\\end{align*}\\]\nen donde podemos definir las constantes:\n\\[B_5=c_4-3\\sqrt{1-c_{4}^{2}}, \\quad B_6=c_4+3\\sqrt{1-c_{4}^{2}}\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-2",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-2",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nPor lo que tendremos que los límites de control para la desviación estándar estarán dados por:\n\\[\\begin{align*}\nUCL&= B_6 \\sigma \\\\\nCL&= c_4 \\sigma\\\\\nLCL&= B_5 \\sigma\n\\end{align*}\\]\nEn donde \\(B_5\\) y \\(B_6\\) son valores tabulados para distintos tamaños de muestra. En cuanto a los parámetros para el diagrama de control para la media, estos serán los mismos que hemos visto antes."
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-3",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-3",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nEn caso de que no sepamos el valor de \\(\\sigma\\), este debe ser estimado desde datos pasados. Supongamos que \\(m\\) muestra preliminares están disponibles, cada una de tamaño \\(n\\), y sea \\(s_i\\) la desviación estándar de la muestra \\(i-\\)ésima. El promedio de las \\(m\\) desviación estándar es:\n\\[\\overline{s}=\\dfrac{1}{m}\\sum_{i=1}^{m}s_i\\]\nEl estadístico \\(\\overline{s}/c_4\\) es una estimador insesgado para \\(\\sigma\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-4",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-4",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nPor lo tanto, los parámetros para el diagrama de control de \\(s\\) serán:\n\\[\\begin{align*}\nUCL&= \\overline{s}+3\\dfrac{\\overline{s}}{c_4}\\sqrt{1-c_{4}^{2}} \\\\\nCL&= \\overline{s} \\\\\nLCL&= \\overline{s}-3\\dfrac{\\overline{s}}{c_4}\\sqrt{1-c_{4}^{2}}\n\\end{align*}\\]\nLuego, definiendo las constantes:\n\\[B_3=1-\\dfrac{3}{c_4}\\sqrt{1-c_{4}^{2}}, \\quad B_6=1+\\dfrac{3}{c_4}\\sqrt{1-c_{4}^{2}}\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-5",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-5",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nPodremos reescribir los límites de control como:\n\\[\\begin{align*}\nUCL&= B_4 \\overline{s} \\\\\nCL&= \\overline{s} \\\\\nLCL&= B_3 \\overline{s}\n\\end{align*}\\]\nEn donde notamos que: \\(B_4=B_6/c_4\\) y \\(B_3=B_5/c_4\\)."
+  },
+  {
+    "objectID": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-6",
+    "href": "slides/lec_week8.html#construcción-de-diagramas-de-control-para-la-media-y-d.e.-continuación-6",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Construcción de diagramas de control para la media y d.e.: continuación",
+    "text": "Construcción de diagramas de control para la media y d.e.: continuación\nCuando \\(\\overline{s}/c_4\\) es usado para estimar \\(\\sigma\\), podremos definir los límites de control para su correspondiente diagrama para la media como:\n\\[\\begin{align*}\nUCL&= \\overline{x} + \\dfrac{3\\overline{s}}{c_4 \\sqrt{n}} \\\\\nCL&= \\overline{x} \\\\\nLCL&= \\overline{x} - \\dfrac{3\\overline{s}}{c_4 \\sqrt{n}}\n\\end{align*}\\]\nLuego, definiendo la constante \\(A_3=3/(c_4\\sqrt{n})\\). Se puede reescribir lo anterior como:\n\\[\\begin{align*}\nUCL&= \\overline{x} + A_3 \\overline{s} \\\\\nCL&= \\overline{x} \\\\\nLCL&= \\overline{x} - A_3 \\overline{s}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week8.html#diagrama-de-control-para-la-media-y-d.e.-con-tamaño-de-muestra-variable",
+    "href": "slides/lec_week8.html#diagrama-de-control-para-la-media-y-d.e.-con-tamaño-de-muestra-variable",
+    "title": "Diagramas de control para variables: continuación",
+    "section": "Diagrama de control para la media y d.e. con tamaño de muestra variable",
+    "text": "Diagrama de control para la media y d.e. con tamaño de muestra variable\nEn el caso de los diagramas de media y desviación estándar es relativamente fácil de aplicar en casos en los que el tamaño de muestra es variable. Si \\(n_i\\) es el número de observaciones en la muestra \\(i-\\)ésima, entonces usamos:\n\\[\\overline{x}=\\dfrac{\\sum_{i=1}^{m}n_i \\overline{x}_i}{\\sum_{i=1}^{m}n_i}\\]\ny,\n\\[\\overline{s}=\\left[ \\dfrac{\\sum_{i=1}^{m}(n_i-1)s_{i}^{2}}{\\sum_{i=1}^{m}n_i-m}\\right]^{1/2}\\]\ncomo línea central de los diagramas para la media y desviación estándar, respectivamente."
+  },
+  {
+    "objectID": "pages/week8.html",
+    "href": "pages/week8.html",
+    "title": "Semana 8",
+    "section": "",
+    "text": "Leer capítulo 6 de Introduction to statistical quality control.\nRevisar paquete qcc de R."
   }
 ]

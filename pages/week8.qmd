@@ -1,10 +1,13 @@
 ---
 title: "Semana 8"
-subtitle: ""
+subtitle: "Diagramas de control para variables: continuación"
 ---
 
 ## Preparación
 
+- Leer capítulo 6 de Introduction to statistical quality control.
+
+- Revisar paquete **qcc** de R.
 
 ## Presentación
 
