@@ -268,14 +268,14 @@
   {
     "objectID": "pages/week9.html#presentación",
     "href": "pages/week9.html#presentación",
-    "title": "Semana 9",
+    "title": "Prueba #1",
     "section": "Presentación",
     "text": "Presentación\nVer presentación en pantalla completa"
   },
   {
     "objectID": "pages/week9.html#material-adicional",
     "href": "pages/week9.html#material-adicional",
-    "title": "Semana 9",
+    "title": "Prueba #1",
     "section": "Material adicional",
     "text": "Material adicional"
   },
@@ -1447,5 +1447,12 @@
     "title": "Semana 8",
     "section": "",
     "text": "Leer capítulo 6 de Introduction to statistical quality control.\nRevisar paquete qcc de R."
+  },
+  {
+    "objectID": "pages/week9.html",
+    "href": "pages/week9.html",
+    "title": "Prueba #1",
+    "section": "",
+    "text": "Códigos R"
   }
 ]

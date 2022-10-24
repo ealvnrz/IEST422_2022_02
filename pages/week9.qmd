@@ -1,10 +1,11 @@
 ---
-title: "Semana 9"
+title: "Prueba #1"
 subtitle: ""
 ---
 
 ## Preparación
 
+[Códigos R](../documents/ex_qcc.R)
 
 ## Presentación
 
