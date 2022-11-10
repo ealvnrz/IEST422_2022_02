@@ -1,5 +1,5 @@
 ---
-title: "Semana 10"
+title: "Diagramas de control para atributos"
 subtitle: ""
 ---
 
@@ -15,3 +15,5 @@ subtitle: ""
 ```
 
 ## Material adicional
+
+- Capítulo 7. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.

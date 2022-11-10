@@ -58,16 +58,16 @@
   {
     "objectID": "pages/week10.html#presentación",
     "href": "pages/week10.html#presentación",
-    "title": "Semana 10",
+    "title": "Diagramas de control para atributos",
     "section": "Presentación",
     "text": "Presentación\nVer presentación en pantalla completa"
   },
   {
     "objectID": "pages/week10.html#material-adicional",
     "href": "pages/week10.html#material-adicional",
-    "title": "Semana 10",
+    "title": "Diagramas de control para atributos",
     "section": "Material adicional",
-    "text": "Material adicional"
+    "text": "Material adicional\n\nCapítulo 7. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition."
   },
   {
     "objectID": "pages/week11.html#presentación",
@@ -1454,5 +1454,166 @@
     "title": "Prueba #1",
     "section": "",
     "text": "Códigos R"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagramas-de-control-para-proporción-no-conforme",
+    "href": "slides/lec_week10.html#diagramas-de-control-para-proporción-no-conforme",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagramas de control para proporción no conforme",
+    "text": "Diagramas de control para proporción no conforme\nLa fracción no conforme está definido como la relación del número de items no conformes en una población y el número total de artículos en esa población. Los artículos pueden tener muchas características de interés que son examinadas simultáneamente por un inspector. Si un artículo no satisface el estándar en una o más de aquellas características, se clasifica aquel producto como no conforme.\nSi bien nos concentraremos principalmente en la proporción de productos no conformes, el análisis es análogo si deseamos enfocarnos en la proporción de productos conformes."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagramas-de-control-para-fracción-no-conforme-continuación",
+    "href": "slides/lec_week10.html#diagramas-de-control-para-fracción-no-conforme-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagramas de control para fracción no conforme: continuación",
+    "text": "Diagramas de control para fracción no conforme: continuación\nEl principio estadístico que subyace los diagramas de control para fracción no conforme es la distribución binomial.\nLa proporción muestral de no conformes se define como:\n\\[\\hat{p}=\\dfrac{D}{n}\\]\nDonde \\(D\\) es el número de unidades conformes en la muestra y \\(n\\) es el tamaño de muestra. Por cursos anteriores, sabemos que la distribución de la variable aleatoria \\(\\hat{p}\\) es binomial, y además, la media y varianza de \\(\\hat{p}\\) son:\n\\[\\mu_{\\hat{p}}=p \\qquad \\sigma_{\\hat{p}}^{2}=\\dfrac{p(1-p)}{n},\\]\nrespectivamente. Este tipo de herramienta de control de calidad se les llama diagramas para \\(p\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control",
+    "href": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control",
+    "title": "Diagramas de control para atributos",
+    "section": "Desarrollo y operación del diagrama de control",
+    "text": "Desarrollo y operación del diagrama de control\nSi \\(w\\) es un estadístico que mide una característica de la calidad, y si la media y varianza están dados por: \\(\\mu_{w}\\) y \\(\\sigma_{w}^{2}\\), entonces el modelo general de un diagrama de control de Shewhart es:\n\\[\\begin{align*}\nUCL &= \\mu_{w}+ L \\sigma_{w} \\\\\nCL &= \\mu_{w} \\\\\nLCL &= \\mu_{w} - L\\sigma_{w}\n\\end{align*}\\]\ndonde \\(L\\) es la distancia de los límites de control desde la línea central, en múltiplos de la desviación estándar de \\(w\\). Usualmente escogemos \\(L=3\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación",
+    "href": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Desarrollo y operación del diagrama de control: continuación",
+    "text": "Desarrollo y operación del diagrama de control: continuación\nSupongamos que la verdadera proporción de no conformidad \\(p\\) en el proceso de producción es conocida o es un valor estándar específico, entonces las ecuaciones anteriores serán:\n\\[\\begin{align*}\nUCL&= p + 3 \\sqrt{\\dfrac{p(1-p)}{n}}\\\\\nCL &= p \\\\\nLCL &= p - 3\\sqrt{\\dfrac{p(1-p)}{n}}\n\\end{align*}\\]\nDependiendo de los valores de \\(p\\) y \\(n\\), a veces el límite de control inferior será negativo, en aquellos casos decimos que \\(LCL=0\\) y asumimos que el diagrama de control sólo tiene un límite de control superior."
+  },
+  {
+    "objectID": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación-1",
+    "href": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación-1",
+    "title": "Diagramas de control para atributos",
+    "section": "Desarrollo y operación del diagrama de control: continuación",
+    "text": "Desarrollo y operación del diagrama de control: continuación\nCuando la proporción de no conformidad del proceso \\(p\\) no es conocida, debemos estimarla desde los datos a disposición. El procedimiento usual consiste en seleccionar \\(m\\) muestral preliminares, cada una de tamaño \\(n\\). Como regla general \\(m\\) debe ser al menos 20 o 25. Luego, si hay \\(D_i\\) artículos no conformes en la muestra \\(i\\), calculamos la fracción de no conformidad en la muestra \\(i-\\)ésima como:\n\\[\\hat{p}_i=\\dfrac{D_i}{n} \\quad i=1,2,\\dots,m\\]\ny el promedio de estas muestras individuales es:\n\\[\\overline{p}=\\dfrac{\\sum_{i=1}^{m}D_i}{mn}=\\dfrac{\\sum_{i=1}^{m}\\hat{p}_i}{m}\\]\nEl estadístico \\(\\overline{p}\\) estima la fracción desconocida de no conformidad \\(p\\)."
+  },
+  {
+    "objectID": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación-2",
+    "href": "slides/lec_week10.html#desarrollo-y-operación-del-diagrama-de-control-continuación-2",
+    "title": "Diagramas de control para atributos",
+    "section": "Desarrollo y operación del diagrama de control: continuación",
+    "text": "Desarrollo y operación del diagrama de control: continuación\nLa línea central y los límites del diagrama de control para la proporción de no confirmidad se calculan como:\n\\[\\begin{align*}\nUCL&= \\overline{p} + 3 \\sqrt{\\dfrac{\\overline{p}(1-\\overline{p})}{n}}\\\\\nCL &= \\overline{p} \\\\\nLCL &=  \\overline{p} - 3 \\sqrt{\\dfrac{\\overline{p}(1-\\overline{p})}{n}}\n\\end{align*}\\]\nLos límites de control definidos anteriormente deben ser consideramos como límites de control preliminares.\nRevisar Ejemplo 7.1. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p",
+    "text": "Diseño de un diagrama de control para p\nLos diagramas de control para \\(p\\) o diagramas de control para la proporción de no conformidad tienen 3 parámetros que deben ser especificados:\n\nTamaño de muestra\nFrecuencia de muestreo\nAncho de los límites de control\n\n\nIdealmente, debemos seguir algunas recomendaciones generales para seleccionar estos parámetros."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p: continuación",
+    "text": "Diseño de un diagrama de control para p: continuación\nEs relativamente común basar el diagrama de control para \\(p\\) en el \\(100\\%\\) de inspecciones de todos las salidas del proceso a lo largo de un periodo de tiempo conveniente, por ejemplo, a lo largo de un día. En este caso, el tamaño de muestra y la frecuencia de muestreo están interrelacionadas.\nEn general, debemos seleccionar una frecuencia de muestreo apropiada para la tasa de producción, y esto fija el tamaño de muestra.\nLos subgrupos racionales pueden tomar un rol fundamental en la determinación de la frecuencia de muestreo."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-1",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-1",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p: continuación",
+    "text": "Diseño de un diagrama de control para p: continuación\nSi seleccionamos una muestra de las salidas del proceso, debemos escoger un tamaño de muestra \\(n\\). Si \\(p\\) es pequeño, debemos escoger \\(n\\) lo suficientemente grande tal que tengamos una gran probabilidad de encontrar al menos un artículo no conforme en la muestra. Sino, podemos caer en el caso en donde el proceso se considerará fuera de control tras encontrar solo un artículo no conforme. Por ejemplo, si \\(p=0.01\\) y \\(n=8\\), se tiene que el límite superior de control es:\n\\[UCL=p+3\\sqrt{\\dfrac{p(1-p)}{n}}=0.01+3\\sqrt{\\dfrac{0.01*0.99}{8}}=0.1155\\]\nSi hay un artículo no conforme en la muestra, entonces \\(\\hat{p}=0.125\\), y concluiríamos que el proceso está fuera de control."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-2",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-2",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p: continuación",
+    "text": "Diseño de un diagrama de control para p: continuación\nPara evitar este problemas, podemos escoger un tamaño de muestra \\(n\\) de tal manera que la probabilidad de encontrar al menos una unidad no conforme por muestra sea de al menos \\(\\gamma\\). Por ejemplo, si suponemos que \\(p=0.01\\) y queremos que la probabilidad de que al menos una unidad no conforme en la muestra sea de 0.95. Si denotamos \\(D\\) como el número de artículo no conformes en la muestra, entonces queremos encontrar \\(n\\) tal que \\(\\mathbb{P}(D\\geq 1)\\geq 0.95 \\Leftrightarrow \\mathbb{P}(D=0)=0.05\\). Así,\n\\[ \\mathbb{P}(D=0)= \\dfrac{n!}{0!(n-0)!}0.01^0(1-0.01)^{n-0} \\Leftrightarrow 0.05 = 0.99^n\\]\nResolviendo esta ecuación nos da un tamaño de muestra \\(n=298\\). Alternativamente, podemos calcular el tamaño de muestra usando la aproximación de Poisson a la distribución binomial."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-3",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-3",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p: continuación",
+    "text": "Diseño de un diagrama de control para p: continuación\nDucan ha sugerido que el tamaño de muestra debe ser lo suficientemente grande tal que tengamos un \\(50\\%\\) de probabilidad de detectar un cambio de una cantidad específica en el proceso. Por ejemplo, supongamos que \\(p=0.01\\), y queremos que la probabilidad de detectar un cambio a \\(p=0.05\\) sea de 0.5. Asumiendo que la aproximación normal a la distribución binomial aplica, debemos escoger \\(n\\) tal que el límite superior de control coincida con la fracción de no conformidad en el estado de no-control.\nSi \\(\\delta\\) es la magnitud del cambio en el proceso, entonces \\(n\\) debe satisfacer:\n\\[\\delta=L\\sqrt{\\dfrac{p(1-p)}{n}}\\]\nAsí,\n\\[n=\\left(\\dfrac{L}{\\delta}\\right)^2 p(1-p)\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-4",
+    "href": "slides/lec_week10.html#diseño-de-un-diagrama-de-control-para-p-continuación-4",
+    "title": "Diagramas de control para atributos",
+    "section": "Diseño de un diagrama de control para p: continuación",
+    "text": "Diseño de un diagrama de control para p: continuación\nEn nuestro ejemplo, \\(p=0.01, \\delta=0.05-0.01=0.04\\), y si límites \\(3-\\)sigma son utilizados, entonces se tiene:\n\\[n=\\left(\\dfrac{3}{0.04}\\right)^2 0.01 * 0.99 = 56\\]\nSi los valores de control de la proporción de no conformidad son pequeños, es recomendable escoger \\(n\\) lo suficientemente grande tal que el diagrama de control tenga un límite inferior positivo. En nuestro ejemplo:\n\\[n> \\dfrac{(1-p)}{p}L^2\\]\nPor ejemplo, si \\(p=0.05\\) y se usan límites \\(3-\\)sigma, el tamaño de muestra necesario será:\n\\[n > \\dfrac{0.95}{0.05} 3^2=171\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagramas-de-control-np",
+    "href": "slides/lec_week10.html#diagramas-de-control-np",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagramas de control np",
+    "text": "Diagramas de control np\nTambién es posible basar el diagrama de control en el número de artículo no conformes en vez de la proporción. A este de herramienta se la llama diagrama de control \\(np\\) y sus límites serán\n\\[\\begin{align*}\nUCL&= np + 3 \\sqrt{np(1-p)}\\\\\nCL &= np \\\\\nLCL &= np - 3\\sqrt{np(1-p)}\n\\end{align*}\\]\nRevisar Sección 7.2.2: Variable Sample Size"
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagramas-de-control-para-defectos-continuación",
+    "href": "slides/lec_week10.html#diagramas-de-control-para-defectos-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagramas de control para defectos: continuación",
+    "text": "Diagramas de control para defectos: continuación\nEs posible desarrollar diagramas de control para el número total de no conformidades o defectos en una unidad o para el número promedio de no conformidades o defectos por unidad. Usualmente, este tipo de diagramas de control asume que la ocurrencia de no conformidades en muestras de tamaño constante se puede modelar mediante una distribución Poisson.\n\n¿Qué supuesto deberemos hacer para modelar mediante una distribución de Poisson?\n\n\nRequeriremos que el número de oportunidades o potenciales lugares de no conformidad sea infinito y que la probabilidad de ocurrencia de una no conformidad en cualquier área sea pequeña y constante. Además, la unidad de inspección debe ser la misma para cada muestra, esto es, cada unidad de inspección debe ser siempre representar un área de oportunidad idéntica para la ocurrencia de no conformidades.\nEn la práctica, estas condiciones no se verán satisfechas exactamente."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagramas-de-control-para-defectos-continuación-1",
+    "href": "slides/lec_week10.html#diagramas-de-control-para-defectos-continuación-1",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagramas de control para defectos: continuación",
+    "text": "Diagramas de control para defectos: continuación"
+  },
+  {
+    "objectID": "slides/lec_week10.html#procedimientos-con-tamaño-de-muestra-constante",
+    "href": "slides/lec_week10.html#procedimientos-con-tamaño-de-muestra-constante",
+    "title": "Diagramas de control para atributos",
+    "section": "Procedimientos con tamaño de muestra constante",
+    "text": "Procedimientos con tamaño de muestra constante\nConsideremos la ocurrencia de no conformidades en una unidad de inspección del producto. En la mayoría de los casos, la unidad inspeccionada será un solo producto, sin embargo esto puede diferir dependiendo de la naturaleza del proceso.\nSupongamos que el número de defecto o no conformidades se distribuye Poisson, así:\n\\[p(x)=\\dfrac{e^{-c}c^x}{x!}\\qquad x=0,1,2,\\dots\\]\ndonde \\(x\\) es el número de no conformidades y \\(c>0\\) es el parámetro de la distribución Poisson."
+  },
+  {
+    "objectID": "slides/lec_week10.html#procedimientos-con-tamaño-de-muestra-constante-continuación",
+    "href": "slides/lec_week10.html#procedimientos-con-tamaño-de-muestra-constante-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Procedimientos con tamaño de muestra constante: continuación",
+    "text": "Procedimientos con tamaño de muestra constante: continuación\nPor lo anterior, una diagrama de control para defectos o no conformidades (o diagrama para \\(c\\) con límites \\(3-\\)sigma estará dado por:\n\\[\\begin{align*}\nUCL &= c + 3\\sqrt{c}\\\\\nCL &= c \\\\\nLCL &= c - 3\\sqrt{c}\n\\end{align*}\\]\nSi tenemos un valor estándar para \\(c\\). Sino, tendremos que estimarlo como el número promedio de no conformidades en una muestra grande, digamos \\(\\overline{c}\\). Así,\n\\[\\begin{align*}\nUCL &= \\overline{c} + 3\\sqrt{\\overline{c}}\\\\\nCL &= \\overline{c} \\\\\nLCL &= \\overline{c} - 3\\sqrt{\\overline{c}}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week10.html#análisis-del-no-conformidades",
+    "href": "slides/lec_week10.html#análisis-del-no-conformidades",
+    "title": "Diagramas de control para atributos",
+    "section": "Análisis del no conformidades",
+    "text": "Análisis del no conformidades\nDatos de defectos o no conformidades siempre serán más informativos que los diagramas de proporción no conformes, debido a que usualmente habrán diferentes tipos de no conformidades o defectos. Al analizar los defectos por tipo, tendremos una mayor visión sobre las causas asignables que provocaron el defecto. Esto puede ser particularmente útil al desarrollar los OCAP (out-of-control-action plans) que deben acompañar a un diagrama de control."
+  },
+  {
+    "objectID": "slides/lec_week10.html#elección-del-tamaño-de-muestra",
+    "href": "slides/lec_week10.html#elección-del-tamaño-de-muestra",
+    "title": "Diagramas de control para atributos",
+    "section": "Elección del tamaño de muestra:",
+    "text": "Elección del tamaño de muestra:\nEn lo anterior utilizamos un tamaño de muestra unitario. Sin embargo, en la práctica desearemos inspeccionar la mayor cantidad de unidades posible. Este tamaño muestral debe ser escogido de acuerdo con consideraciones estadísticas como:\n\nEl tamaño de muestra sea lo suficientemente grande para asegurar un límite inferior de control positivo\nObtener probabilidades particulares para la detección de un cambio\n\n\nAlternativamente, factores económicos pueden tener un rol fundamental en la elección del tamaño de muestra."
+  },
+  {
+    "objectID": "slides/lec_week10.html#diagrama-de-control-para-u",
+    "href": "slides/lec_week10.html#diagrama-de-control-para-u",
+    "title": "Diagramas de control para atributos",
+    "section": "Diagrama de control para u",
+    "text": "Diagrama de control para u\nSi deseamos construir un diagrama de control para el número promedio de no conformidades por unidad de inspección, definimos el número promedio de no conformidades por unidad de inspección como:\n\\[u=\\dfrac{x}{n}\\]\nen donde, \\(x\\) es el número total de no conformidades en una muestra de \\(n\\) unidades de inspección. Además, notamos que \\(x\\) es una variable aleatoria Poisson, en consecuencia se tiene:\n\\[\\begin{align*}\nUCL &= \\overline{u} + 3\\sqrt{\\dfrac{\\overline{u}}{n}}\\\\\nCL &= \\overline{u} \\\\\nLCL &= \\overline{u} - 3\\sqrt{\\dfrac{\\overline{u}}{n}}\n\\end{align*}\\]\ndonde \\(\\overline{u}\\) representa el número promedio observado de no conformidades por unidad en un conjunto de datos."
+  },
+  {
+    "objectID": "slides/lec_week10.html#sistemas-de-demérito-continuación",
+    "href": "slides/lec_week10.html#sistemas-de-demérito-continuación",
+    "title": "Diagramas de control para atributos",
+    "section": "Sistemas de demérito: continuación",
+    "text": "Sistemas de demérito: continuación\nLos sistemás de demérito para datos de atributo pueden ser útiles en estos casos. Un posible esquema de demérito es el siguiente:\n\nDefectos Clase A, muy grave: La unidad es completamente inapropiada para el servicio o fallará en el servicio de tal manera que no se puede corregir fácilmente o causará lesiones personales o daños a la propiedad.\nDefectos Clase B, grave: Es posible que la unidad sufra una falla de operación de Clase A, cause problemas de operación algo menos serios o tendrá una vida útil reducida o un mayor costo de mantenimiento.\nDefectos Clase C, moderadamente grave: Es posible que la unidad falle en servicio, cause problemas que sean menos serios que una falla operativa, posiblemente tenga una vida útil reducida o aumenten los costos de mantenimiento, tenga un defecto importante en el acabado, la apariencia o la calidad del trabajo.\nDefectos Clase D, menores: La unidad no fallará en el servicio, pero tiene defectos menores en el acabado, apariencia o calidad del trabajo."
+  },
+  {
+    "objectID": "slides/lec_week10.html#sistemas-de-demérito-continuación-1",
+    "href": "slides/lec_week10.html#sistemas-de-demérito-continuación-1",
+    "title": "Diagramas de control para atributos",
+    "section": "Sistemas de demérito: continuación",
+    "text": "Sistemas de demérito: continuación\nSean \\(c_{iA}, c_{iB}, c_{iC}\\) y \\(c_{iD}\\) el número de defectos Clases A, B, C y D, respectivamente, en la unidad de inspección \\(i-\\)ésima. Asumiremos que cada clase de defectos es independiente, y la ocurrencia de defectos en cada clase es correctamente modelada mediante una distribución de Poisson. Así, definimos el número de deméritos en la unidad de inspección como:\n\\[d_i=100 c_{iA}+ 50 c_{iB} + 10  c_{iC} + c_{iD}\\]\nEn donde los pesos asociados son los comúnmente usados en la práctica. Sin embargo, estos pueden ser cambiados dependiendo de la naturaleza del proceso."
+  },
+  {
+    "objectID": "slides/lec_week10.html#sistemas-de-demérito-continuación-2",
+    "href": "slides/lec_week10.html#sistemas-de-demérito-continuación-2",
+    "title": "Diagramas de control para atributos",
+    "section": "Sistemas de demérito: continuación",
+    "text": "Sistemas de demérito: continuación\nSupongamos que una muestra de \\(n\\) unidades de inspección es usada. Entonces el número de deméritos por unidad está dado por:\n\\[y_i=\\dfrac{D}{n}\\]\ndonde \\(D=\\sum_{i=1}^{n}d_i\\) es el número total de deméritos en todas las \\(n\\) unidades de inspección. Debido a que \\(u_i\\) es una combinación lineal de V.A. Poisson independientes, el estadístico \\(u_i\\) puede ser graficado en un diagrama de control como:\n\\[\\begin{align*}\nUCL &= \\overline{u} + 3\\hat{\\sigma}_u\\\\\nCL &= \\overline{u} \\\\\nLCL &= \\overline{u} - 3\\hat{\\sigma}_u\n\\end{align*}\\]\ndonde,\n\\[\\overline{u}=100 \\overline{u}_A +  50 \\overline{u}_B + 10 \\overline{u}_C + \\overline{u}_D\\]\ny,\n\\[\\hat{\\sigma}_u=\\left[ \\dfrac{100^2 \\overline{u}_A +  50^2 \\overline{u}_B + 10^2 \\overline{u}_C + \\overline{u}_D}{n}\\right]^{1/2}\\]"
   }
 ]
