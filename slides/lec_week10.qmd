@@ -310,7 +310,7 @@ $$\hat{\sigma}_u=\left[ \dfrac{100^2 \overline{u}_A +  50^2 \overline{u}_B + 10^
 
 . . .
 
-*Tarea: Leer Sección 7.5: Guideliens for implementing Control Charts. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.**
+**Tarea: Leer Sección 7.5: Guideliens for implementing Control Charts. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.**
 
 
 # ¿Qué veremos la próxima semana?
