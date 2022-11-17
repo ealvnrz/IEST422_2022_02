@@ -3,7 +3,7 @@ title: "Calendario"
 ---
 
 |          Semana          | Fecha |              Preparación               |              Presentación               |              Material adicional               | Prueba | Trabajo Final |
-|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|:------------------------:|:-----:|:--------------------------------------:|:---------------------------------------:|:---------------------------------------------:|:------:|:-------------:|
 |  [1](/pages/week1.html)  | 25/08 | [📖](../pages/week1.html#preparación)  | [🖥️](../pages/week1.html#presentación)  | [📋](../pages/week1.html#material-adicional)  |        |               |
 |  [2](/pages/week2.html)  | 01/09 | [📖](../pages/week2.html#preparación)  | [🖥️](../pages/week2.html#presentación)  | [📋](../pages/week2.html#material-adicional)  |        |               |
 |  [3](/pages/week3.html)  | 08/09 | [📖](../pages/week3.html#preparación)  | [🖥️](../pages/week3.html#presentación)  | [📋](../pages/week3.html#material-adicional)  |        |               |

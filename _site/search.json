@@ -1615,5 +1615,75 @@
     "title": "Diagramas de control para atributos",
     "section": "Sistemas de demérito: continuación",
     "text": "Sistemas de demérito: continuación\nSupongamos que una muestra de \\(n\\) unidades de inspección es usada. Entonces el número de deméritos por unidad está dado por:\n\\[y_i=\\dfrac{D}{n}\\]\ndonde \\(D=\\sum_{i=1}^{n}d_i\\) es el número total de deméritos en todas las \\(n\\) unidades de inspección. Debido a que \\(u_i\\) es una combinación lineal de V.A. Poisson independientes, el estadístico \\(u_i\\) puede ser graficado en un diagrama de control como:\n\\[\\begin{align*}\nUCL &= \\overline{u} + 3\\hat{\\sigma}_u\\\\\nCL &= \\overline{u} \\\\\nLCL &= \\overline{u} - 3\\hat{\\sigma}_u\n\\end{align*}\\]\ndonde,\n\\[\\overline{u}=100 \\overline{u}_A +  50 \\overline{u}_B + 10 \\overline{u}_C + \\overline{u}_D\\]\ny,\n\\[\\hat{\\sigma}_u=\\left[ \\dfrac{100^2 \\overline{u}_A +  50^2 \\overline{u}_B + 10^2 \\overline{u}_C + \\overline{u}_D}{n}\\right]^{1/2}\\]"
+  },
+  {
+    "objectID": "slides/lec_week11.html#capacidad-del-proceso",
+    "href": "slides/lec_week11.html#capacidad-del-proceso",
+    "title": "Capacidad del proceso",
+    "section": "Capacidad del proceso",
+    "text": "Capacidad del proceso\nLa capacidad del proceso hace referencia a la uniformidad del proceso. Claramente, la variabilidad de las características importantes para la calidad en el proceso es una medida de la uniformidad de las salidas. Hay dos formas de pensar esta variabilidad:\n\nLa variabilidad inherente en las características importantes para la calidad en un tiempo específico o varibilidad instantánea.\nLa variabilidad en las características importantes para la calidad a lo largo del tiempo\n\n\nLos límites de tolerancia naturales del proceso están definidos como:\n\\[\\begin{align*}\nUNTL &= \\mu + 3 \\sigma \\\\\nLNTL &= \\mu - 3 \\sigma\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso",
+    "href": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso",
+    "title": "Capacidad del proceso",
+    "section": "Análisis de la capacidad del proceso",
+    "text": "Análisis de la capacidad del proceso\nDefinimos el análisis de la capacidad del proceso como el estudio formal para estimar la capacidad del proceso. Esta estimación puede ser en términos de una distribución de probabilidad con cierta forma, media y desviación estándar.\nPor ejemplo, podemos determinar que la salida del proceso se distribuye normal con media \\(\\mu=1\\) cm y desviación estándar \\(\\sigma= 0.001\\) cm. En este sentido, el análisis de la capacidad del proceso puede ser realizado sin considerar las especificaciones de la característica de la calidad.\nAlternativamente, podemos expresas la capacidad del proceso como el porcentaje que cae fuera de los límites de especificación. Sin embargo, las especificaciones no son necesarias para realizar el análisis de la capacidad del proceso."
+  },
+  {
+    "objectID": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso-continuación",
+    "href": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso-continuación",
+    "title": "Capacidad del proceso",
+    "section": "Análisis de la capacidad del proceso: continuación",
+    "text": "Análisis de la capacidad del proceso: continuación\nUn estudio de la capacidad del proceso usualmente mide parámetros funciones o características importantes para la calidad en un producto, no el proceso mismo. Cuando un analista puede directamente observar el proceso y puede controlar o monitorear la recolección de datos, el estudio es un verdadero análisis de la capacidad del proceso, debido a que al tener control sobre la muestra, sabiendo la temporalidad de los datos, es posible hacer inferencia sobre la estabilidad del proceso a lo largo del tiempo.\nCuando no tenemos control sobre la temporalidad, al estudio le llamamos caracterización del producto, en donde sólo podremos estimar la distribución de la característica para la calidad del producto. Es decir, no podemos aseverar nada sobre el comportamiento dinámico del proceso o su estado de control estadístico."
+  },
+  {
+    "objectID": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso-continuación-1",
+    "href": "slides/lec_week11.html#análisis-de-la-capacidad-del-proceso-continuación-1",
+    "title": "Capacidad del proceso",
+    "section": "Análisis de la capacidad del proceso: continuación",
+    "text": "Análisis de la capacidad del proceso: continuación\nEl análisis de la capacidad del proceso es una parte vital de los programas de mejoramiento continuo. Entre sus usos más frecuentes están:\n\nPredecir que tan bien un proceso mantendrá las tolerancias.\nAsistir a los diseñadores/desarrolladores del producto en modificaciones del proceso.\nAsistir en la determinación de intervalos de tiempo entre muestreos.\nEspecificar los requerimientos de desempeño para nuevos equipos.\nAyudar a seleccionar proveedores.\nAyudar a planear la secuencia del proceso de producción bajo efectos de interacción\nReducir la variabilidad general del proceso\n\n\nLas tres principales herramientas utilizadas en este análisis son:\n\nHistogramas y gráficos de probabilidad (qq-plot)\nDiagramas de control\nDiseño de experimentos"
+  },
+  {
+    "objectID": "slides/lec_week11.html#qq-plot",
+    "href": "slides/lec_week11.html#qq-plot",
+    "title": "Capacidad del proceso",
+    "section": "QQ-plot",
+    "text": "QQ-plot\nLos gráficos de probabilidad son una alternativa a los histogramas que pueden ser usados para determinar la forma, centro y desviación estándar de la distribución. A diferencia del histograma, no es necesario crear intervalos.\nSi bien, estamos acostumbrados a utilizar este tipo de gráficos para distribuciones normales, fácilmente puede extendidos a otras distribuciones.\nLa elección de la distribución con la que compararemos nuestros datos es particularmente importante, esta puede ser escogida desde experiencias pasadas o conocimiento del proceso en cuestión. Adicionalmente, es posible graficar la asimetría vs la kurtosis, definidas como:\n\\[\\sqrt{\\hat{\\beta}_1}=\\dfrac{M_3}{(M_2)^{3/2}}\\] y,\n\\[\\hat{\\beta}_2=\\dfrac{M_4}{M_{2}^{2}},\\] respectivamente, donde:\n\\[M_j=\\dfrac{\\sum_{i=1}^{n}(x_i-\\overline{x})^j}{n},\\quad j=1,2,3,4\\]"
+  },
+  {
+    "objectID": "slides/lec_week11.html#qq-plot-continuación",
+    "href": "slides/lec_week11.html#qq-plot-continuación",
+    "title": "Capacidad del proceso",
+    "section": "QQ-plot: continuación",
+    "text": "QQ-plot: continuación"
+  },
+  {
+    "objectID": "slides/lec_week11.html#relaciones-de-la-capacidad-del-proceso",
+    "href": "slides/lec_week11.html#relaciones-de-la-capacidad-del-proceso",
+    "title": "Capacidad del proceso",
+    "section": "Relaciones de la capacidad del proceso",
+    "text": "Relaciones de la capacidad del proceso\nFrecuentemente es conveniento tener una forma sencilla de cuantificar la capacidad del proceso. Una forma de hacerlo es la relación de la capacidad del proceso (process capability ratio (PCR)) \\(C_p\\) definida como:\n\\[C_p = \\dfrac{USL-LSL}{6\\sigma}\\]\ncomo hemos visto antes, o en términos porcentuales como:\n\\[P=\\left(\\dfrac{1}{C_p}\\right)100\\%\\]"
+  },
+  {
+    "objectID": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación",
+    "href": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación",
+    "title": "Capacidad del proceso",
+    "section": "Relacion de la capacidad del proceso: continuación",
+    "text": "Relacion de la capacidad del proceso: continuación\nLas ecuaciones anteriores asumen que el proceso tiene especificaciones en ambos lados, sin embargo, existen procesos en los cuales sólo uno de los límites es importante. Para este caso, definimos las relaciones de la capacidad del proceso unilaterales como:\n\\[\\begin{align*}\nC_{pu}=\\dfrac{USL - \\mu}{3\\sigma}\\\\\nC_{pl}=\\dfrac{\\mu - LSL}{3\\sigma}\n\\end{align*}\\]\nEn donde, reemplazando por sus estimaciónes respetivas para \\(\\mu\\) y \\(\\sigma\\) obtendremos la estimación de las capacidades."
+  },
+  {
+    "objectID": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación-1",
+    "href": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación-1",
+    "title": "Capacidad del proceso",
+    "section": "Relacion de la capacidad del proceso: continuación",
+    "text": "Relacion de la capacidad del proceso: continuación\nLa capacidad del proceso \\(C_p\\) no toma en cuenta donde está ubicada la media del proceso en relación a las especificaciones, pues sólo mide la dispersión de las especificaciones respecto a una variabilidad \\(6\\sigma\\) en el proceso.\nEn estos casos, utilizaremos el coeficiente \\(C_{pk}\\) que tiene en cuenta el centrado del proceso:\n\\[C_{pk}=\\min\\left(C_{up},C_{pl}\\right)\\]\nEn general, si \\(C_p=C_{pk}\\), el proceso está centrado en el punto medio de los límites de especificación, y cuando \\(C_{pk}<C_p\\) el proceso no está centrado. Usualmente decimos que \\(C_p\\) mide la capacidad potencial en el proceso, mientras que \\(C_{pk}\\) mide la capacidad actual.\nTarea: Revisar inferencia sobre \\(C_p\\), i.e. intervalos de confianza y test de hipótesis"
+  },
+  {
+    "objectID": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación-2",
+    "href": "slides/lec_week11.html#relacion-de-la-capacidad-del-proceso-continuación-2",
+    "title": "Capacidad del proceso",
+    "section": "Relacion de la capacidad del proceso: continuación",
+    "text": "Relacion de la capacidad del proceso: continuación"
   }
 ]

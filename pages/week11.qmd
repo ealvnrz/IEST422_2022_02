@@ -1,10 +1,11 @@
 ---
-title: "Semana 11"
+title: "Capacidad del proceso"
 subtitle: ""
 ---
 
 ## Preparación
 
+- Estudiar Capítulo 8. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.
 
 ## Presentación
 
@@ -15,3 +16,5 @@ subtitle: ""
 ```
 
 ## Material adicional
+
+- Estudiar Capítulo 9. Introduction to statistical quality control. Montgomery, Douglas C. 7th edition.
